@@ -7,7 +7,7 @@
     "@hasura/ndc-sdk-typescript": "^4.4.0",
     "mysql2": "^3.9.4",
     "tslint": "^6.1.3",
-    "typescript": "^5.4.3"
+    "typescript": "^5.2.2"
   },
   "files": [
     "./bin/*",
