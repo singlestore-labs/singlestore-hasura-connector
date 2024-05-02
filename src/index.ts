@@ -1,14 +1,24 @@
-import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, NotSupported, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
+import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
 import mysql, { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
 import { do_get_schema } from "./handlers/schema";
 
+const SINGLESTORE_HOST = process.env["SINGLESTORE_HOST"] as string;
+const SINGLESTORE_PORT = process.env["SINGLESTORE_PORT"] as string;
+const SINGLESTORE_USER = process.env["SINGLESTORE_USER"] as string;
+const SINGLESTORE_PASSWORD = process.env["SINGLESTORE_PASSWORD"] as string;
+
+type ConfigurationSchema = {
+    collection_names: string[];
+    object_types: { [k: string]: ObjectType };
+    // TODO: implement functioin and procedure handling
+    // functions: FunctionInfo[];
+    // procedures: ProcedureInfo[];
+};
+
 export type Configuration = {
-    host: string
-    port: number
-    user: string
-    password: string
+    config?: ConfigurationSchema;
 };
 
 export type State = {
@@ -57,10 +67,10 @@ const connector: Connector<Configuration, State> = {
         metrics: unknown
     ): Promise<State> {
         const pool = mysql.createPool({
-            user: configuration.user,
-            port: configuration.port,
-            host: configuration.host,
-            password: configuration.password,
+            host: SINGLESTORE_HOST,
+            port: Number(SINGLESTORE_PORT),
+            user: SINGLESTORE_USER,
+            password: SINGLESTORE_PASSWORD
         })
 
         return Promise.resolve({ connPool: pool })

@@ -20,12 +20,4 @@ export const CAPABILITIES_RESPONSE: CapabilitiesResponse = {
 };
 
 export const SCALAR_TYPES: { [key: string]: ScalarType } = {
-    Int: {
-        aggregate_functions: {},
-        comparison_operators: {}
-    },
-    Atata: {
-        aggregate_functions: {},
-        comparison_operators: {}
-    }
 }
