@@ -1,5 +1,5 @@
 import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
-import mysql, { Pool } from 'mysql2/promise';
+import mysql, { Pool } from 'mysql2';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
 import { do_get_schema } from "./handlers/schema";
@@ -10,8 +10,8 @@ const SINGLESTORE_USER = process.env["SINGLESTORE_USER"] as string;
 const SINGLESTORE_PASSWORD = process.env["SINGLESTORE_PASSWORD"] as string;
 
 type ConfigurationSchema = {
-    collection_names: string[];
-    object_types: { [k: string]: ObjectType };
+    tableNames: string[];
+    objectTypes: { [k: string]: ObjectType };
     // TODO: implement functioin and procedure handling
     // functions: FunctionInfo[];
     // procedures: ProcedureInfo[];
