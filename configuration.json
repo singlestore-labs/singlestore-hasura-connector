@@ -26,7 +26,11 @@
       "nullable" : false,
       "auto_increment" : false
     } ],
-    "pks" : [ "AlbumId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "AlbumId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Artist`",
     "tableType" : "TABLE",
@@ -46,7 +50,11 @@
       "nullable" : true,
       "auto_increment" : false
     } ],
-    "pks" : [ "ArtistId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "ArtistId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Customer`",
     "tableType" : "TABLE",
@@ -143,7 +151,11 @@
       "nullable" : true,
       "auto_increment" : false
     } ],
-    "pks" : [ "CustomerId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "CustomerId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Employee`",
     "tableType" : "TABLE",
@@ -254,7 +266,11 @@
       "nullable" : true,
       "auto_increment" : false
     } ],
-    "pks" : [ "EmployeeId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "EmployeeId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Genre`",
     "tableType" : "TABLE",
@@ -274,7 +290,11 @@
       "nullable" : true,
       "auto_increment" : false
     } ],
-    "pks" : [ "GenreId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "GenreId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Invoice`",
     "tableType" : "TABLE",
@@ -343,7 +363,11 @@
       "nullable" : false,
       "auto_increment" : false
     } ],
-    "pks" : [ "InvoiceId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "InvoiceId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`InvoiceLine`",
     "tableType" : "TABLE",
@@ -384,7 +408,11 @@
       "nullable" : false,
       "auto_increment" : false
     } ],
-    "pks" : [ "InvoiceLineId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "InvoiceLineId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`MediaType`",
     "tableType" : "TABLE",
@@ -404,7 +432,11 @@
       "nullable" : true,
       "auto_increment" : false
     } ],
-    "pks" : [ "MediaTypeId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "MediaTypeId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Playlist`",
     "tableType" : "TABLE",
@@ -424,7 +456,11 @@
       "nullable" : true,
       "auto_increment" : false
     } ],
-    "pks" : [ "PlaylistId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "PlaylistId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`PlaylistTrack`",
     "tableType" : "TABLE",
@@ -444,7 +480,11 @@
       "nullable" : false,
       "auto_increment" : false
     } ],
-    "pks" : [ "PlaylistId", "TrackId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "PlaylistId", "TrackId" ]
+      }
+    }
   }, {
     "tableName" : "`chinook`.`Track`",
     "tableType" : "TABLE",
@@ -513,6 +553,10 @@
       "nullable" : false,
       "auto_increment" : false
     } ],
-    "pks" : [ "TrackId" ]
+    "uniquenessConstraints" : {
+      "PRIMARY" : {
+        "unique_columns" : [ "TrackId" ]
+      }
+    }
   } ]
 }

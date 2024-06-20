@@ -1,0 +1,48 @@
+DROP DATABASE IF EXISTS allTypesDB;
+CREATE DATABASE allTypesDB;
+USE allTypesDB;
+
+CREATE ROWSTORE TABLE `allTypesTable` (
+  `boolColumn` BOOL,
+  `booleanColumn` BOOLEAN,
+  `bitColumn` BIT(64),
+  `tinyintColumn` TINYINT,
+  `mediumintColumn` MEDIUMINT,
+  `smallintColumn` SMALLINT,
+  `intColumn` INT,
+  `integerColumn` INTEGER,
+  `bigintColumn` BIGINT,
+  `floatColumn` FLOAT,
+  `doubleColumn` DOUBLE,
+  `realColumn` REAL,
+  `dateColumn` DATE,
+  `timeColumn` TIME,
+  `time6Column` TIME(6),
+  `datetimeColumn` DATETIME,
+  `datetime6Column` DATETIME(6),
+  `timestampColumn` TIMESTAMP,
+  `timestamp6Column` TIMESTAMP(6),
+  `yearColumn` YEAR,
+  `decimalColumn` DECIMAL(65, 30),
+  `decColumn` DEC,
+  `fixedColumn` FIXED,
+  `numericColumn` NUMERIC,
+  `charColumn` CHAR,
+  `mediumtextColumn` MEDIUMTEXT,
+  `binaryColumn` BINARY,
+  `varcharColumn` VARCHAR(100),
+  `varbinaryColumn` VARBINARY(100),
+  `longtextColumn` LONGTEXT,
+  `textColumn` TEXT,\
+  `tinytextColumn` TINYTEXT,
+  `longblobColumn` LONGBLOB,
+  `mediumblobColumn` MEDIUMBLOB,
+  `blobColumn` BLOB,
+  `tinyblobColumn` TINYBLOB,
+  `jsonColumn` JSON,
+  `geographyColumn` GEOGRAPHY,
+  `geographypointColumn` GEOGRAPHYPOINT,
+  `enumColumn` ENUM('val1','val2','valN'),
+  `setColumn` SET('v1', 'v2', 'v3', 'v4'),
+  `vectorColumn` VECTOR(3)
+) 
