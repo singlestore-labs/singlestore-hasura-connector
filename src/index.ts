@@ -1,4 +1,4 @@
-import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
+import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
 import mysql, { Pool } from 'mysql2';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
@@ -9,16 +9,34 @@ const SINGLESTORE_PORT = process.env["SINGLESTORE_PORT"] as string;
 const SINGLESTORE_USER = process.env["SINGLESTORE_USER"] as string;
 const SINGLESTORE_PASSWORD = process.env["SINGLESTORE_PASSWORD"] as string;
 
-type ConfigurationSchema = {
-    tableNames: string[];
-    objectTypes: { [k: string]: ObjectType };
-    // TODO: implement functioin and procedure handling
-    // functions: FunctionInfo[];
-    // procedures: ProcedureInfo[];
-};
+
+enum TableType {
+    Table,
+    View
+}
+
+export type ColumnSchema = {
+    name: string
+    description: string | null
+    type: string
+    numeric_scale: number | null
+    nullable: boolean
+    auto_increment: boolean
+}
+
+type TableSchema = {
+    tableName: string;
+    tableType: TableType;
+    description: string | null;
+    columns: ColumnSchema[];
+    uniquenessConstraints: {
+        [k: string]: UniquenessConstraint;
+    };
+}
 
 export type Configuration = {
-    config?: ConfigurationSchema;
+    jdbcUrl: string;
+    tables: TableSchema[];
 };
 
 export type State = {
@@ -34,9 +52,9 @@ const connector: Connector<Configuration, State> = {
     parseConfiguration(
         configurationDir: string
     ): Promise<Configuration> {
-        let filePath = `${configurationDir}/config.json`;
+        let filePath = `${configurationDir}/configuration.json`;
         if (configurationDir.length === 0) {
-            filePath = "config.json";
+            filePath = "configuration.json";
         }
         try {
             const fileContent = readFileSync(filePath, 'utf8');
