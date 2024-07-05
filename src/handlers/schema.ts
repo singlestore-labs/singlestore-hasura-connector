@@ -18,7 +18,7 @@ export function do_get_schema(configuration: Configuration): SchemaResponse {
             arguments: {},
             type: table.tableName,
             uniqueness_constraints: table.uniquenessConstraints,
-            foreign_keys: {}
+            foreign_keys: table.foreignKeys
         })
     }
 
