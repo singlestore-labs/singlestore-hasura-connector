@@ -114,9 +114,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            //            "in": {
-            //                type: "in"
-            //            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -232,9 +229,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            //            "in": {
-            //                type: "in"
-            //            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -302,9 +296,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            //            "in": {
-            //                type: "in"
-            //            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -379,9 +370,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            //            "in": {
-            //                type: "in"
-            //            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -450,9 +438,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            //            "in": {
-            //                type: "in"
-            //            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -502,9 +487,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            //            "in": {
-            //                type: "in"
-            //            },
         }
     },
 }
