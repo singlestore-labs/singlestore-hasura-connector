@@ -2,9 +2,9 @@ import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, ForeignKey
 import mysql, { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
-import { do_get_schema } from "./handlers/schema";
+import { doGetSchema } from "./handlers/schema";
 import { doQuery } from "./handlers/query";
-import { do_query_explain } from "./handlers/queryExplain";
+import { doQueryExplain } from "./handlers/queryExplain";
 
 const SINGLESTORE_HOST = process.env["SINGLESTORE_HOST"] as string;
 const SINGLESTORE_PORT = process.env["SINGLESTORE_PORT"] as string;
@@ -149,7 +149,7 @@ const connector: Connector<Configuration, State> = {
      * @param configuration
      */
     getSchema(configuration: Configuration): Promise<SchemaResponse> {
-        return Promise.resolve(do_get_schema(configuration));
+        return Promise.resolve(doGetSchema(configuration));
     },
 
     /**
@@ -166,8 +166,7 @@ const connector: Connector<Configuration, State> = {
         state: State,
         request: QueryRequest
     ): Promise<ExplainResponse> {
-        console.log(JSON.stringify(request, null, 2));
-        return do_query_explain(configuration, state, request)
+        return doQueryExplain(configuration, state, request)
     },
 
     /**
@@ -218,7 +217,6 @@ const connector: Connector<Configuration, State> = {
         state: State,
         request: QueryRequest
     ): Promise<QueryResponse> {
-        console.log(JSON.stringify(request, null, 2));
         return doQuery(configuration, state, request)
     },
 }

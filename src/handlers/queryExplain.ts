@@ -2,7 +2,7 @@ import { ExplainResponse, QueryRequest } from "@hasura/ndc-sdk-typescript";
 import { Configuration, State } from "..";
 import { generateQueries } from "./query";
 
-export function do_query_explain(
+export function doQueryExplain(
     configuration: Configuration,
     state: State,
     request: QueryRequest): Promise<ExplainResponse> {
