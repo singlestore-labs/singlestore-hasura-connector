@@ -1,9 +1,10 @@
 import opentelemetry from '@opentelemetry/api';
-import { Configuration, State } from "..";
 import { FieldPacket, RowDataPacket } from "mysql2/promise";
 import { SingleStoreQuery } from "../sql/SingleStoreQuery";
 import { Field, Query, QueryRequest, QueryResponse, RowSet } from "@hasura/ndc-sdk-typescript";
 import { withActiveSpan } from "@hasura/ndc-sdk-typescript/instrumentation";
+import { Configuration } from '../util';
+import { State } from '..';
 
 export async function doQuery(
     configuration: Configuration,

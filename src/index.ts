@@ -1,63 +1,11 @@
-import { BadGateway, CapabilitiesResponse, Connector, ExplainResponse, Forbidden, ForeignKeyConstraint, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
-import mysql, { Pool } from 'mysql2/promise';
+import { BadGateway, CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
+import { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
 import { doGetSchema } from "./handlers/schema";
 import { doQuery } from "./handlers/query";
 import { doQueryExplain } from "./handlers/queryExplain";
-import { createPool } from "./util";
-
-// URL with credentials and options needed to establish connection to the SingleStore database
-// The format is mysql://[<user>][:<password>][@<host>]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]
-// Connection options https://www.npmjs.com/package/mysql#connection-options
-// Pool options https://www.npmjs.com/package/mysql#pool-options
-//
-// Example: "mysql://user:pass@host/db?debug=true"
-export const SINGLESTORE_URL = process.env["SINGLESTORE_URL"] as string | undefined;
-
-export const SINGLESTORE_HOST = process.env["SINGLESTORE_HOST"] as string | undefined;
-export const SINGLESTORE_PORT = process.env["SINGLESTORE_PORT"] as string | undefined;
-export const SINGLESTORE_USER = process.env["SINGLESTORE_USER"] as string | undefined;
-export const SINGLESTORE_PASSWORD = process.env["SINGLESTORE_PASSWORD"] as string | undefined;
-export const SINGLESTORE_DATABASE = process.env["SINGLESTORE_DATABASE"] as string | undefined;
-export const SINGLESTORE_SSL_CA = process.env["SINGLESTORE_SSL_CA"] as string | undefined;
-export const SINGLESTORE_SSL_CERT = process.env["SINGLESTORE_SSL_CERT"] as string | undefined;
-export const SINGLESTORE_SSL_KEY = process.env["SINGLESTORE_SSL_KEY"] as string | undefined;
-export const SINGLESTORE_SSL_CIPHERS = process.env["SINGLESTORE_SSL_CIPHERS"] as string | undefined;
-export const SINGLESTORE_SSL_PASSPHRASE = process.env["SINGLESTORE_SSL_PASSPHRASE"] as string | undefined;
-export const SINGLESTORE_SSL_REJECT_UNAUTHORIZED = process.env["SINGLESTORE_SSL_REJECT_UNAUTHORIZED"] as string | undefined;
-
-enum TableType {
-    Table,
-    View
-}
-
-export type ColumnSchema = {
-    name: string
-    description: string | null
-    type: string
-    numeric_scale: number | null
-    nullable: boolean
-    auto_increment: boolean
-}
-
-type TableSchema = {
-    tableName: string;
-    tableType: TableType;
-    description: string | null;
-    columns: ColumnSchema[];
-    uniquenessConstraints: {
-        [k: string]: UniquenessConstraint;
-    };
-    foreignKeys: {
-        [k: string]: ForeignKeyConstraint;
-    }
-}
-
-export type Configuration = {
-    jdbcUrl: string;
-    tables: TableSchema[];
-};
+import { Configuration, createPool } from "./util";
 
 export type State = {
     connPool: Pool;
@@ -236,3 +184,5 @@ const connector: Connector<Configuration, State> = {
 }
 
 start(connector)
+export { Configuration };
+

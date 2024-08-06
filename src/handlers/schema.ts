@@ -1,6 +1,6 @@
 import { CollectionInfo, ObjectField, ObjectType, SchemaResponse, Type, UnprocessableContent } from "@hasura/ndc-sdk-typescript";
-import { ColumnSchema, Configuration } from "..";
 import { DataTypeClass, SCALAR_TYPES } from "../constants";
+import { ColumnSchema, Configuration } from "../util";
 
 export function doGetSchema(configuration: Configuration): SchemaResponse {
     let collectionInfos: CollectionInfo[] = [];
