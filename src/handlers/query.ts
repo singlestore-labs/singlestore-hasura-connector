@@ -1,7 +1,9 @@
+import opentelemetry from '@opentelemetry/api';
 import { Configuration, State } from "..";
 import { FieldPacket, RowDataPacket } from "mysql2/promise";
 import { SingleStoreQuery } from "../sql/SingleStoreQuery";
 import { Field, Query, QueryRequest, QueryResponse, RowSet } from "@hasura/ndc-sdk-typescript";
+import { withActiveSpan } from "@hasura/ndc-sdk-typescript/instrumentation";
 
 export async function doQuery(
     configuration: Configuration,
@@ -9,13 +11,21 @@ export async function doQuery(
     query: QueryRequest
 ): Promise<QueryResponse> {
     let queries = generateQueries(configuration, query);
-    return performQueries(state, queries, query);
+    const sql = queries[0].sql
+    const spanAttributes = { sql };
+    const tracer = opentelemetry.trace.getTracer("singletore-hasura-conenctor");
+
+    return withActiveSpan(tracer,
+        "running SQL queries",
+        async (): Promise<QueryResponse> => {
+            return await performQueries(state, queries, query);
+        },
+        spanAttributes)
 }
 
 function performQueries(state: State, queries: SingleStoreQuery[], request: QueryRequest): Promise<QueryResponse> {
     var results: Promise<RowSet>[] = []
     for (const query of queries) {
-        console.log(query)
         const res = state.connPool.execute<RowDataPacket[]>(query.sql, query.parameters)
             .then(([res, fields]: [RowDataPacket[], FieldPacket[]]): any => {
                 let rowSet = res[0].data as RowSet;
