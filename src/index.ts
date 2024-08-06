@@ -1,4 +1,4 @@
-import { CapabilitiesResponse, Connector, ConnectorError, ExplainResponse, Forbidden, ForeignKeyConstraint, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
+import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, ForeignKeyConstraint, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
 import mysql, { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
@@ -112,7 +112,7 @@ const connector: Connector<Configuration, State> = {
      * @param state
      */
     fetchMetrics(configuration: Configuration, state: State): Promise<undefined> {
-        return Promise.resolve(undefined);
+        throw new Error("Function not implemented.");
     },
     /**
      * Check the health of the connector.
@@ -124,12 +124,8 @@ const connector: Connector<Configuration, State> = {
      * @param configuration
      * @param state
      */
-    async healthCheck(configuration: Configuration, state: State): Promise<undefined> {
-        try {
-            await state.connPool.execute("SELECT 1")
-        } catch (x) {
-            throw new ConnectorError(503, "Service Unavailable");
-        }
+    healthCheck(configuration: Configuration, state: State): Promise<undefined> {
+        throw new Error("Function not implemented.");
     },
 
     /**
