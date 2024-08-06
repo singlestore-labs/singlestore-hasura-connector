@@ -2,7 +2,7 @@ import { CollectionInfo, ObjectField, ObjectType, SchemaResponse, Type, Unproces
 import { ColumnSchema, Configuration } from "..";
 import { DataTypeClass, SCALAR_TYPES } from "../constants";
 
-export function do_get_schema(configuration: Configuration): SchemaResponse {
+export function doGetSchema(configuration: Configuration): SchemaResponse {
     let collectionInfos: CollectionInfo[] = [];
     let object_types: { [k: string]: ObjectType } = {};
 
@@ -18,7 +18,7 @@ export function do_get_schema(configuration: Configuration): SchemaResponse {
             arguments: {},
             type: table.tableName,
             uniqueness_constraints: table.uniquenessConstraints,
-            foreign_keys: {}
+            foreign_keys: table.foreignKeys
         })
     }
 

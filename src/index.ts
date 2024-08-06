@@ -1,8 +1,10 @@
-import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
-import mysql, { Pool } from 'mysql2';
+import { CapabilitiesResponse, Connector, ExplainResponse, Forbidden, ForeignKeyConstraint, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
+import mysql, { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
-import { do_get_schema } from "./handlers/schema";
+import { doGetSchema } from "./handlers/schema";
+import { doQuery } from "./handlers/query";
+import { doQueryExplain } from "./handlers/queryExplain";
 
 const SINGLESTORE_HOST = process.env["SINGLESTORE_HOST"] as string;
 const SINGLESTORE_PORT = process.env["SINGLESTORE_PORT"] as string;
@@ -32,6 +34,9 @@ type TableSchema = {
     uniquenessConstraints: {
         [k: string]: UniquenessConstraint;
     };
+    foreignKeys: {
+        [k: string]: ForeignKeyConstraint;
+    }
 }
 
 export type Configuration = {
@@ -144,7 +149,7 @@ const connector: Connector<Configuration, State> = {
      * @param configuration
      */
     getSchema(configuration: Configuration): Promise<SchemaResponse> {
-        return Promise.resolve(do_get_schema(configuration));
+        return Promise.resolve(doGetSchema(configuration));
     },
 
     /**
@@ -161,7 +166,7 @@ const connector: Connector<Configuration, State> = {
         state: State,
         request: QueryRequest
     ): Promise<ExplainResponse> {
-        throw new Error("Function not implemented.");
+        return doQueryExplain(configuration, state, request)
     },
 
     /**
@@ -212,7 +217,7 @@ const connector: Connector<Configuration, State> = {
         state: State,
         request: QueryRequest
     ): Promise<QueryResponse> {
-        throw new Error("Function not implemented.");
+        return doQuery(configuration, state, request)
     },
 }
 

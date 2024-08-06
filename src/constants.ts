@@ -114,26 +114,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            "not_equal": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "INTEGER"
-                }
-            },
-            "in": {
-                type: "in"
-            },
-            "not_in": {
-                type: "custom",
-                argument_type: {
-                    type: "array",
-                    element_type: {
-                        type: "named",
-                        name: "INTEGER"
-                    }
-                }
-            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -249,26 +229,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            "not_equal": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "REAL"
-                }
-            },
-            "in": {
-                type: "in"
-            },
-            "not_in": {
-                type: "custom",
-                argument_type: {
-                    type: "array",
-                    element_type: {
-                        type: "named",
-                        name: "REAL"
-                    }
-                }
-            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -336,26 +296,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            "not_equal": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "STRING"
-                }
-            },
-            "in": {
-                type: "in"
-            },
-            "not_in": {
-                type: "custom",
-                argument_type: {
-                    type: "array",
-                    element_type: {
-                        type: "named",
-                        name: "STRING"
-                    }
-                }
-            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -391,13 +331,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
                     name: "STRING"
                 }
             },
-            "not_like": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "STRING"
-                }
-            }
         }
     },
     "BLOB": {
@@ -437,26 +370,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            "not_equal": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "BLOB"
-                }
-            },
-            "in": {
-                type: "in"
-            },
-            "not_in": {
-                type: "custom",
-                argument_type: {
-                    type: "array",
-                    element_type: {
-                        type: "named",
-                        name: "BLOB"
-                    }
-                }
-            },
             "greater": {
                 type: "custom",
                 argument_type: {
@@ -492,13 +405,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
                     name: "BLOB"
                 }
             },
-            "not_like": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "BLOB"
-                }
-            }
         }
     },
     DATETIME: {
@@ -531,26 +437,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
         comparison_operators: {
             "equal": {
                 type: "equal"
-            },
-            "not_equal": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "DATETIME"
-                }
-            },
-            "in": {
-                type: "in"
-            },
-            "not_in": {
-                type: "custom",
-                argument_type: {
-                    type: "array",
-                    element_type: {
-                        type: "named",
-                        name: "DATETIME"
-                    }
-                }
             },
             "greater": {
                 type: "custom",
@@ -601,26 +487,6 @@ export const SCALAR_TYPES: { [key: string]: ScalarType } = {
             "equal": {
                 type: "equal"
             },
-            "not_equal": {
-                type: "custom",
-                argument_type: {
-                    type: "named",
-                    name: "OTHER"
-                }
-            },
-            "in": {
-                type: "in"
-            },
-            "not_in": {
-                type: "custom",
-                argument_type: {
-                    type: "array",
-                    element_type: {
-                        type: "named",
-                        name: "OTHER"
-                    }
-                }
-            }
         }
     },
 }
