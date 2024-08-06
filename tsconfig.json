@@ -4,9 +4,9 @@
         "lib": [
             "ESNext"
         ],
-        "module": "CommonJS",
+        "module": "NodeNext",
         "rootDir": "./src",
-        "moduleResolution": "node",
+        "moduleResolution": "nodenext",
         "resolveJsonModule": true,
         "declaration": true,
         "sourceMap": true,
