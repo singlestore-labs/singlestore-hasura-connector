@@ -114,7 +114,7 @@ export class SingleStoreQueryBuilder {
                         // TODO: escape
                         return `'${fieldName}', ${this.collection}.${field.column}`
                     case "relationship":
-                        const tableName = this.aliasGenerator.newAlies()
+                        const tableName = this.aliasGenerator.newAlias()
                         const relationship = this.relationships[field.relationship]
 
                         this.subqueries[tableName] = new SingleStoreQueryBuilder(
@@ -160,7 +160,7 @@ export class SingleStoreQueryBuilder {
                     false
                 ).build(query)
 
-                var tableName = this.aliasGenerator.newAlies()
+                var tableName = this.aliasGenerator.newAlias()
                 switch (target.type) {
                     case "column":
                         // TODO: escape
@@ -185,7 +185,7 @@ export class SingleStoreQueryBuilder {
                         break;
                 }
 
-                tableName = this.aliasGenerator.newAlies()
+                tableName = this.aliasGenerator.newAlias()
                 this.subqueries[tableName] = subquery
                 this.orderByElementToSubqueryAlias.set(element, tableName)
             })
@@ -396,14 +396,14 @@ LIMIT 1
                 false
             ).build(query)
 
-            var tableName = this.aliasGenerator.newAlies()
+            var tableName = this.aliasGenerator.newAlias()
             subquery = new SingleStoreQuery(
                 // TODO escape
                 `SELECT ANY_VALUE(${tableName}.${target.name}) AS comp_expr FROM ((${subquery.sql}) AS ${tableName})`,
                 subquery.parameters
             )
 
-            tableName = this.aliasGenerator.newAlies()
+            tableName = this.aliasGenerator.newAlias()
             this.subqueries[tableName] = subquery
             this.comparisonTargetToSubqueryAlias.set(target, tableName)
         }
@@ -453,6 +453,85 @@ LIMIT 1
         }
     }
 
+    /**
+     * Builds a SingleStoreQuery (valid SingleStore SQL query and it's parameters)
+     * from the Hasura Query using configurations provided in the SingleStoreQueryBuilder constructor.
+     * This method introspects all relationships in fields/order by/expressions 
+     * and recursivelly builds queries for them.
+     *
+     * @param query - The Hasura Query
+     * @returns The SingleStoreQuery (SQL string and query parameters)
+     * @example
+     * 
+     * Hasura Query:
+     * {
+     *   "collection": "chinook.Artist",
+     *   "query": {
+     *     "fields": {
+     *       "ArtistId": {
+     *         "type": "column",
+     *         "column": "ArtistId",
+     *         "fields": null
+     *       },
+     *       "Name": {
+     *         "type": "column",
+     *         "column": "Name",
+     *         "fields": null
+     *       }
+     *     },
+     *     "limit": 10,
+     *     "predicate": {
+     *       "type": "exists",
+     *       "in_collection": {
+     *         "type": "related",
+     *         "relationship": "__array_relationship",
+     *         "arguments": {}
+     *       },
+     *       "predicate": {
+     *         "type": "binary_comparison_operator",
+     *         "column": {
+     *           "type": "column",
+     *           "name": "ArtistId",
+     *           "path": []
+     *         },
+     *         "operator": "equal",
+     *         "value": {
+     *           "type": "scalar",
+     *           "value": 1
+     *         }
+     *       }
+     *     }
+     *   },
+     *   "arguments": {},
+     *   "collection_relationships": {
+     *     "__array_relationship": {
+     *       "column_mapping": {
+     *         "ArtistId": "ArtistId"
+     *       },
+     *       "relationship_type": "array",
+     *       "target_collection": "chinook.Album",
+     *       "arguments": {}
+     *     }
+     *   }
+     * }
+     * 
+     * SQL Query:
+     * SELECT JSON_BUILD_OBJECT('rows', JSON_AGG(row)) AS data
+     * FROM (
+     *     SELECT JSON_BUILD_OBJECT('ArtistId', chinook.Artist.ArtistId, 'Name', chinook.Artist.Name) AS row
+     *     FROM chinook.Artist
+     *     WHERE EXISTS (
+     *         SELECT 1 FROM chinook.Album
+     *         WHERE (chinook.Album.ArtistId = ? ) AND (chinook.Artist.ArtistId = chinook.Album.ArtistId )
+     *         LIMIT 1
+     *     )
+     *     ORDER BY row
+     *     LIMIT 10
+     * )
+     * 
+     * Parameters:
+     * [ 1 ]
+     */
     build(query: Query): SingleStoreQuery {
         this.select(query)
         this.subqueriesFromOrderBy(query.order_by)

@@ -1,7 +1,7 @@
 export class AliasGenerator {
     private aliasCounter: number = 0
 
-    newAlies() {
+    newAlias() {
         return `table_${++this.aliasCounter}`;
     }
 }
