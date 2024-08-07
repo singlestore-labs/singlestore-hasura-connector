@@ -1,4 +1,4 @@
-import { CapabilitiesResponse, Connector, ConnectorError, ExplainResponse, Forbidden, ForeignKeyConstraint, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
+import { BadGateway, CapabilitiesResponse, Connector, ExplainResponse, Forbidden, ForeignKeyConstraint, MutationRequest, MutationResponse, NotSupported, ObjectType, QueryRequest, QueryResponse, SchemaResponse, UniquenessConstraint, start } from "@hasura/ndc-sdk-typescript";
 import mysql, { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
@@ -6,10 +6,13 @@ import { doGetSchema } from "./handlers/schema";
 import { doQuery } from "./handlers/query";
 import { doQueryExplain } from "./handlers/queryExplain";
 
-const SINGLESTORE_HOST = process.env["SINGLESTORE_HOST"] as string;
-const SINGLESTORE_PORT = process.env["SINGLESTORE_PORT"] as string;
-const SINGLESTORE_USER = process.env["SINGLESTORE_USER"] as string;
-const SINGLESTORE_PASSWORD = process.env["SINGLESTORE_PASSWORD"] as string;
+// URL with credentials and options needed to establish connection to the SingleStore database
+// The format is mysql://[<user>][:<password>][@<host>]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]
+// Connection options https://www.npmjs.com/package/mysql#connection-options
+// Pool options https://www.npmjs.com/package/mysql#pool-options
+//
+// Example: "mysql://user:pass@host/db?debug=true"
+const SINGLESTORE_URL = process.env["SINGLESTORE_URL"] as string;
 
 
 enum TableType {
@@ -89,12 +92,7 @@ const connector: Connector<Configuration, State> = {
         configuration: Configuration,
         metrics: unknown
     ): Promise<State> {
-        const pool = mysql.createPool({
-            host: SINGLESTORE_HOST,
-            port: Number(SINGLESTORE_PORT),
-            user: SINGLESTORE_USER,
-            password: SINGLESTORE_PASSWORD
-        })
+        const pool = mysql.createPool(SINGLESTORE_URL)
 
         return Promise.resolve({ connPool: pool })
     },
@@ -128,7 +126,7 @@ const connector: Connector<Configuration, State> = {
         try {
             await state.connPool.execute("SELECT 1")
         } catch (x) {
-            throw new ConnectorError(503, "Service Unavailable");
+            throw new BadGateway("Service Unavailable");
         }
     },
 
