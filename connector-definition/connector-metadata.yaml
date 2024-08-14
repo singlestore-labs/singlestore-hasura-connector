@@ -1,0 +1,38 @@
+packagingDefinition:
+  type: PrebuiltDockerImage
+  dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.1
+supportedEnvironmentVariables:
+  - name: SINGELSTORE_URL
+    description: The url for the SingleStore database. The format is `mysql://[<user>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]`.
+  - name: SINGLESTORE_HOST
+    description: The hostname of the database you are connecting to. (default - localhost)
+  - name: SINGLESTORE_PORT
+    description: The port number to connect to. (default - 3306)
+  - name: SINGLESTORE_USER
+    description: The SingleStore user to authenticate as
+  - name: SINGLESTORE_PASSWORD
+    description: The password of that SingleStore user
+  - name: SINGLESTORE_DATABASE
+    description: The name of the database to use
+  - name: SINGLESTORE_SSL_CA
+    description: The path to trusted CA certificates file
+  - name: SINGLESTORE_SSL_CERT
+    description: The path to cert chain file in PEM format
+  - name: SINGLESTORE_SSL_KEY
+    description: The path to private key file in PEM format
+  - name: SINGLESTORE_SSL_CIPHERS
+    description: The cipher suite specification, replacing the default
+  - name: SINGLESTORE_SSL_PASSPHRASE
+    description: The shared passphrase used for a single private key
+  - name: SINGLESTORE_SSL_REJECT_UNAUTHORIZED
+    description: If true the server will reject any connection which is not authorized with the list of supplied CAs (default true)
+commands:
+  update:
+    type: Dockerized
+    dockerImage: ghcr.io/hasura/singlestore-hasura-connector:v0.0.1
+    commandArgs:
+      - update
+dockerComposeWatch:
+  - path: ./
+    target: /etc/connector
+    action: sync+restart
