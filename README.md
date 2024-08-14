@@ -16,8 +16,6 @@ This connector is built using the [Typescript Data Connector SDK](https://github
 - [Connector information in the Hasura Hub](https://hasura.io/connectors/singlestore)
 - [Hasura V3 Documentation](https://hasura.io/docs/3.0)
 
-<!-- TODO: add lincs to the documentation -->
-
 ## Features
 
 Below, you'll find a matrix of all supported features for the SingleStore connector:
@@ -227,17 +225,6 @@ docker ps
 You'll need to follow whatever steps are necessary to expose your connector's port so that Hasura DDN can connect to it.
 Additionally, you'll need to update any cloud environment variables that your deployed supergraph needs from this
 connector (e.g., `MY_SUBGRAPH_SINGLESTORE_READ_URL`) to match your deployed connector's endpoint.
-
-<!-- TODO: add lincs to the documentation
-## Documentation
-
-View the full documentation for the SingleStore connector [here](./docs/index.md).
-
-
-## Contributing
-
-Check out our [contributing guide](./docs/contributing.md) for more details.
--->
 
 ## License
 
