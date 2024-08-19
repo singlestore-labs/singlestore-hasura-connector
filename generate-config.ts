@@ -115,4 +115,5 @@ async function main() {
     }
 }
 
-main();
+main()
+    .then(() => pool.end());
