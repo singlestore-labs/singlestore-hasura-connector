@@ -82,9 +82,11 @@ async function main() {
     const configuration: Configuration = {
         tables: tables[0].map(table => {
             const constraints: { [k: string]: UniquenessConstraint } = {};
-            (table["UNIQUE_CONSTRAINTS"] as UniqueKey[]).forEach(key => {
-                constraints[key.name] = { unique_columns: key.columns }
-            })
+            if (table["UNIQUE_CONSTRAINTS"]) {
+                (table["UNIQUE_CONSTRAINTS"] as UniqueKey[]).forEach(key => {
+                    constraints[key.name] = { unique_columns: key.columns }
+                })
+            }
 
             return {
                 tableName: table["TABLE_NAME"],
