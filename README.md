@@ -13,7 +13,7 @@ The Hasura SingleStore Connector ("the connector") enables you to connect to a S
 This connector is built using the [Typescript Data Connector SDK](https://github.com/hasura/ndc-sdk-typescript) and, it implements the [Data Connector Spec](https://github.com/hasura/ndc-spec).
 
 <!-- TODO: update when connector will be published -->
-- [Connector information in the Hasura Hub](https://hasura.io/connectors/singlestore)
+- [See the listing in the Hasura Hub](https://hasura.io/connectors/singlestore)
 - [Hasura V3 Documentation](https://hasura.io/docs/3.0)
 
 ## Features
@@ -54,173 +54,93 @@ The following steps explain how to initialize and configure the connector for lo
 ddn auth login
 ```
 
-### Step 2: Initialize the connector
+### Step 2: Configure the connector
+
+Once you have an initialized supergraph and subgraph, run the initialization command in interactive mode while 
+providing a name for the connector in the prompt:
 
 ```bash
-ddn connector init singlestore  --subgraph my_subgraph/subgraph.yaml  --hub-connector hasura/singlestore
+ddn connector init <connector-name>  -i
 ```
 
-This command uses `my_subgraph` as an example. Update the `--subgraph` value in the command with the subgraph in your project. 
+#### Step 2.1: Choose the singlestore from the list
 
-### Step 3: Modify the connector's port
+#### Step 2.2: Choose a port for the connector
+The CLI will ask for a specific port to run the connector on. Choose a port that is not already in use or use the 
+default suggested port.
 
-When the connector is initialized (Step 2), the CLI generates a set of configuration files, including a Docker Compose file for the connector.
-Typically, the default port of the connector is `8080`. To avoid port collisions, SingleStore recommends incrementing the published port by one whenever a new connector is added.
+#### Step 2.3: Provide the env vars for the connector
 
-For example, you can modify the published port to a value that isn't currently being used by any other connector in the `compose.yaml` file (such as `my_subgraph/connector/singlestore/compose.yaml`):
-
-```yaml
-ports:
-  - mode: ingress
-    target: 8080
-    published: "8082"
-    protocol: tcp
-```
-
-### Step 4: Add environment variables
-
-Now that the connector has been scaffolded out, provide a connection string that allows the connector to connect to the SingleStore database, introspect the data source, and generate boilerplate configuration.
-
-During the initialization process, the CLI generates a `.env.local` file for the connector in the `<my_subgraph>/connector/singlestore` directory.
 Specify the connection string used to connect to the SingleStore database using the `SINGLESTORE_URL` variable as a key-value pair in this file. The connection string must be in the `mysql://[<username>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]` format. 
 
-Here's a sample `.env.local` file after adding the `SINGLESTORE_URL` option:
+For example:
 
 ```env
-OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://local.hasura.dev:4317
-OTEL_SERVICE_NAME=my_subgraph_singlestore
 SINGLESTORE_URL=singlestore://username:password@hostname/database
 ```
 The connector uses [MySQL2](https://sidorares.github.io/node-mysql2/docs) library to establish a connection.
 For more information, refer to [Connection options](https://www.npmjs.com/package/mysql#connection-options) and [Pool options](https://www.npmjs.com/package/mysql#pool-options).
 
 Alternatively, you can also set following environment variables instead of the `SINGLELSTORE_URL` variable:
- * `SINGLESTORE_HOST` - Hostname of the SingleStore database to connect with. Default: `localhost`.
- * `SINGLESTORE_PORT` - Port number of the SingleStore database. Default: `3306`.
- * `SINGLESTORE_USER` - Username of the SingleStore database user used to authenticate the connection.
- * `SINGLESTORE_PASSWORD` - Password of the SingleStore database user.
- * `SINGLESTORE_DATABASE` - Name of the SingleStore database to connect with.
- * `SINGLESTORE_SSL_CA` - Path to the trusted CA certificate file.
- * `SINGLESTORE_SSL_CERT` - Path to the certificate chain file in PEM format.
- * `SINGLESTORE_SSL_KEY` - Path to the private key file in PEM format.
- * `SINGLESTORE_SSL_CIPHERS` - Cipher suite specification. If specified, it replaces the default value.
- * `SINGLESTORE_SSL_PASSPHRASE` - Shared passphrase used for a single private key.
- * `SINGLESTORE_SSL_REJECT_UNAUTHORIZED` - If enabled, the server rejects any connection that is not authorized with the list of supplied CAs. Default: `true`.
 
-### Step 5: Introspect your data source
+| Name                                | Default     | Description |
+|-------------------------------------|-------------|-------------|
+| SINGLESTORE_HOST                    | localhost   | Hostname of the SingleStore database to connect with. |
+| SINGLESTORE_PORT                    | 3306        | Port number of the SingleStore database. |
+| SINGLESTORE_PASSWORD                |             | Password of the SingleStore database user. |
+| SINGLESTORE_DATABASE                |             | Name of the SingleStore database to connect with. |
+| SINGLESTORE_SSL_CA                  |             | Path to the trusted CA certificate file. |
+| SINGLESTORE_SSL_CERT                |             | Path to the certificate chain file in PEM format. |
+| SINGLESTORE_SSL_KEY                 |             | Path to the private key file in PEM format. |
+| SINGLESTORE_SSL_CIPHERS             |             | Cipher suite specification. If specified, it replaces the default value. |
+| SINGLESTORE_SSL_PASSPHRASE          |             | Cipher suite specification. If specified, it replaces the default value. |
+| SINGLESTORE_SSL_REJECT_UNAUTHORIZED | true        | If enabled, the server rejects any connection that is not authorized with the list of supplied CAs. |
 
-After configuring the connector, use the CLI to introspect the SingleStore database and create a source-specific configuration file for the connector.
+### Step 3: Introspect your data source
 
-```bash
-ddn connector introspect --connector my_subgraph/connector/singlestore/connector.local.yaml
-```
-
-### Step 6. Create the Hasura metadata
-
-Hasura DDN uses a concept called "connector linking" to take [NDC-compliant](https://github.com/hasura/ndc-spec)
-configuration JSON files for a data connector and transform them into an `hml` (Hasura Metadata Language) file as a
-[`DataConnectorLink` metadata object](https://hasura.io/docs/3.0/supergraph-modeling/data-connectors#dataconnectorlink-dataconnectorlink).
-
-Basically, metadata objects in `hml` files define our API.
-
-First we need to create this `hml` file with the `connector-link add` command, and then convert our configuration files
-into `hml` syntax and add it to this file with the `connector-link update` command.
-
-Let's name the `hml` file the same as our connector, `singlestore`:
+After configuring the connector, use the CLI to introspect the SingleStore database and create a source-specific configuration file for the connector (`configuration.json`).
 
 ```bash
-ddn connector-link add singlestore --subgraph my_subgraph/subgraph.yaml
+ddn connector introspect <connector-name>
 ```
 
-The new file is scaffolded out at `my_subgraph/metadata/singlestore/singlestore.hml`.
+## Step 4: Add your resources
 
-### Step 7. Update the environment variables
-
-The generated file has two environment variables: one for reads and one for writes. Add these environment variables to your subgraph's `.env.my_subgraph.local` file.
-Each key is prefixed by the subgraph name, an underscore, and the name of the connector. Ensure the port value matches the value published in the connector's docker compose file.
-
-For example:
-
-```env
-MY_SUBGRAPH_SINGLESTORE_READ_URL=http://local.hasura.dev:<port>
-MY_SUBGRAPH_SINGLESTORE_WRITE_URL=http://local.hasura.dev:<port>
-```
-
-These values are for the connector itself and utilize `local.hasura.dev` to ensure proper resolution within the docker container.
-
-### Step 8. Start the connector's Docker Compose
-
-Start the connector's Docker Compose file by running the following from inside the connector's subgraph:
+This command will create `.hml` files for each table and view in your database 
+and an `.hml` file with information about SingleStore data types.
 
 ```bash
-docker compose -f compose.yaml up
+ddn connector-link add-resources <connector-name>
 ```
 
-### Step 9. Update the new `DataConnectorLink` object
+## Step 5. Add relationships
 
-Now that the `DataConnectorLink` has the correct environment variables configured for the connector,
-run the `update` command to have the CLI look at the configuration JSON and transform it to reflect the database's
-schema in `hml` format. In a new terminal tab, run:
-
-```bash
-ddn connector-link update singlestore --subgraph my_subgraph/subgraph.yaml --env-file my_subgraph/.env.my_subgraph.local
+SingleStore doesn't have foreign keys. Relationships between tables must be added manually.
+You can do it by appending information about relationiship to the `.hml` files generated in the previous step.
+[Here](https://hasura.io/docs/3.0/supergraph-modeling/relationships/) you can find information about syntax of relationship definition.
+For example if you want to add a relationsip from a message table to the user table, you can append following text to the 
+`DbMessage.hml` file:
+```hml
+---
+kind: Relationship
+version: v1
+definition:
+  name: user
+  sourceType: DbMessage
+  target:
+    model:
+      name: DbUser
+      subgraph: app
+      relationshipType: Object
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: userId
+      target:
+        modelField:
+          - fieldName: id
+  description: The user details for a message
 ```
-
-After this command runs, you can open your `my_subgraph/metadata/singlestore.hml` file and see your metadata completely
-scaffolded out for you. 🎉
-
-### Step 10. Deploy your connector
-
-Connectors can be deployed to the Hasura DDN or, if you choose, your own infrastructure.
-
-#### Deploy SingleStore to Hasura DDN
-
-Prepare a `env.cloud` file for the connector. Use the environment variables of your choice, such as `SINGLESTORE_URL` 
-, with the deployed supergraph. For example:
-
-```env
-SINGLESTORE_URL=mysql://user:pass@host/db
-```
-
-Then, update the referenced paths in the following command to match your project structure and run the updated command:
-
-```sh
-ddn connector build create \
-  --connector my_subgraph/connector/singlestore/connector.cloud.yaml \
-  --target-env-file my_subgraph/.env.my_subgraph.cloud \
-  --target-subgraph my_subgraph/subgraph.yaml \
-  --target-connector-link singlestore
-```
-
-This command deploys the connector and updates your project's metadata.
-
-#### Deploy SingleStore to your own infrastructure
-
-As a connector is an HTTP service built using Docker, you can host your connectors anywhere Docker containers can be
-hosted.
-
-On your own self- or cloud-hosted infrastructure, create a new build from within the connector's directory:
-
-```sh
-docker compose build
-```
-
-Then, bring the connector up:
-
-```sh
-docker compose up -d
-```
-
-And verify the connector is running:
-
-```sh
-docker ps
-```
-
-Perform the steps required to expose the connector's port so that Hasura DDN can connect to it.
-Additionally, update any cloud environment variables that your deployed supergraph needs from the
-connector (e.g., `MY_SUBGRAPH_SINGLESTORE_READ_URL`) to match the deployed connector's endpoint.
-
 ## License
 
 The SingleStore connector is available under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
