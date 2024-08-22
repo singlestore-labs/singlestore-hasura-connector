@@ -39,14 +39,14 @@ The following matrix lists the features supported by the Hasura SingleStore conn
 Ensure that the following prerequisites are met before using the connector:
 
 1. Install [DDN CLI](https://hasura.io/docs/3.0/cli/installation) and [Docker](https://docs.docker.com/engine/install/).
-2. A [supergraph](https://hasura.io/docs/3.0/getting-started/init-supergraph)
-3. A [subgraph](https://hasura.io/docs/3.0/getting-started/init-subgraph)
+2. Initialize a [supergraph](https://hasura.io/docs/3.0/getting-started/init-supergraph).
+3. Initialize a [subgraph](https://hasura.io/docs/3.0/getting-started/init-subgraph).
 4. An active [SingleStore](https://www.singlestore.com/) deployment that serves as the data source for the API.
 
 
 ## Using the SingleStore connector
 
-The following steps explain how to initialize and configure the connector for local developments. For information on deploying a connector after it has been configured, refer to [Deploy a Connector](https://hasura.io/docs/3.0/getting-started/deployment/deploy-a-connector).
+The following steps explain how to initialize and configure the connector for local development. For information on deploying a connector after it has been configured, refer to [Deploy a Connector](https://hasura.io/docs/3.0/getting-started/deployment/deploy-a-connector).
 <!-- TODO: test steps after the connector will be published to hub -->
 ### Step 1: Authenticate your CLI session
 
@@ -56,20 +56,20 @@ ddn auth login
 
 ### Step 2: Configure the connector
 
-Once you have an initialized supergraph and subgraph, run the initialization command in interactive mode while 
-providing a name for the connector in the prompt:
+After the supergraph and subgraph have been initialized (refer to [Prerequisites](#Prerequisites), run the initialization command in interactive mode. Specify a name for the connector in the command.
 
 ```bash
 ddn connector init <connector-name>  -i
 ```
 
-#### Step 2.1: Choose the singlestore from the list
+#### Step 2.1: Select the SingleStore connector
 
-#### Step 2.2: Choose a port for the connector
-The CLI will ask for a specific port to run the connector on. Choose a port that is not already in use or use the 
-default suggested port.
+From the list of connectors, select `singlestore`.
 
-#### Step 2.3: Provide the env vars for the connector
+#### Step 2.2: Select a port for the connector
+The CLI prompts you to specify a port for running the connector. Either select the default port suggested or choose a port that is not currently in use.
+
+#### Step 2.3: Provide the environment variable(s) for the connector
 
 Specify the connection string used to connect to the SingleStore database using the `SINGLESTORE_URL` variable as a key-value pair in this file. The connection string must be in the `mysql://[<username>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]` format. 
 
@@ -115,10 +115,9 @@ ddn connector-link add-resources <connector-name>
 
 ## Step 5. Add relationships
 
-SingleStore doesn't have foreign keys. Relationships between tables must be added manually.
-You can do it by appending information about relationiship to the `.hml` files generated in the previous step.
-[Here](https://hasura.io/docs/3.0/supergraph-modeling/relationships/) you can find information about syntax of relationship definition.
-For example if you want to add a relationsip from a message table to the user table, you can append following text to the 
+SingleStore does not support foreign keys. Relationships between tables must be added manually. You can define relationships by appending relationship information to the `.hml` files generated in the previous step.
+For information on defining relationships, refer to [Relationships](https://hasura.io/docs/3.0/supergraph-modeling/relationships/).
+For example, to add a relationship from a `message` table to the `user` table, append following text to the 
 `DbMessage.hml` file:
 ```hml
 ---
