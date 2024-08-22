@@ -71,7 +71,7 @@ The CLI prompts you to specify a port for running the connector. Either select t
 
 #### Step 2.3: Provide the environment variable(s) for the connector
 
-Specify the connection string used to connect to the SingleStore database using the `SINGLESTORE_URL` variable as a key-value pair in this file. The connection string must be in the `mysql://[<username>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]` format. 
+Specify the connection string used to connect to the SingleStore database using the `SINGLESTORE_URL` variable. The connection string must be in the `mysql://[<username>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]` format. 
 
 For example:
 
@@ -95,6 +95,8 @@ Alternatively, you can also set following environment variables instead of the `
 | SINGLESTORE_SSL_CIPHERS             |             | Cipher suite specification. If specified, it replaces the default value. |
 | SINGLESTORE_SSL_PASSPHRASE          |             | Cipher suite specification. If specified, it replaces the default value. |
 | SINGLESTORE_SSL_REJECT_UNAUTHORIZED | true        | If enabled, the server rejects any connection that is not authorized with the list of supplied CAs. |
+
+If `SINGLELSTORE_URL` is set these variables are ignored.
 
 ### Step 3: Introspect your data source
 
