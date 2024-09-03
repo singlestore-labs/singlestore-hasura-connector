@@ -1,0 +1,21 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "1600 Amphitheatre Parkway",
+        "City": "Mountain View",
+        "Company": "Google Inc.",
+        "Country": "USA",
+        "CustomerId": 16,
+        "Email": "fharris@google.com",
+        "Fax": "+1 (650) 253-0000",
+        "FirstName": "Frank",
+        "LastName": "Harris",
+        "Phone": "+1 (650) 253-0000",
+        "PostalCode": "94043-1351",
+        "State": "CA",
+        "SupportRepId": 4
+      }
+    ]
+  }
+]

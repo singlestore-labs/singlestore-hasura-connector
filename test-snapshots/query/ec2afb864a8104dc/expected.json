@@ -1,0 +1,76 @@
+[
+  {
+    "rows": [
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 11170334,
+        "Milliseconds_3045": 343719,
+        "Name_4035": "For Those About To Rock (We Salute You)",
+        "TrackId_7458": 1
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 8817038,
+        "Milliseconds_3045": 270863,
+        "Name_4035": "Spellbound",
+        "TrackId_7458": 14
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 8611245,
+        "Milliseconds_3045": 263497,
+        "Name_4035": "Evil Walks",
+        "TrackId_7458": 10
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 8596840,
+        "Milliseconds_3045": 263288,
+        "Name_4035": "Breaking The Rules",
+        "TrackId_7458": 12
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 7636561,
+        "Milliseconds_3045": 233926,
+        "Name_4035": "Let's Get It Up",
+        "TrackId_7458": 7
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 6852860,
+        "Milliseconds_3045": 210834,
+        "Name_4035": "Inject The Venom",
+        "TrackId_7458": 8
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 6713451,
+        "Milliseconds_3045": 205662,
+        "Name_4035": "Put The Finger On You",
+        "TrackId_7458": 6
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 6706347,
+        "Milliseconds_3045": 205688,
+        "Name_4035": "Night Of The Long Knives",
+        "TrackId_7458": 13
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 6599424,
+        "Milliseconds_3045": 203102,
+        "Name_4035": "Snowballed",
+        "TrackId_7458": 9
+      },
+      {
+        "AlbumId_6405": 1,
+        "Bytes_7237": 6566314,
+        "Milliseconds_3045": 199836,
+        "Name_4035": "C.O.D.",
+        "TrackId_7458": 11
+      }
+    ]
+  }
+]

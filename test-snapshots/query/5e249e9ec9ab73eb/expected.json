@@ -1,0 +1,21 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "1033 N Park Ave",
+        "City": "Tucson",
+        "Company": null,
+        "Country": "USA",
+        "CustomerId": 27,
+        "Email": "patrick.gray@aol.com",
+        "Fax": null,
+        "FirstName": "Patrick",
+        "LastName": "Gray",
+        "Phone": "+1 (520) 622-4200",
+        "PostalCode": "85719",
+        "State": "AZ",
+        "SupportRepId": 4
+      }
+    ]
+  }
+]

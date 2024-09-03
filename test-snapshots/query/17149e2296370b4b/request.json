@@ -1,0 +1,129 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "BillingAddress_7370": {
+        "type": "column",
+        "column": "BillingAddress",
+        "fields": null
+      },
+      "BillingCity_4954": {
+        "type": "column",
+        "column": "BillingCity",
+        "fields": null
+      },
+      "BillingCountry_4985": {
+        "type": "column",
+        "column": "BillingCountry",
+        "fields": null
+      },
+      "BillingPostalCode_0533": {
+        "type": "column",
+        "column": "BillingPostalCode",
+        "fields": null
+      },
+      "BillingState_7592": {
+        "type": "column",
+        "column": "BillingState",
+        "fields": null
+      },
+      "Total_7738": {
+        "type": "column",
+        "column": "Total",
+        "fields": null
+      },
+      "InvoiceId_8750": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "FK_InvoiceCustomerId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "Address": {
+              "type": "column",
+              "column": "Address",
+              "fields": null
+            },
+            "City": {
+              "type": "column",
+              "column": "City",
+              "fields": null
+            },
+            "Company": {
+              "type": "column",
+              "column": "Company",
+              "fields": null
+            },
+            "Country": {
+              "type": "column",
+              "column": "Country",
+              "fields": null
+            },
+            "CustomerId": {
+              "type": "column",
+              "column": "CustomerId",
+              "fields": null
+            },
+            "Email": {
+              "type": "column",
+              "column": "Email",
+              "fields": null
+            },
+            "Fax": {
+              "type": "column",
+              "column": "Fax",
+              "fields": null
+            },
+            "FirstName": {
+              "type": "column",
+              "column": "FirstName",
+              "fields": null
+            },
+            "LastName": {
+              "type": "column",
+              "column": "LastName",
+              "fields": null
+            },
+            "Phone": {
+              "type": "column",
+              "column": "Phone",
+              "fields": null
+            },
+            "PostalCode": {
+              "type": "column",
+              "column": "PostalCode",
+              "fields": null
+            },
+            "State": {
+              "type": "column",
+              "column": "State",
+              "fields": null
+            },
+            "SupportRepId": {
+              "type": "column",
+              "column": "SupportRepId",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "CustomerId": "CustomerId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.Customer",
+      "arguments": {}
+    }
+  }
+}

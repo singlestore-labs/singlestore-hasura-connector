@@ -1,0 +1,78 @@
+[
+  {
+    "rows": [
+      {
+        "City_9488": "Calgary",
+        "Fax_5077": "1 (780) 836-9543",
+        "FirstName_4161": "Steve",
+        "HireDate_4256": "2003-10-17",
+        "LastName_9791": "Johnson",
+        "ReportsTo_3298": 2,
+        "Title_1117": "Sales Support Agent"
+      },
+      {
+        "City_9488": "Edmonton",
+        "Fax_5077": "+1 (780) 428-3457",
+        "FirstName_4161": "Andrew",
+        "HireDate_4256": "2002-08-14",
+        "LastName_9791": "Adams",
+        "ReportsTo_3298": null,
+        "Title_1117": "General Manager"
+      },
+      {
+        "City_9488": "Lethbridge",
+        "Fax_5077": "+1 (403) 467-8772",
+        "FirstName_4161": "Laura",
+        "HireDate_4256": "2004-03-04",
+        "LastName_9791": "Callahan",
+        "ReportsTo_3298": 6,
+        "Title_1117": "IT Staff"
+      },
+      {
+        "City_9488": "Lethbridge",
+        "Fax_5077": "+1 (403) 456-8485",
+        "FirstName_4161": "Robert",
+        "HireDate_4256": "2004-01-02",
+        "LastName_9791": "King",
+        "ReportsTo_3298": 6,
+        "Title_1117": "IT Staff"
+      },
+      {
+        "City_9488": "Calgary",
+        "Fax_5077": "+1 (403) 263-4289",
+        "FirstName_4161": "Margaret",
+        "HireDate_4256": "2003-05-03",
+        "LastName_9791": "Park",
+        "ReportsTo_3298": 2,
+        "Title_1117": "Sales Support Agent"
+      },
+      {
+        "City_9488": "Calgary",
+        "Fax_5077": "+1 (403) 262-3322",
+        "FirstName_4161": "Nancy",
+        "HireDate_4256": "2002-05-01",
+        "LastName_9791": "Edwards",
+        "ReportsTo_3298": 1,
+        "Title_1117": "Sales Manager"
+      },
+      {
+        "City_9488": "Calgary",
+        "Fax_5077": "+1 (403) 262-6712",
+        "FirstName_4161": "Jane",
+        "HireDate_4256": "2002-04-01",
+        "LastName_9791": "Peacock",
+        "ReportsTo_3298": 2,
+        "Title_1117": "Sales Support Agent"
+      },
+      {
+        "City_9488": "Calgary",
+        "Fax_5077": "+1 (403) 246-9899",
+        "FirstName_4161": "Michael",
+        "HireDate_4256": "2003-10-17",
+        "LastName_9791": "Mitchell",
+        "ReportsTo_3298": 1,
+        "Title_1117": "IT Manager"
+      }
+    ]
+  }
+]

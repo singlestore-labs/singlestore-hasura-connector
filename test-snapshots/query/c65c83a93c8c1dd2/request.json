@@ -1,0 +1,35 @@
+{
+  "collection": "chinook.Genre",
+  "query": {
+    "fields": {
+      "GenreId_5696": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "GenreId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Name",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

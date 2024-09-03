@@ -1,0 +1,78 @@
+[
+  {
+    "rows": [
+      {
+        "City_0498": "Calgary",
+        "Email_0410": "steve@chinookcorp.com",
+        "EmployeeId_4288": 5,
+        "FirstName_7297": "Steve",
+        "Phone_2119": "1 (780) 836-9987",
+        "ReportsTo_2937": 2,
+        "Title_3614": "Sales Support Agent"
+      },
+      {
+        "City_0498": "Lethbridge",
+        "Email_0410": "robert@chinookcorp.com",
+        "EmployeeId_4288": 7,
+        "FirstName_7297": "Robert",
+        "Phone_2119": "+1 (403) 456-9986",
+        "ReportsTo_2937": 6,
+        "Title_3614": "IT Staff"
+      },
+      {
+        "City_0498": "Calgary",
+        "Email_0410": "nancy@chinookcorp.com",
+        "EmployeeId_4288": 2,
+        "FirstName_7297": "Nancy",
+        "Phone_2119": "+1 (403) 262-3443",
+        "ReportsTo_2937": 1,
+        "Title_3614": "Sales Manager"
+      },
+      {
+        "City_0498": "Calgary",
+        "Email_0410": "michael@chinookcorp.com",
+        "EmployeeId_4288": 6,
+        "FirstName_7297": "Michael",
+        "Phone_2119": "+1 (403) 246-9887",
+        "ReportsTo_2937": 1,
+        "Title_3614": "IT Manager"
+      },
+      {
+        "City_0498": "Calgary",
+        "Email_0410": "margaret@chinookcorp.com",
+        "EmployeeId_4288": 4,
+        "FirstName_7297": "Margaret",
+        "Phone_2119": "+1 (403) 263-4423",
+        "ReportsTo_2937": 2,
+        "Title_3614": "Sales Support Agent"
+      },
+      {
+        "City_0498": "Lethbridge",
+        "Email_0410": "laura@chinookcorp.com",
+        "EmployeeId_4288": 8,
+        "FirstName_7297": "Laura",
+        "Phone_2119": "+1 (403) 467-3351",
+        "ReportsTo_2937": 6,
+        "Title_3614": "IT Staff"
+      },
+      {
+        "City_0498": "Calgary",
+        "Email_0410": "jane@chinookcorp.com",
+        "EmployeeId_4288": 3,
+        "FirstName_7297": "Jane",
+        "Phone_2119": "+1 (403) 262-3443",
+        "ReportsTo_2937": 2,
+        "Title_3614": "Sales Support Agent"
+      },
+      {
+        "City_0498": "Edmonton",
+        "Email_0410": "andrew@chinookcorp.com",
+        "EmployeeId_4288": 1,
+        "FirstName_7297": "Andrew",
+        "Phone_2119": "+1 (780) 428-9482",
+        "ReportsTo_2937": null,
+        "Title_3614": "General Manager"
+      }
+    ]
+  }
+]

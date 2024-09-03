@@ -1,0 +1,28 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "3 Chatham Street",
+        "BillingCity": "Dublin",
+        "BillingCountry": "Ireland",
+        "BillingPostalCode": null,
+        "BillingState": "Dublin",
+        "CustomerId": 46,
+        "InvoiceDate": "2009-02-03",
+        "InvoiceId": 10,
+        "Total": 5.94
+      },
+      {
+        "BillingAddress": "Praça Pio X, 119",
+        "BillingCity": "Rio de Janeiro",
+        "BillingCountry": "Brazil",
+        "BillingPostalCode": "20040-020",
+        "BillingState": "RJ",
+        "CustomerId": 12,
+        "InvoiceDate": "2011-08-25",
+        "InvoiceId": 221,
+        "Total": 8.91
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "collection": "chinook.Playlist",
+  "query": {
+    "fields": {
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "PlaylistId": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "unary_comparison_operator",
+      "column": {
+        "type": "column",
+        "name": "Name",
+        "path": []
+      },
+      "operator": "is_null"
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,20 @@
+{
+  "collection": "chinook.Album",
+  "query": {
+    "aggregates": {
+      "ArtistId_max_7035": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "max"
+      },
+      "ArtistId_avg_5030": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "avg"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

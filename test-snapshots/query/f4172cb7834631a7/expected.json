@@ -1,0 +1,24 @@
+[
+  {
+    "aggregates": {
+      "BillingAddress_count": 412,
+      "BillingAddress_distinct_count": 59,
+      "BillingCity_count": 412,
+      "BillingCity_distinct_count": 53,
+      "BillingCountry_count": 412,
+      "BillingCountry_distinct_count": 24,
+      "BillingPostalCode_count": 384,
+      "BillingPostalCode_distinct_count": 55,
+      "BillingState_count": 210,
+      "BillingState_distinct_count": 25,
+      "CustomerId_count": 412,
+      "CustomerId_distinct_count": 59,
+      "InvoiceDate_count": 412,
+      "InvoiceDate_distinct_count": 354,
+      "InvoiceId_count": 412,
+      "InvoiceId_distinct_count": 412,
+      "Total_count": 412,
+      "Total_distinct_count": 23
+    }
+  }
+]

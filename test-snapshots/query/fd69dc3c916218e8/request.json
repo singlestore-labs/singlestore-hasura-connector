@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "InvoiceDate_6216": {
+        "type": "column",
+        "column": "InvoiceDate",
+        "fields": null
+      },
+      "InvoiceId_0995": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "InvoiceDate",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

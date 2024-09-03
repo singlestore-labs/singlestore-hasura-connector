@@ -1,0 +1,54 @@
+[
+  {
+    "rows": [
+      {
+        "BirthDate_3502": "1968-01-09",
+        "EmployeeId_8625": 8,
+        "ReportsTo_3283": 6,
+        "Title_3801": "IT Staff"
+      },
+      {
+        "BirthDate_3502": "1958-12-08",
+        "EmployeeId_8625": 2,
+        "ReportsTo_3283": 1,
+        "Title_3801": "Sales Manager"
+      },
+      {
+        "BirthDate_3502": "1965-03-03",
+        "EmployeeId_8625": 5,
+        "ReportsTo_3283": 2,
+        "Title_3801": "Sales Support Agent"
+      },
+      {
+        "BirthDate_3502": "1947-09-19",
+        "EmployeeId_8625": 4,
+        "ReportsTo_3283": 2,
+        "Title_3801": "Sales Support Agent"
+      },
+      {
+        "BirthDate_3502": "1970-05-29",
+        "EmployeeId_8625": 7,
+        "ReportsTo_3283": 6,
+        "Title_3801": "IT Staff"
+      },
+      {
+        "BirthDate_3502": "1973-07-01",
+        "EmployeeId_8625": 6,
+        "ReportsTo_3283": 1,
+        "Title_3801": "IT Manager"
+      },
+      {
+        "BirthDate_3502": "1962-02-18",
+        "EmployeeId_8625": 1,
+        "ReportsTo_3283": null,
+        "Title_3801": "General Manager"
+      },
+      {
+        "BirthDate_3502": "1973-08-29",
+        "EmployeeId_8625": 3,
+        "ReportsTo_3283": 2,
+        "Title_3801": "Sales Support Agent"
+      }
+    ]
+  }
+]

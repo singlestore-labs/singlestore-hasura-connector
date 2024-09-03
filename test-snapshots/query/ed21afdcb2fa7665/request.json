@@ -1,0 +1,50 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "aggregates": {
+      "ArtistId_avg_4811": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "avg"
+      },
+      "ArtistId_count_7923": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "count"
+      },
+      "ArtistId_max_7491": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "max"
+      },
+      "ArtistId_median_9983": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "median"
+      },
+      "ArtistId_min_3035": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "min"
+      },
+      "ArtistId_sum_0372": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "sum"
+      },
+      "Name_min_2743": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "min"
+      },
+      "Name_count_4148": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,65 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "fields": {
+      "ArtistId": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "and",
+      "expressions": [
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "ArtistId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 107
+          }
+        },
+        {
+          "type": "or",
+          "expressions": [
+            {
+              "type": "binary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "Name",
+                "path": []
+              },
+              "operator": "equal",
+              "value": {
+                "type": "scalar",
+                "value": "Marvin Gaye"
+              }
+            },
+            {
+              "type": "unary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "Name",
+                "path": []
+              },
+              "operator": "is_null"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

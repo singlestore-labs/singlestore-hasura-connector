@@ -1,0 +1,18 @@
+{
+  "version": "0.1.2",
+  "capabilities": {
+    "query": {
+      "aggregates": {},
+      "variables": {},
+      "explain": {}
+    },
+    "mutation": {
+      "transactional": {},
+      "explain": {}
+    },
+    "relationships": {
+      "relation_comparisons": {},
+      "order_by_aggregate": {}
+    }
+  }
+}

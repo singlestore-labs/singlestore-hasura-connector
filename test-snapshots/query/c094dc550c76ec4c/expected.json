@@ -1,0 +1,86 @@
+[
+  {
+    "rows": [
+      {
+        "AlbumId_3774": 347,
+        "Bytes_4241": 3305164,
+        "Composer_3841": "Philip Glass",
+        "GenreId_5580": 10,
+        "Milliseconds_9179": 206005,
+        "Name_0823": "Koyaanisqatsi"
+      },
+      {
+        "AlbumId_3774": 346,
+        "Bytes_4241": 3665114,
+        "Composer_3841": "Wolfgang Amadeus Mozart",
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 221331,
+        "Name_0823": "Quintet for Horn, Violin, 2 Violas, and Cello in E Flat Major, K. 407/386c: III. Allegro"
+      },
+      {
+        "AlbumId_3774": 345,
+        "Bytes_4241": 1189062,
+        "Composer_3841": "Claudio Monteverdi",
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 66639,
+        "Name_0823": "L'orfeo, Act 3, Sinfonia (Orchestra)"
+      },
+      {
+        "AlbumId_3774": 344,
+        "Bytes_4241": 2283131,
+        "Composer_3841": "Franz Schubert",
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 139200,
+        "Name_0823": "String Quartet No. 12 in C Minor, D. 703 \"Quartettsatz\": II. Andante - Allegro assai"
+      },
+      {
+        "AlbumId_3774": 343,
+        "Bytes_4241": 4718950,
+        "Composer_3841": null,
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 286741,
+        "Name_0823": "Pini Di Roma (Pinien Von Rom)  I Pini Della Via Appia"
+      },
+      {
+        "AlbumId_3774": 342,
+        "Bytes_4241": 16454937,
+        "Composer_3841": "Pietro Antonio Locatelli",
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 493573,
+        "Name_0823": "Concerto for Violin, Strings and Continuo in G Major, Op. 3, No. 9: I. Allegro"
+      },
+      {
+        "AlbumId_3774": 341,
+        "Bytes_4241": 4307907,
+        "Composer_3841": null,
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 261849,
+        "Name_0823": "Erlkonig, D.328"
+      },
+      {
+        "AlbumId_3774": 340,
+        "Bytes_4241": 2229617,
+        "Composer_3841": null,
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 51780,
+        "Name_0823": "Étude 1, In C Major - Preludio (Presto) - Liszt"
+      },
+      {
+        "AlbumId_3774": 339,
+        "Bytes_4241": 4371533,
+        "Composer_3841": "Niccolò Paganini",
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 265541,
+        "Name_0823": "24 Caprices, Op. 1, No. 24, for Solo Violin, in A Minor"
+      },
+      {
+        "AlbumId_3774": 338,
+        "Bytes_4241": 4834785,
+        "Composer_3841": "Carl Nielsen",
+        "GenreId_5580": 24,
+        "Milliseconds_9179": 286998,
+        "Name_0823": "Symphony No. 2, Op. 16 -  \"The Four Temperaments\": II. Allegro Comodo e Flemmatico"
+      }
+    ]
+  }
+]

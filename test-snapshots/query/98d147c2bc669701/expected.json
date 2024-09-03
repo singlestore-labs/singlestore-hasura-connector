@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "InvoiceLineId_count_2930": 2240,
+      "Quantity_count_3031": 2240,
+      "Quantity_min_5998": 1,
+      "UnitPrice_count_2149": 2240
+    }
+  }
+]

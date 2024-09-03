@@ -1,0 +1,99 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "fields": {
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "InvoiceLineId": {
+        "type": "column",
+        "column": "InvoiceLineId",
+        "fields": null
+      },
+      "Quantity": {
+        "type": "column",
+        "column": "Quantity",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "FK_InvoiceLineTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "AlbumId_5381": {
+              "type": "column",
+              "column": "AlbumId",
+              "fields": null
+            },
+            "Bytes_1707": {
+              "type": "column",
+              "column": "Bytes",
+              "fields": null
+            },
+            "Composer_2693": {
+              "type": "column",
+              "column": "Composer",
+              "fields": null
+            },
+            "GenreId_4421": {
+              "type": "column",
+              "column": "GenreId",
+              "fields": null
+            },
+            "MediaTypeId_3142": {
+              "type": "column",
+              "column": "MediaTypeId",
+              "fields": null
+            },
+            "Milliseconds_8545": {
+              "type": "column",
+              "column": "Milliseconds",
+              "fields": null
+            },
+            "Name_2595": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            },
+            "TrackId_7406": {
+              "type": "column",
+              "column": "TrackId",
+              "fields": null
+            },
+            "UnitPrice_5237": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

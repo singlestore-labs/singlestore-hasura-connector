@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.Playlist",
+  "query": {
+    "aggregates": {
+      "PlaylistId_count_5908": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "count"
+      },
+      "PlaylistId_median_5555": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "median"
+      },
+      "PlaylistId_avg_6570": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "avg"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

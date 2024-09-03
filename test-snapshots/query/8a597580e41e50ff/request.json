@@ -1,0 +1,100 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "BillingAddress": {
+        "type": "column",
+        "column": "BillingAddress",
+        "fields": null
+      },
+      "BillingCity": {
+        "type": "column",
+        "column": "BillingCity",
+        "fields": null
+      },
+      "BillingCountry": {
+        "type": "column",
+        "column": "BillingCountry",
+        "fields": null
+      },
+      "BillingPostalCode": {
+        "type": "column",
+        "column": "BillingPostalCode",
+        "fields": null
+      },
+      "BillingState": {
+        "type": "column",
+        "column": "BillingState",
+        "fields": null
+      },
+      "CustomerId": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "InvoiceDate": {
+        "type": "column",
+        "column": "InvoiceDate",
+        "fields": null
+      },
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "Total": {
+        "type": "column",
+        "column": "Total",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "and",
+      "expressions": [
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "InvoiceId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 59
+          }
+        },
+        {
+          "type": "or",
+          "expressions": [
+            {
+              "type": "unary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "BillingAddress",
+                "path": []
+              },
+              "operator": "is_null"
+            },
+            {
+              "type": "binary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "BillingAddress",
+                "path": []
+              },
+              "operator": "equal",
+              "value": {
+                "type": "scalar",
+                "value": "1 Infinite Loop"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

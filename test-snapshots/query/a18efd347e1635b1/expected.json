@@ -1,0 +1,13 @@
+[
+  {
+    "aggregates": {
+      "InvoiceLineId_avg_3732": 1120.5,
+      "InvoiceLineId_count_2851": 2240,
+      "Quantity_count_2767": 2240,
+      "Quantity_median_5088": 1,
+      "Quantity_std_8389": 0,
+      "TrackId_min_4263": 1,
+      "UnitPrice_median_7157": 0.99
+    }
+  }
+]

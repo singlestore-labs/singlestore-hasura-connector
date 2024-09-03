@@ -1,0 +1,51 @@
+{
+  "collection": "chinook.Playlist",
+  "query": {
+    "fields": {
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "PlaylistId": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "and",
+      "expressions": [
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "Name",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": "Brazilian Music"
+          }
+        },
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "PlaylistId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 16
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

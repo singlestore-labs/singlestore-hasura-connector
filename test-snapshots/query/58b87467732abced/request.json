@@ -1,0 +1,103 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address_9598": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate_9482": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City_5103": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country_0646": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_2683": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "State_7755": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "Fax_3322": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_5592": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate_2940": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "Title_9861": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      },
+      "Phone_5196": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode_5853": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "ReportsTo_3663": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "FirstName",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "ReportsTo",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Email",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

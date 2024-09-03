@@ -1,0 +1,9 @@
+[
+  {
+    "aggregates": {
+      "City_count_5374": 59,
+      "SupportRepId_count_9779": 59,
+      "SupportRepId_min_8377": 3
+    }
+  }
+]

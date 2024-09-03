@@ -1,0 +1,40 @@
+{
+  "collection": "chinook.Album",
+  "query": {
+    "aggregates": {
+      "AlbumId_avg_9205": {
+        "type": "single_column",
+        "column": "AlbumId",
+        "function": "avg"
+      },
+      "ArtistId_avg_5315": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "avg"
+      },
+      "AlbumId_max_6000": {
+        "type": "single_column",
+        "column": "AlbumId",
+        "function": "max"
+      },
+      "Title_min_3699": {
+        "type": "single_column",
+        "column": "Title",
+        "function": "min"
+      },
+      "ArtistId_count_5058": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "count"
+      },
+      "ArtistId_sum_9832": {
+        "type": "single_column",
+        "column": "ArtistId",
+        "function": "sum"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

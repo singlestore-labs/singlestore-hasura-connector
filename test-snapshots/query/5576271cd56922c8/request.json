@@ -1,0 +1,35 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "ReportsTo_7356": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "EmployeeId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "State",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

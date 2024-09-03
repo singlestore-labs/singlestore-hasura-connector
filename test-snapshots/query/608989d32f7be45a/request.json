@@ -1,0 +1,88 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Address_0817": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "City_1741": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Company_6488": {
+        "type": "column",
+        "column": "Company",
+        "fields": null
+      },
+      "PostalCode_2392": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "CustomerId_5553": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "Email_7525": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "Fax_0289": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_6234": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "SupportRepId_9255": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      },
+      "Phone_9082": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "PostalCode",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "SupportRepId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Company",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

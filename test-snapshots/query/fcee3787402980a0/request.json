@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "fields": {
+      "MediaTypeId_2871": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Name_5860": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Name",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

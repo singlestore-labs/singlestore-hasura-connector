@@ -1,0 +1,53 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "fields": {
+      "InvoiceId_0690": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "InvoiceLineId_4222": {
+        "type": "column",
+        "column": "InvoiceLineId",
+        "fields": null
+      },
+      "UnitPrice_4608": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "InvoiceId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "UnitPrice",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Quantity",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

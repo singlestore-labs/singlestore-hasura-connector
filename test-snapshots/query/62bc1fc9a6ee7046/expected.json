@@ -1,0 +1,94 @@
+[
+  {
+    "rows": [
+      {
+        "BirthDate_4084": "1968-01-09",
+        "City_3847": "Lethbridge",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 8,
+        "FirstName_6136": "Laura",
+        "HireDate_9113": "2004-03-04",
+        "Phone_6026": "+1 (403) 467-3351",
+        "ReportsTo_6873": 6,
+        "Title_3668": "IT Staff"
+      },
+      {
+        "BirthDate_4084": "1958-12-08",
+        "City_3847": "Calgary",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 2,
+        "FirstName_6136": "Nancy",
+        "HireDate_9113": "2002-05-01",
+        "Phone_6026": "+1 (403) 262-3443",
+        "ReportsTo_6873": 1,
+        "Title_3668": "Sales Manager"
+      },
+      {
+        "BirthDate_4084": "1965-03-03",
+        "City_3847": "Calgary",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 5,
+        "FirstName_6136": "Steve",
+        "HireDate_9113": "2003-10-17",
+        "Phone_6026": "1 (780) 836-9987",
+        "ReportsTo_6873": 2,
+        "Title_3668": "Sales Support Agent"
+      },
+      {
+        "BirthDate_4084": "1947-09-19",
+        "City_3847": "Calgary",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 4,
+        "FirstName_6136": "Margaret",
+        "HireDate_9113": "2003-05-03",
+        "Phone_6026": "+1 (403) 263-4423",
+        "ReportsTo_6873": 2,
+        "Title_3668": "Sales Support Agent"
+      },
+      {
+        "BirthDate_4084": "1970-05-29",
+        "City_3847": "Lethbridge",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 7,
+        "FirstName_6136": "Robert",
+        "HireDate_9113": "2004-01-02",
+        "Phone_6026": "+1 (403) 456-9986",
+        "ReportsTo_6873": 6,
+        "Title_3668": "IT Staff"
+      },
+      {
+        "BirthDate_4084": "1973-07-01",
+        "City_3847": "Calgary",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 6,
+        "FirstName_6136": "Michael",
+        "HireDate_9113": "2003-10-17",
+        "Phone_6026": "+1 (403) 246-9887",
+        "ReportsTo_6873": 1,
+        "Title_3668": "IT Manager"
+      },
+      {
+        "BirthDate_4084": "1962-02-18",
+        "City_3847": "Edmonton",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 1,
+        "FirstName_6136": "Andrew",
+        "HireDate_9113": "2002-08-14",
+        "Phone_6026": "+1 (780) 428-9482",
+        "ReportsTo_6873": null,
+        "Title_3668": "General Manager"
+      },
+      {
+        "BirthDate_4084": "1973-08-29",
+        "City_3847": "Calgary",
+        "Country_6643": "Canada",
+        "EmployeeId_7830": 3,
+        "FirstName_6136": "Jane",
+        "HireDate_9113": "2002-04-01",
+        "Phone_6026": "+1 (403) 262-3443",
+        "ReportsTo_6873": 2,
+        "Title_3668": "Sales Support Agent"
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "aggregates": {
+      "AlbumId_count": 3503,
+      "AlbumId_distinct_count": 347,
+      "Bytes_count": 3503,
+      "Bytes_distinct_count": 3501,
+      "Composer_count": 2525,
+      "Composer_distinct_count": 851,
+      "GenreId_count": 3503,
+      "GenreId_distinct_count": 25,
+      "MediaTypeId_count": 3503,
+      "MediaTypeId_distinct_count": 5,
+      "Milliseconds_count": 3503,
+      "Milliseconds_distinct_count": 3080,
+      "Name_count": 3503,
+      "Name_distinct_count": 3247,
+      "TrackId_count": 3503,
+      "TrackId_distinct_count": 3503,
+      "UnitPrice_count": 3503,
+      "UnitPrice_distinct_count": 2
+    }
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "collection": "chinook.Genre",
+  "query": {
+    "fields": {
+      "GenreId": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "and",
+        "expressions": [
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "Composer",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": "Angus Young, Malcolm Young, Brian Johnson"
+            }
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "UnitPrice",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 0.99
+            }
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "AlbumId",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "GenreId": "GenreId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "fields": {
+      "MediaTypeId": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "FK_TrackMediaTypeId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "AlbumId_7729": {
+              "type": "column",
+              "column": "AlbumId",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "MediaTypeId": "MediaTypeId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

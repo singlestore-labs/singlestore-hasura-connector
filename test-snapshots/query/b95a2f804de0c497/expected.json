@@ -1,0 +1,21 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "11, Place Bellecour",
+        "City": "Lyon",
+        "Company": null,
+        "Country": "France",
+        "CustomerId": 41,
+        "Email": "marc.dubois@hotmail.com",
+        "Fax": null,
+        "FirstName": "Marc",
+        "LastName": "Dubois",
+        "Phone": "+33 04 78 30 30 30",
+        "PostalCode": "69002",
+        "State": null,
+        "SupportRepId": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "fields": {
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "InvoiceLineId": {
+        "type": "column",
+        "column": "InvoiceLineId",
+        "fields": null
+      },
+      "Quantity": {
+        "type": "column",
+        "column": "Quantity",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "FK_InvoiceLineInvoiceId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "BillingAddress_6755": {
+              "type": "column",
+              "column": "BillingAddress",
+              "fields": null
+            },
+            "BillingCity_4649": {
+              "type": "column",
+              "column": "BillingCity",
+              "fields": null
+            },
+            "BillingCountry_8527": {
+              "type": "column",
+              "column": "BillingCountry",
+              "fields": null
+            },
+            "Total_9082": {
+              "type": "column",
+              "column": "Total",
+              "fields": null
+            },
+            "InvoiceDate_8744": {
+              "type": "column",
+              "column": "InvoiceDate",
+              "fields": null
+            },
+            "CustomerId_8285": {
+              "type": "column",
+              "column": "CustomerId",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "InvoiceId": "InvoiceId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Invoice",
+      "arguments": {}
+    }
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "Email_min_6726": "andrew@chinookcorp.com",
+      "Fax_min_4383": "+1 (403) 246-9899",
+      "PostalCode_min_0005": "T1H 1Y8",
+      "ReportsTo_avg_1199": 2.857142857
+    }
+  }
+]

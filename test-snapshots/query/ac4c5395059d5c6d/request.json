@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "aggregates": {
+      "MediaTypeId_count": {
+        "type": "column_count",
+        "column": "MediaTypeId",
+        "distinct": false
+      },
+      "MediaTypeId_distinct_count": {
+        "type": "column_count",
+        "column": "MediaTypeId",
+        "distinct": true
+      },
+      "Name_count": {
+        "type": "column_count",
+        "column": "Name",
+        "distinct": false
+      },
+      "Name_distinct_count": {
+        "type": "column_count",
+        "column": "Name",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

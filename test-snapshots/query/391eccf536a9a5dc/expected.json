@@ -1,0 +1,21 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "12,Community Centre",
+        "City": "Delhi",
+        "Company": null,
+        "Country": "India",
+        "CustomerId": 58,
+        "Email": "manoj.pareek@rediff.com",
+        "Fax": null,
+        "FirstName": "Manoj",
+        "LastName": "Pareek",
+        "Phone": "+91 0124 39883988",
+        "PostalCode": "110017",
+        "State": null,
+        "SupportRepId": 3
+      }
+    ]
+  }
+]

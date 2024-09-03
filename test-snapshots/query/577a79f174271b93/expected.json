@@ -1,0 +1,14 @@
+[
+  {
+    "aggregates": {
+      "Composer_min_3727": "A. F. Iommi, W. Ward, T. Butler, J. Osbourne",
+      "MediaTypeId_count_1767": 3503,
+      "MediaTypeId_min_8029": 1,
+      "Milliseconds_max_8548": 5286953,
+      "Milliseconds_median_9048": 255634,
+      "Milliseconds_sum_7643": 1378778040,
+      "UnitPrice_avg_7986": 1.050805024,
+      "UnitPrice_min_4100": 0.99
+    }
+  }
+]

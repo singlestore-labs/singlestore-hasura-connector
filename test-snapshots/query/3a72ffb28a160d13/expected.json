@@ -1,0 +1,11 @@
+[
+  {
+    "aggregates": {
+      "BillingCountry_count_4695": 412,
+      "CustomerId_sum_2814": 12331,
+      "InvoiceDate_max_0928": "2013-12-22",
+      "InvoiceDate_min_8432": "2009-01-01",
+      "InvoiceId_count_7341": 412
+    }
+  }
+]

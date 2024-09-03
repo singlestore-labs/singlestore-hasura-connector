@@ -1,0 +1,104 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "BillingAddress": {
+        "type": "column",
+        "column": "BillingAddress",
+        "fields": null
+      },
+      "BillingCity": {
+        "type": "column",
+        "column": "BillingCity",
+        "fields": null
+      },
+      "BillingCountry": {
+        "type": "column",
+        "column": "BillingCountry",
+        "fields": null
+      },
+      "BillingPostalCode": {
+        "type": "column",
+        "column": "BillingPostalCode",
+        "fields": null
+      },
+      "BillingState": {
+        "type": "column",
+        "column": "BillingState",
+        "fields": null
+      },
+      "CustomerId": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "InvoiceDate": {
+        "type": "column",
+        "column": "InvoiceDate",
+        "fields": null
+      },
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "Total": {
+        "type": "column",
+        "column": "Total",
+        "fields": null
+      },
+      "FK_InvoiceCustomerId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "Address_4432": {
+              "type": "column",
+              "column": "Address",
+              "fields": null
+            },
+            "City_8988": {
+              "type": "column",
+              "column": "City",
+              "fields": null
+            },
+            "Fax_2685": {
+              "type": "column",
+              "column": "Fax",
+              "fields": null
+            },
+            "Country_6782": {
+              "type": "column",
+              "column": "Country",
+              "fields": null
+            },
+            "CustomerId_5402": {
+              "type": "column",
+              "column": "CustomerId",
+              "fields": null
+            },
+            "Email_1428": {
+              "type": "column",
+              "column": "Email",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "CustomerId": "CustomerId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Customer",
+      "arguments": {}
+    }
+  }
+}

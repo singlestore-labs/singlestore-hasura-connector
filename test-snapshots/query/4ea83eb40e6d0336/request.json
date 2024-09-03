@@ -1,0 +1,88 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Address_6071": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "City_5675": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Company_6187": {
+        "type": "column",
+        "column": "Company",
+        "fields": null
+      },
+      "Country_6129": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "CustomerId_4935": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "Email_0592": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "Fax_1991": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_9046": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "LastName_4922": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "PostalCode_0648": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Phone",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "FirstName",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Company",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

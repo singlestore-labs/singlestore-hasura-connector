@@ -1,0 +1,17 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "Theodor-Heuss-Straße 34",
+        "BillingCity": "Stuttgart",
+        "BillingCountry": "Germany",
+        "BillingPostalCode": "70174",
+        "BillingState": null,
+        "CustomerId": 2,
+        "InvoiceDate": "2009-01-01",
+        "InvoiceId": 1,
+        "Total": 1.98
+      }
+    ]
+  }
+]

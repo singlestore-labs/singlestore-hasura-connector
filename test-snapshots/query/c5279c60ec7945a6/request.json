@@ -1,0 +1,20 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "fields": {
+      "PlaylistId": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

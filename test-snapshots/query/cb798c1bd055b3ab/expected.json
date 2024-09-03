@@ -1,0 +1,11 @@
+[
+  {
+    "aggregates": {
+      "Quantity_median_5294": 1,
+      "TrackId_avg_7957": 1717.734375,
+      "UnitPrice_avg_9069": 1.039553571,
+      "UnitPrice_max_6810": 1.99,
+      "UnitPrice_sum_6405": 2328.6
+    }
+  }
+]

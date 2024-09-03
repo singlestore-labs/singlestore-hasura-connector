@@ -1,0 +1,13 @@
+[
+  {
+    "aggregates": {
+      "AlbumId_max_3402": 347,
+      "AlbumId_min_1008": 1,
+      "AlbumId_sum_7858": 60378,
+      "ArtistId_median_8087": 112,
+      "ArtistId_sum_9554": 42314,
+      "Title_count_5964": 347,
+      "Title_min_7748": "...And Justice For All"
+    }
+  }
+]

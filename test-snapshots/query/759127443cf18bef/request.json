@@ -1,0 +1,13 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "aggregates": {
+      "count": {
+        "type": "star_count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

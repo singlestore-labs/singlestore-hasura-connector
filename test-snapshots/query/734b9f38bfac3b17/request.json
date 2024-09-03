@@ -1,0 +1,44 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "Composer_0154": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "FK_TrackGenreId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "GenreId": {
+              "type": "column",
+              "column": "GenreId",
+              "fields": null
+            },
+            "Name": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "GenreId": "GenreId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.Genre",
+      "arguments": {}
+    }
+  }
+}

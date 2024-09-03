@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "aggregates": {
+      "Fax_min_4383": {
+        "type": "single_column",
+        "column": "Fax",
+        "function": "min"
+      },
+      "ReportsTo_avg_1199": {
+        "type": "single_column",
+        "column": "ReportsTo",
+        "function": "avg"
+      },
+      "Email_min_6726": {
+        "type": "single_column",
+        "column": "Email",
+        "function": "min"
+      },
+      "PostalCode_min_0005": {
+        "type": "single_column",
+        "column": "PostalCode",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,15 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "aggregates": {
+      "Name_min_9489": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

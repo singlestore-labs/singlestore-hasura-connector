@@ -1,0 +1,30 @@
+[
+  {
+    "rows": [
+      {
+        "ReportsTo_7356": null
+      },
+      {
+        "ReportsTo_7356": 1
+      },
+      {
+        "ReportsTo_7356": 2
+      },
+      {
+        "ReportsTo_7356": 2
+      },
+      {
+        "ReportsTo_7356": 2
+      },
+      {
+        "ReportsTo_7356": 1
+      },
+      {
+        "ReportsTo_7356": 6
+      },
+      {
+        "ReportsTo_7356": 6
+      }
+    ]
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "AlbumId": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "Bytes": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Composer": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "GenreId": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "MediaTypeId": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Milliseconds": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "and",
+      "expressions": [
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "TrackId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 7
+          }
+        },
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "AlbumId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 1
+          }
+        },
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "MediaTypeId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 1
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

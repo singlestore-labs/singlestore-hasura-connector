@@ -1,0 +1,126 @@
+[
+  {
+    "rows": [
+      {
+        "City_7165": "Calgary",
+        "Email_9020": "jane@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (403) 262-6712",
+        "FirstName_3418": "Jane",
+        "HireDate_2201": "2002-04-01",
+        "LastName_3117": "Peacock",
+        "PostalCode_8285": "T2P 5M5",
+        "ReportsTo_4517": 2,
+        "State_8176": "AB",
+        "Title_1352": "Sales Support Agent"
+      },
+      {
+        "City_7165": "Calgary",
+        "Email_9020": "margaret@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (403) 263-4289",
+        "FirstName_3418": "Margaret",
+        "HireDate_2201": "2003-05-03",
+        "LastName_3117": "Park",
+        "PostalCode_8285": "T2P 5G3",
+        "ReportsTo_4517": 2,
+        "State_8176": "AB",
+        "Title_1352": "Sales Support Agent"
+      },
+      {
+        "City_7165": "Calgary",
+        "Email_9020": "michael@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (403) 246-9899",
+        "FirstName_3418": "Michael",
+        "HireDate_2201": "2003-10-17",
+        "LastName_3117": "Mitchell",
+        "PostalCode_8285": "T3B 0C5",
+        "ReportsTo_4517": 1,
+        "State_8176": "AB",
+        "Title_1352": "IT Manager"
+      },
+      {
+        "City_7165": "Calgary",
+        "Email_9020": "nancy@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (403) 262-3322",
+        "FirstName_3418": "Nancy",
+        "HireDate_2201": "2002-05-01",
+        "LastName_3117": "Edwards",
+        "PostalCode_8285": "T2P 2T3",
+        "ReportsTo_4517": 1,
+        "State_8176": "AB",
+        "Title_1352": "Sales Manager"
+      },
+      {
+        "City_7165": "Calgary",
+        "Email_9020": "steve@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "1 (780) 836-9543",
+        "FirstName_3418": "Steve",
+        "HireDate_2201": "2003-10-17",
+        "LastName_3117": "Johnson",
+        "PostalCode_8285": "T3B 1Y7",
+        "ReportsTo_4517": 2,
+        "State_8176": "AB",
+        "Title_1352": "Sales Support Agent"
+      },
+      {
+        "City_7165": "Edmonton",
+        "Email_9020": "andrew@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (780) 428-3457",
+        "FirstName_3418": "Andrew",
+        "HireDate_2201": "2002-08-14",
+        "LastName_3117": "Adams",
+        "PostalCode_8285": "T5K 2N1",
+        "ReportsTo_4517": null,
+        "State_8176": "AB",
+        "Title_1352": "General Manager"
+      },
+      {
+        "City_7165": "Lethbridge",
+        "Email_9020": "laura@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (403) 467-8772",
+        "FirstName_3418": "Laura",
+        "HireDate_2201": "2004-03-04",
+        "LastName_3117": "Callahan",
+        "PostalCode_8285": "T1H 1Y8",
+        "ReportsTo_4517": 6,
+        "State_8176": "AB",
+        "Title_1352": "IT Staff"
+      },
+      {
+        "City_7165": "Lethbridge",
+        "Email_9020": "robert@chinookcorp.com",
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5780": "+1 (403) 456-8485",
+        "FirstName_3418": "Robert",
+        "HireDate_2201": "2004-01-02",
+        "LastName_3117": "King",
+        "PostalCode_8285": "T1K 5N8",
+        "ReportsTo_4517": 6,
+        "State_8176": "AB",
+        "Title_1352": "IT Staff"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "aggregates": {
+      "InvoiceId_median_1663": 207,
+      "TrackId_sum_5137": 3847725,
+      "UnitPrice_median_6301": 0.99
+    }
+  }
+]

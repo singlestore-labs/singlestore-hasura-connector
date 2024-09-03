@@ -1,0 +1,28 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "5112 48 Street",
+        "BillingCity": "Yellowknife",
+        "BillingCountry": "Canada",
+        "BillingPostalCode": "X1A 1N6",
+        "BillingState": "NT",
+        "CustomerId": 33,
+        "InvoiceDate": "2011-07-25",
+        "InvoiceId": 214,
+        "Total": 8.91
+      },
+      {
+        "BillingAddress": "Theodor-Heuss-Straße 34",
+        "BillingCity": "Stuttgart",
+        "BillingCountry": "Germany",
+        "BillingPostalCode": "70174",
+        "BillingState": null,
+        "CustomerId": 2,
+        "InvoiceDate": "2009-01-01",
+        "InvoiceId": 1,
+        "Total": 1.98
+      }
+    ]
+  }
+]

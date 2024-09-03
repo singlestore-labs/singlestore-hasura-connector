@@ -1,0 +1,12 @@
+[
+  {
+    "aggregates": {
+      "AlbumId_count": 347,
+      "AlbumId_distinct_count": 347,
+      "ArtistId_count": 347,
+      "ArtistId_distinct_count": 204,
+      "Title_count": 347,
+      "Title_distinct_count": 346
+    }
+  }
+]

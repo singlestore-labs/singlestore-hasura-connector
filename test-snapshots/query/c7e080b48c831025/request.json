@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "aggregates": {
+      "FirstName_min_7429": {
+        "type": "single_column",
+        "column": "FirstName",
+        "function": "min"
+      },
+      "CustomerId_median_0958": {
+        "type": "single_column",
+        "column": "CustomerId",
+        "function": "median"
+      },
+      "State_max_4952": {
+        "type": "single_column",
+        "column": "State",
+        "function": "max"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

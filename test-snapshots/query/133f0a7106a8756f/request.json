@@ -1,0 +1,84 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "AlbumId": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "Bytes": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Composer": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "GenreId": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "MediaTypeId": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Milliseconds": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "FK_InvoiceLineTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "Quantity_1299": {
+              "type": "column",
+              "column": "Quantity",
+              "fields": null
+            },
+            "UnitPrice_6703": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.InvoiceLine",
+      "arguments": {}
+    }
+  }
+}

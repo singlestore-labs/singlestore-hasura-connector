@@ -1,0 +1,112 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "EmployeeId": {
+        "type": "column",
+        "column": "EmployeeId",
+        "fields": null
+      },
+      "Fax": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "ReportsTo": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      },
+      "State": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "Title": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "or",
+      "expressions": [
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "Address",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": "825 8 Ave SW"
+          }
+        },
+        {
+          "type": "unary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "Address",
+            "path": []
+          },
+          "operator": "is_null"
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,98 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address_4242": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate_3213": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "Title_9497": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      },
+      "Country_1516": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_8811": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "ReportsTo_0530": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      },
+      "State_0649": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "FirstName_8240": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate_5087": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName_3660": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone_8656": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode_0783": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Phone",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Title",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "FirstName",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

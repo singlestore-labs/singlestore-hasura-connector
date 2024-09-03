@@ -1,0 +1,23 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "7727B 41 Ave",
+        "BirthDate": "1965-03-03",
+        "City": "Calgary",
+        "Country": "Canada",
+        "Email": "steve@chinookcorp.com",
+        "EmployeeId": 5,
+        "Fax": "1 (780) 836-9543",
+        "FirstName": "Steve",
+        "HireDate": "2003-10-17",
+        "LastName": "Johnson",
+        "Phone": "1 (780) 836-9987",
+        "PostalCode": "T3B 1Y7",
+        "ReportsTo": 2,
+        "State": "AB",
+        "Title": "Sales Support Agent"
+      }
+    ]
+  }
+]

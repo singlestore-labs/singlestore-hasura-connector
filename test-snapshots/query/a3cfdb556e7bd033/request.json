@@ -1,0 +1,52 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Address_8359": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "City_2728": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "State_3154": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "SupportRepId_5216": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      },
+      "PostalCode_9789": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "FirstName_4497": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "State",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

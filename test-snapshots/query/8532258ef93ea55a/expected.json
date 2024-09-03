@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "MediaTypeId_count_5826": 5,
+      "MediaTypeId_min_0808": 1,
+      "Name_count_6028": 5,
+      "Name_min_4493": "AAC audio file"
+    }
+  }
+]

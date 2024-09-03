@@ -1,0 +1,70 @@
+[
+  {
+    "rows": [
+      {
+        "City_1033": "Lethbridge",
+        "Email_0424": "laura@chinookcorp.com",
+        "FirstName_0651": "Laura",
+        "HireDate_8024": "2004-03-04",
+        "Phone_8546": "+1 (403) 467-3351",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Lethbridge",
+        "Email_0424": "robert@chinookcorp.com",
+        "FirstName_0651": "Robert",
+        "HireDate_8024": "2004-01-02",
+        "Phone_8546": "+1 (403) 456-9986",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Calgary",
+        "Email_0424": "jane@chinookcorp.com",
+        "FirstName_0651": "Jane",
+        "HireDate_8024": "2002-04-01",
+        "Phone_8546": "+1 (403) 262-3443",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Calgary",
+        "Email_0424": "margaret@chinookcorp.com",
+        "FirstName_0651": "Margaret",
+        "HireDate_8024": "2003-05-03",
+        "Phone_8546": "+1 (403) 263-4423",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Calgary",
+        "Email_0424": "steve@chinookcorp.com",
+        "FirstName_0651": "Steve",
+        "HireDate_8024": "2003-10-17",
+        "Phone_8546": "1 (780) 836-9987",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Calgary",
+        "Email_0424": "michael@chinookcorp.com",
+        "FirstName_0651": "Michael",
+        "HireDate_8024": "2003-10-17",
+        "Phone_8546": "+1 (403) 246-9887",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Calgary",
+        "Email_0424": "nancy@chinookcorp.com",
+        "FirstName_0651": "Nancy",
+        "HireDate_8024": "2002-05-01",
+        "Phone_8546": "+1 (403) 262-3443",
+        "State_2399": "AB"
+      },
+      {
+        "City_1033": "Edmonton",
+        "Email_0424": "andrew@chinookcorp.com",
+        "FirstName_0651": "Andrew",
+        "HireDate_8024": "2002-08-14",
+        "Phone_8546": "+1 (780) 428-9482",
+        "State_2399": "AB"
+      }
+    ]
+  }
+]

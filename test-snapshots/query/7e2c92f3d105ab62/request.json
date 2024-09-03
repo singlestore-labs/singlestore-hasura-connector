@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "aggregates": {
+      "State_max_6589": {
+        "type": "single_column",
+        "column": "State",
+        "function": "max"
+      },
+      "Phone_count_7548": {
+        "type": "single_column",
+        "column": "Phone",
+        "function": "count"
+      },
+      "Country_count_4323": {
+        "type": "single_column",
+        "column": "Country",
+        "function": "count"
+      },
+      "ReportsTo_min_5898": {
+        "type": "single_column",
+        "column": "ReportsTo",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

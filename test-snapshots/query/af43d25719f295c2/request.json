@@ -1,0 +1,35 @@
+{
+  "collection": "chinook.Genre",
+  "query": {
+    "aggregates": {
+      "GenreId_avg_4556": {
+        "type": "single_column",
+        "column": "GenreId",
+        "function": "avg"
+      },
+      "GenreId_count_0507": {
+        "type": "single_column",
+        "column": "GenreId",
+        "function": "count"
+      },
+      "GenreId_max_2949": {
+        "type": "single_column",
+        "column": "GenreId",
+        "function": "max"
+      },
+      "GenreId_sum_4544": {
+        "type": "single_column",
+        "column": "GenreId",
+        "function": "sum"
+      },
+      "GenreId_min_5569": {
+        "type": "single_column",
+        "column": "GenreId",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

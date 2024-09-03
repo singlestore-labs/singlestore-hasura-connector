@@ -1,0 +1,56 @@
+[
+  {
+    "rows": [
+      {
+        "BillingCountry_9277": "Germany",
+        "BillingPostalCode_5446": "70174",
+        "InvoiceDate_0741": "2009-01-01"
+      },
+      {
+        "BillingCountry_9277": "Norway",
+        "BillingPostalCode_5446": "0171",
+        "InvoiceDate_0741": "2009-01-02"
+      },
+      {
+        "BillingCountry_9277": "Belgium",
+        "BillingPostalCode_5446": "1000",
+        "InvoiceDate_0741": "2009-01-03"
+      },
+      {
+        "BillingCountry_9277": "Canada",
+        "BillingPostalCode_5446": "T6G 2C7",
+        "InvoiceDate_0741": "2009-01-06"
+      },
+      {
+        "BillingCountry_9277": "USA",
+        "BillingPostalCode_5446": "2113",
+        "InvoiceDate_0741": "2009-01-11"
+      },
+      {
+        "BillingCountry_9277": "Germany",
+        "BillingPostalCode_5446": "60316",
+        "InvoiceDate_0741": "2009-01-19"
+      },
+      {
+        "BillingCountry_9277": "Germany",
+        "BillingPostalCode_5446": "10779",
+        "InvoiceDate_0741": "2009-02-01"
+      },
+      {
+        "BillingCountry_9277": "France",
+        "BillingPostalCode_5446": "75002",
+        "InvoiceDate_0741": "2009-02-01"
+      },
+      {
+        "BillingCountry_9277": "France",
+        "BillingPostalCode_5446": "33000",
+        "InvoiceDate_0741": "2009-02-02"
+      },
+      {
+        "BillingCountry_9277": "Ireland",
+        "BillingPostalCode_5446": null,
+        "InvoiceDate_0741": "2009-02-03"
+      }
+    ]
+  }
+]

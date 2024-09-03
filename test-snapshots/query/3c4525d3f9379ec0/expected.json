@@ -1,0 +1,187 @@
+[
+  {
+    "rows": [
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 100
+            },
+            {
+              "AlbumId_7729": 101
+            }
+          ]
+        },
+        "MediaTypeId": 1,
+        "Name": "MPEG audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            },
+            {
+              "AlbumId_7729": 121
+            }
+          ]
+        },
+        "MediaTypeId": 2,
+        "Name": "Protected AAC audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "AlbumId_7729": 226
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            },
+            {
+              "AlbumId_7729": 227
+            }
+          ]
+        },
+        "MediaTypeId": 3,
+        "Name": "Protected MPEG-4 video file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "AlbumId_7729": 260
+            },
+            {
+              "AlbumId_7729": 283
+            },
+            {
+              "AlbumId_7729": 318
+            },
+            {
+              "AlbumId_7729": 324
+            },
+            {
+              "AlbumId_7729": 325
+            },
+            {
+              "AlbumId_7729": 340
+            },
+            {
+              "AlbumId_7729": 342
+            }
+          ]
+        },
+        "MediaTypeId": 4,
+        "Name": "Purchased AAC audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "AlbumId_7729": 262
+            },
+            {
+              "AlbumId_7729": 262
+            },
+            {
+              "AlbumId_7729": 263
+            },
+            {
+              "AlbumId_7729": 263
+            },
+            {
+              "AlbumId_7729": 264
+            },
+            {
+              "AlbumId_7729": 264
+            },
+            {
+              "AlbumId_7729": 265
+            },
+            {
+              "AlbumId_7729": 265
+            },
+            {
+              "AlbumId_7729": 266
+            },
+            {
+              "AlbumId_7729": 267
+            }
+          ]
+        },
+        "MediaTypeId": 5,
+        "Name": "AAC audio file"
+      }
+    ]
+  }
+]

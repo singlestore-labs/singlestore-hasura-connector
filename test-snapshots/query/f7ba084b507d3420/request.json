@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "aggregates": {
+      "UnitPrice_median_6301": {
+        "type": "single_column",
+        "column": "UnitPrice",
+        "function": "median"
+      },
+      "TrackId_sum_5137": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "sum"
+      },
+      "InvoiceId_median_1663": {
+        "type": "single_column",
+        "column": "InvoiceId",
+        "function": "median"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "fields": {
+      "Quantity_8835": {
+        "type": "column",
+        "column": "Quantity",
+        "fields": null
+      },
+      "InvoiceLineId_4196": {
+        "type": "column",
+        "column": "InvoiceLineId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "TrackId",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

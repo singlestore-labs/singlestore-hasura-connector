@@ -1,0 +1,17 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "3 Chatham Street",
+        "BillingCity": "Dublin",
+        "BillingCountry": "Ireland",
+        "BillingPostalCode": null,
+        "BillingState": "Dublin",
+        "CustomerId": 46,
+        "InvoiceDate": "2009-02-03",
+        "InvoiceId": 10,
+        "Total": 5.94
+      }
+    ]
+  }
+]

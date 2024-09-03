@@ -1,0 +1,113 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address_7291": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate_3338": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City_1466": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country_4936": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_5844": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "EmployeeId_1670": {
+        "type": "column",
+        "column": "EmployeeId",
+        "fields": null
+      },
+      "Fax_2515": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_0231": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate_7846": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName_3593": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone_0927": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode_0148": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "ReportsTo_2703": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      },
+      "State_1708": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "Title_1376": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Email",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "ReportsTo",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "City",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,47 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "PostalCode_6918": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "BirthDate_3951": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "ReportsTo_9082": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      },
+      "HireDate_9311": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "State_2650": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Fax",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

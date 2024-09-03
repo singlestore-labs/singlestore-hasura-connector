@@ -1,0 +1,47 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "Name_1902": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "Bytes_7936": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Composer_7391": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "GenreId_7146": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "TrackId_3660": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Bytes",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

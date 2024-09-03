@@ -1,0 +1,15 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "aggregates": {
+      "Email_max_9221": {
+        "type": "single_column",
+        "column": "Email",
+        "function": "max"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

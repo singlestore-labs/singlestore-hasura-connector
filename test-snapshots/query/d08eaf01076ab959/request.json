@@ -1,0 +1,160 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "aggregates": {
+      "Address_count": {
+        "type": "column_count",
+        "column": "Address",
+        "distinct": false
+      },
+      "Address_distinct_count": {
+        "type": "column_count",
+        "column": "Address",
+        "distinct": true
+      },
+      "BirthDate_count": {
+        "type": "column_count",
+        "column": "BirthDate",
+        "distinct": false
+      },
+      "BirthDate_distinct_count": {
+        "type": "column_count",
+        "column": "BirthDate",
+        "distinct": true
+      },
+      "City_count": {
+        "type": "column_count",
+        "column": "City",
+        "distinct": false
+      },
+      "City_distinct_count": {
+        "type": "column_count",
+        "column": "City",
+        "distinct": true
+      },
+      "Country_count": {
+        "type": "column_count",
+        "column": "Country",
+        "distinct": false
+      },
+      "Country_distinct_count": {
+        "type": "column_count",
+        "column": "Country",
+        "distinct": true
+      },
+      "Email_count": {
+        "type": "column_count",
+        "column": "Email",
+        "distinct": false
+      },
+      "Email_distinct_count": {
+        "type": "column_count",
+        "column": "Email",
+        "distinct": true
+      },
+      "EmployeeId_count": {
+        "type": "column_count",
+        "column": "EmployeeId",
+        "distinct": false
+      },
+      "EmployeeId_distinct_count": {
+        "type": "column_count",
+        "column": "EmployeeId",
+        "distinct": true
+      },
+      "Fax_count": {
+        "type": "column_count",
+        "column": "Fax",
+        "distinct": false
+      },
+      "Fax_distinct_count": {
+        "type": "column_count",
+        "column": "Fax",
+        "distinct": true
+      },
+      "FirstName_count": {
+        "type": "column_count",
+        "column": "FirstName",
+        "distinct": false
+      },
+      "FirstName_distinct_count": {
+        "type": "column_count",
+        "column": "FirstName",
+        "distinct": true
+      },
+      "HireDate_count": {
+        "type": "column_count",
+        "column": "HireDate",
+        "distinct": false
+      },
+      "HireDate_distinct_count": {
+        "type": "column_count",
+        "column": "HireDate",
+        "distinct": true
+      },
+      "LastName_count": {
+        "type": "column_count",
+        "column": "LastName",
+        "distinct": false
+      },
+      "LastName_distinct_count": {
+        "type": "column_count",
+        "column": "LastName",
+        "distinct": true
+      },
+      "Phone_count": {
+        "type": "column_count",
+        "column": "Phone",
+        "distinct": false
+      },
+      "Phone_distinct_count": {
+        "type": "column_count",
+        "column": "Phone",
+        "distinct": true
+      },
+      "PostalCode_count": {
+        "type": "column_count",
+        "column": "PostalCode",
+        "distinct": false
+      },
+      "PostalCode_distinct_count": {
+        "type": "column_count",
+        "column": "PostalCode",
+        "distinct": true
+      },
+      "ReportsTo_count": {
+        "type": "column_count",
+        "column": "ReportsTo",
+        "distinct": false
+      },
+      "ReportsTo_distinct_count": {
+        "type": "column_count",
+        "column": "ReportsTo",
+        "distinct": true
+      },
+      "State_count": {
+        "type": "column_count",
+        "column": "State",
+        "distinct": false
+      },
+      "State_distinct_count": {
+        "type": "column_count",
+        "column": "State",
+        "distinct": true
+      },
+      "Title_count": {
+        "type": "column_count",
+        "column": "Title",
+        "distinct": false
+      },
+      "Title_distinct_count": {
+        "type": "column_count",
+        "column": "Title",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

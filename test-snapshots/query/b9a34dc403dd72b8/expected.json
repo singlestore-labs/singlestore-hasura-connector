@@ -1,0 +1,56 @@
+[
+  {
+    "rows": [
+      {
+        "Bytes_7087": 11170334,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 343719
+      },
+      {
+        "Bytes_7087": 5510424,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 342562
+      },
+      {
+        "Bytes_7087": 3990994,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 230619
+      },
+      {
+        "Bytes_7087": 4331779,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 252051
+      },
+      {
+        "Bytes_7087": 6290521,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 375418
+      },
+      {
+        "Bytes_7087": 6713451,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 205662
+      },
+      {
+        "Bytes_7087": 7636561,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 233926
+      },
+      {
+        "Bytes_7087": 6852860,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 210834
+      },
+      {
+        "Bytes_7087": 6599424,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 203102
+      },
+      {
+        "Bytes_7087": 8611245,
+        "GenreId_6556": 1,
+        "Milliseconds_6035": 263497
+      }
+    ]
+  }
+]

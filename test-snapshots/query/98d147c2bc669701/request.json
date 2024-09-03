@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "aggregates": {
+      "InvoiceLineId_count_2930": {
+        "type": "single_column",
+        "column": "InvoiceLineId",
+        "function": "count"
+      },
+      "Quantity_min_5998": {
+        "type": "single_column",
+        "column": "Quantity",
+        "function": "min"
+      },
+      "Quantity_count_3031": {
+        "type": "single_column",
+        "column": "Quantity",
+        "function": "count"
+      },
+      "UnitPrice_count_2149": {
+        "type": "single_column",
+        "column": "UnitPrice",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

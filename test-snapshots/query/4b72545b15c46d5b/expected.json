@@ -1,0 +1,56 @@
+[
+  {
+    "rows": [
+      {
+        "InvoiceId_3271": 1,
+        "InvoiceLineId_0199": 2,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 1,
+        "InvoiceLineId_0199": 1,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 2,
+        "InvoiceLineId_0199": 6,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 2,
+        "InvoiceLineId_0199": 5,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 2,
+        "InvoiceLineId_0199": 4,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 2,
+        "InvoiceLineId_0199": 3,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 3,
+        "InvoiceLineId_0199": 12,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 3,
+        "InvoiceLineId_0199": 11,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 3,
+        "InvoiceLineId_0199": 10,
+        "UnitPrice_1662": 0.99
+      },
+      {
+        "InvoiceId_3271": 3,
+        "InvoiceLineId_0199": 9,
+        "UnitPrice_1662": 0.99
+      }
+    ]
+  }
+]

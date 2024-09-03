@@ -1,0 +1,96 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress_3695": "Theodor-Heuss-Straße 34",
+        "BillingPostalCode_0953": "70174",
+        "BillingState_8328": null,
+        "CustomerId_6504": 2,
+        "InvoiceDate_3951": "2009-01-01",
+        "InvoiceId_5426": 1,
+        "Total_6981": 1.98
+      },
+      {
+        "BillingAddress_3695": "Ullevålsveien 14",
+        "BillingPostalCode_0953": "0171",
+        "BillingState_8328": null,
+        "CustomerId_6504": 4,
+        "InvoiceDate_3951": "2009-01-02",
+        "InvoiceId_5426": 2,
+        "Total_6981": 3.96
+      },
+      {
+        "BillingAddress_3695": "Grétrystraat 63",
+        "BillingPostalCode_0953": "1000",
+        "BillingState_8328": null,
+        "CustomerId_6504": 8,
+        "InvoiceDate_3951": "2009-01-03",
+        "InvoiceId_5426": 3,
+        "Total_6981": 5.94
+      },
+      {
+        "BillingAddress_3695": "8210 111 ST NW",
+        "BillingPostalCode_0953": "T6G 2C7",
+        "BillingState_8328": "AB",
+        "CustomerId_6504": 14,
+        "InvoiceDate_3951": "2009-01-06",
+        "InvoiceId_5426": 4,
+        "Total_6981": 8.91
+      },
+      {
+        "BillingAddress_3695": "69 Salem Street",
+        "BillingPostalCode_0953": "2113",
+        "BillingState_8328": "MA",
+        "CustomerId_6504": 23,
+        "InvoiceDate_3951": "2009-01-11",
+        "InvoiceId_5426": 5,
+        "Total_6981": 13.86
+      },
+      {
+        "BillingAddress_3695": "Berger Straße 10",
+        "BillingPostalCode_0953": "60316",
+        "BillingState_8328": null,
+        "CustomerId_6504": 37,
+        "InvoiceDate_3951": "2009-01-19",
+        "InvoiceId_5426": 6,
+        "Total_6981": 0.99
+      },
+      {
+        "BillingAddress_3695": "Barbarossastraße 19",
+        "BillingPostalCode_0953": "10779",
+        "BillingState_8328": null,
+        "CustomerId_6504": 38,
+        "InvoiceDate_3951": "2009-02-01",
+        "InvoiceId_5426": 7,
+        "Total_6981": 1.98
+      },
+      {
+        "BillingAddress_3695": "8, Rue Hanovre",
+        "BillingPostalCode_0953": "75002",
+        "BillingState_8328": null,
+        "CustomerId_6504": 40,
+        "InvoiceDate_3951": "2009-02-01",
+        "InvoiceId_5426": 8,
+        "Total_6981": 1.98
+      },
+      {
+        "BillingAddress_3695": "9, Place Louis Barthou",
+        "BillingPostalCode_0953": "33000",
+        "BillingState_8328": null,
+        "CustomerId_6504": 42,
+        "InvoiceDate_3951": "2009-02-02",
+        "InvoiceId_5426": 9,
+        "Total_6981": 3.96
+      },
+      {
+        "BillingAddress_3695": "3 Chatham Street",
+        "BillingPostalCode_0953": null,
+        "BillingState_8328": "Dublin",
+        "CustomerId_6504": 46,
+        "InvoiceDate_3951": "2009-02-03",
+        "InvoiceId_5426": 10,
+        "Total_6981": 5.94
+      }
+    ]
+  }
+]

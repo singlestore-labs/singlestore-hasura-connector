@@ -1,0 +1,11 @@
+[
+  {
+    "aggregates": {
+      "ArtistId_count_7681": 275,
+      "ArtistId_max_4374": 275,
+      "ArtistId_min_6762": 1,
+      "ArtistId_sum_3613": 37950,
+      "Name_min_8777": "A Cor Do Som"
+    }
+  }
+]

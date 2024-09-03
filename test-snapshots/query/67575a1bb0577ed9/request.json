@@ -1,0 +1,140 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "aggregates": {
+      "Address_count": {
+        "type": "column_count",
+        "column": "Address",
+        "distinct": false
+      },
+      "Address_distinct_count": {
+        "type": "column_count",
+        "column": "Address",
+        "distinct": true
+      },
+      "City_count": {
+        "type": "column_count",
+        "column": "City",
+        "distinct": false
+      },
+      "City_distinct_count": {
+        "type": "column_count",
+        "column": "City",
+        "distinct": true
+      },
+      "Company_count": {
+        "type": "column_count",
+        "column": "Company",
+        "distinct": false
+      },
+      "Company_distinct_count": {
+        "type": "column_count",
+        "column": "Company",
+        "distinct": true
+      },
+      "Country_count": {
+        "type": "column_count",
+        "column": "Country",
+        "distinct": false
+      },
+      "Country_distinct_count": {
+        "type": "column_count",
+        "column": "Country",
+        "distinct": true
+      },
+      "CustomerId_count": {
+        "type": "column_count",
+        "column": "CustomerId",
+        "distinct": false
+      },
+      "CustomerId_distinct_count": {
+        "type": "column_count",
+        "column": "CustomerId",
+        "distinct": true
+      },
+      "Email_count": {
+        "type": "column_count",
+        "column": "Email",
+        "distinct": false
+      },
+      "Email_distinct_count": {
+        "type": "column_count",
+        "column": "Email",
+        "distinct": true
+      },
+      "Fax_count": {
+        "type": "column_count",
+        "column": "Fax",
+        "distinct": false
+      },
+      "Fax_distinct_count": {
+        "type": "column_count",
+        "column": "Fax",
+        "distinct": true
+      },
+      "FirstName_count": {
+        "type": "column_count",
+        "column": "FirstName",
+        "distinct": false
+      },
+      "FirstName_distinct_count": {
+        "type": "column_count",
+        "column": "FirstName",
+        "distinct": true
+      },
+      "LastName_count": {
+        "type": "column_count",
+        "column": "LastName",
+        "distinct": false
+      },
+      "LastName_distinct_count": {
+        "type": "column_count",
+        "column": "LastName",
+        "distinct": true
+      },
+      "Phone_count": {
+        "type": "column_count",
+        "column": "Phone",
+        "distinct": false
+      },
+      "Phone_distinct_count": {
+        "type": "column_count",
+        "column": "Phone",
+        "distinct": true
+      },
+      "PostalCode_count": {
+        "type": "column_count",
+        "column": "PostalCode",
+        "distinct": false
+      },
+      "PostalCode_distinct_count": {
+        "type": "column_count",
+        "column": "PostalCode",
+        "distinct": true
+      },
+      "State_count": {
+        "type": "column_count",
+        "column": "State",
+        "distinct": false
+      },
+      "State_distinct_count": {
+        "type": "column_count",
+        "column": "State",
+        "distinct": true
+      },
+      "SupportRepId_count": {
+        "type": "column_count",
+        "column": "SupportRepId",
+        "distinct": false
+      },
+      "SupportRepId_distinct_count": {
+        "type": "column_count",
+        "column": "SupportRepId",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

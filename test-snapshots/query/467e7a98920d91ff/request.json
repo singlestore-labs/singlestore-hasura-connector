@@ -1,0 +1,77 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Title_7236": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      },
+      "BirthDate_2538": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City_2399": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country_4293": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_3755": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "PostalCode_9360": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "Fax_4283": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_0095": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate_3932": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName_8499": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "ReportsTo_4613": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "State",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

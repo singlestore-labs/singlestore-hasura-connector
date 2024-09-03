@@ -1,0 +1,17 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "1 Microsoft Way",
+        "BillingCity": "Redmond",
+        "BillingCountry": "USA",
+        "BillingPostalCode": "98052-8300",
+        "BillingState": "WA",
+        "CustomerId": 17,
+        "InvoiceDate": "2009-03-04",
+        "InvoiceId": 14,
+        "Total": 1.98
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "rows": [
+      {
+        "ReportsTo_3130": null
+      },
+      {
+        "ReportsTo_3130": 1
+      },
+      {
+        "ReportsTo_3130": 1
+      },
+      {
+        "ReportsTo_3130": 2
+      },
+      {
+        "ReportsTo_3130": 2
+      },
+      {
+        "ReportsTo_3130": 2
+      },
+      {
+        "ReportsTo_3130": 6
+      },
+      {
+        "ReportsTo_3130": 6
+      }
+    ]
+  }
+]

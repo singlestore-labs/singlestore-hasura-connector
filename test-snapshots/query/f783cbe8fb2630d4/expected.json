@@ -1,0 +1,94 @@
+[
+  {
+    "rows": [
+      {
+        "Address_2649": "1111 6 Ave SW",
+        "BirthDate_2066": "1973-08-29",
+        "Email_7101": "jane@chinookcorp.com",
+        "Fax_0650": "+1 (403) 262-6712",
+        "FirstName_0437": "Jane",
+        "LastName_1631": "Peacock",
+        "Phone_6120": "+1 (403) 262-3443",
+        "ReportsTo_2884": 2,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "11120 Jasper Ave NW",
+        "BirthDate_2066": "1962-02-18",
+        "Email_7101": "andrew@chinookcorp.com",
+        "Fax_0650": "+1 (780) 428-3457",
+        "FirstName_0437": "Andrew",
+        "LastName_1631": "Adams",
+        "Phone_6120": "+1 (780) 428-9482",
+        "ReportsTo_2884": null,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "5827 Bowness Road NW",
+        "BirthDate_2066": "1973-07-01",
+        "Email_7101": "michael@chinookcorp.com",
+        "Fax_0650": "+1 (403) 246-9899",
+        "FirstName_0437": "Michael",
+        "LastName_1631": "Mitchell",
+        "Phone_6120": "+1 (403) 246-9887",
+        "ReportsTo_2884": 1,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "590 Columbia Boulevard West",
+        "BirthDate_2066": "1970-05-29",
+        "Email_7101": "robert@chinookcorp.com",
+        "Fax_0650": "+1 (403) 456-8485",
+        "FirstName_0437": "Robert",
+        "LastName_1631": "King",
+        "Phone_6120": "+1 (403) 456-9986",
+        "ReportsTo_2884": 6,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "683 10 Street SW",
+        "BirthDate_2066": "1947-09-19",
+        "Email_7101": "margaret@chinookcorp.com",
+        "Fax_0650": "+1 (403) 263-4289",
+        "FirstName_0437": "Margaret",
+        "LastName_1631": "Park",
+        "Phone_6120": "+1 (403) 263-4423",
+        "ReportsTo_2884": 2,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "7727B 41 Ave",
+        "BirthDate_2066": "1965-03-03",
+        "Email_7101": "steve@chinookcorp.com",
+        "Fax_0650": "1 (780) 836-9543",
+        "FirstName_0437": "Steve",
+        "LastName_1631": "Johnson",
+        "Phone_6120": "1 (780) 836-9987",
+        "ReportsTo_2884": 2,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "825 8 Ave SW",
+        "BirthDate_2066": "1958-12-08",
+        "Email_7101": "nancy@chinookcorp.com",
+        "Fax_0650": "+1 (403) 262-3322",
+        "FirstName_0437": "Nancy",
+        "LastName_1631": "Edwards",
+        "Phone_6120": "+1 (403) 262-3443",
+        "ReportsTo_2884": 1,
+        "State_3881": "AB"
+      },
+      {
+        "Address_2649": "923 7 ST NW",
+        "BirthDate_2066": "1968-01-09",
+        "Email_7101": "laura@chinookcorp.com",
+        "Fax_0650": "+1 (403) 467-8772",
+        "FirstName_0437": "Laura",
+        "LastName_1631": "Callahan",
+        "Phone_6120": "+1 (403) 467-3351",
+        "ReportsTo_2884": 6,
+        "State_3881": "AB"
+      }
+    ]
+  }
+]

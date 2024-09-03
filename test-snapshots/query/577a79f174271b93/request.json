@@ -1,0 +1,50 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "aggregates": {
+      "Composer_min_3727": {
+        "type": "single_column",
+        "column": "Composer",
+        "function": "min"
+      },
+      "UnitPrice_avg_7986": {
+        "type": "single_column",
+        "column": "UnitPrice",
+        "function": "avg"
+      },
+      "UnitPrice_min_4100": {
+        "type": "single_column",
+        "column": "UnitPrice",
+        "function": "min"
+      },
+      "Milliseconds_median_9048": {
+        "type": "single_column",
+        "column": "Milliseconds",
+        "function": "median"
+      },
+      "Milliseconds_max_8548": {
+        "type": "single_column",
+        "column": "Milliseconds",
+        "function": "max"
+      },
+      "MediaTypeId_min_8029": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "min"
+      },
+      "Milliseconds_sum_7643": {
+        "type": "single_column",
+        "column": "Milliseconds",
+        "function": "sum"
+      },
+      "MediaTypeId_count_1767": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

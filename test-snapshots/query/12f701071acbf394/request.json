@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "aggregates": {
+      "Name_max_9674": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "max"
+      },
+      "MediaTypeId_avg_2884": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "avg"
+      },
+      "MediaTypeId_count_9324": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "count"
+      },
+      "MediaTypeId_sum_5529": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "sum"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

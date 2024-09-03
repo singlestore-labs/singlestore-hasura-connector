@@ -1,0 +1,78 @@
+[
+  {
+    "rows": [
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (403) 246-9899",
+        "HireDate_5616": "2003-10-17",
+        "Phone_6073": "+1 (403) 246-9887",
+        "ReportsTo_0407": 1
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (403) 262-3322",
+        "HireDate_5616": "2002-05-01",
+        "Phone_6073": "+1 (403) 262-3443",
+        "ReportsTo_0407": 1
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (403) 262-6712",
+        "HireDate_5616": "2002-04-01",
+        "Phone_6073": "+1 (403) 262-3443",
+        "ReportsTo_0407": 2
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (403) 263-4289",
+        "HireDate_5616": "2003-05-03",
+        "Phone_6073": "+1 (403) 263-4423",
+        "ReportsTo_0407": 2
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (403) 456-8485",
+        "HireDate_5616": "2004-01-02",
+        "Phone_6073": "+1 (403) 456-9986",
+        "ReportsTo_0407": 6
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (403) 467-8772",
+        "HireDate_5616": "2004-03-04",
+        "Phone_6073": "+1 (403) 467-3351",
+        "ReportsTo_0407": 6
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "+1 (780) 428-3457",
+        "HireDate_5616": "2002-08-14",
+        "Phone_6073": "+1 (780) 428-9482",
+        "ReportsTo_0407": null
+      },
+      {
+        "FK_EmployeeReportsTo1": {
+          "rows": []
+        },
+        "Fax_5397": "1 (780) 836-9543",
+        "HireDate_5616": "2003-10-17",
+        "Phone_6073": "1 (780) 836-9987",
+        "ReportsTo_0407": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "fields": {
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "InvoiceLineId": {
+        "type": "column",
+        "column": "InvoiceLineId",
+        "fields": null
+      },
+      "Quantity": {
+        "type": "column",
+        "column": "Quantity",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "FK_InvoiceLineTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "AlbumId_6343": {
+              "type": "column",
+              "column": "AlbumId",
+              "fields": null
+            },
+            "Milliseconds_6014": {
+              "type": "column",
+              "column": "Milliseconds",
+              "fields": null
+            },
+            "Composer_5606": {
+              "type": "column",
+              "column": "Composer",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

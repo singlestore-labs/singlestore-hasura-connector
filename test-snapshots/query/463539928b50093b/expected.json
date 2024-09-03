@@ -1,0 +1,94 @@
+[
+  {
+    "rows": [
+      {
+        "BirthDate_1797": "1947-09-19",
+        "City_2100": "Calgary",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T2P 5G3",
+        "ReportsTo_4248": 2,
+        "State_5818": "AB",
+        "Title_7195": "Sales Support Agent"
+      },
+      {
+        "BirthDate_1797": "1958-12-08",
+        "City_2100": "Calgary",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T2P 2T3",
+        "ReportsTo_4248": 1,
+        "State_5818": "AB",
+        "Title_7195": "Sales Manager"
+      },
+      {
+        "BirthDate_1797": "1962-02-18",
+        "City_2100": "Edmonton",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T5K 2N1",
+        "ReportsTo_4248": null,
+        "State_5818": "AB",
+        "Title_7195": "General Manager"
+      },
+      {
+        "BirthDate_1797": "1965-03-03",
+        "City_2100": "Calgary",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T3B 1Y7",
+        "ReportsTo_4248": 2,
+        "State_5818": "AB",
+        "Title_7195": "Sales Support Agent"
+      },
+      {
+        "BirthDate_1797": "1968-01-09",
+        "City_2100": "Lethbridge",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T1H 1Y8",
+        "ReportsTo_4248": 6,
+        "State_5818": "AB",
+        "Title_7195": "IT Staff"
+      },
+      {
+        "BirthDate_1797": "1970-05-29",
+        "City_2100": "Lethbridge",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T1K 5N8",
+        "ReportsTo_4248": 6,
+        "State_5818": "AB",
+        "Title_7195": "IT Staff"
+      },
+      {
+        "BirthDate_1797": "1973-07-01",
+        "City_2100": "Calgary",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T3B 0C5",
+        "ReportsTo_4248": 1,
+        "State_5818": "AB",
+        "Title_7195": "IT Manager"
+      },
+      {
+        "BirthDate_1797": "1973-08-29",
+        "City_2100": "Calgary",
+        "FK_EmployeeReportsTo": {
+          "rows": []
+        },
+        "PostalCode_1980": "T2P 5M5",
+        "ReportsTo_4248": 2,
+        "State_5818": "AB",
+        "Title_7195": "Sales Support Agent"
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "rows": [
+      {
+        "ArtistId": 1,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {},
+            {}
+          ]
+        },
+        "Name": "AC/DC"
+      },
+      {
+        "ArtistId": 10,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Billy Cobham"
+      },
+      {
+        "ArtistId": 100,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Lenny Kravitz"
+      },
+      {
+        "ArtistId": 101,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {},
+            {}
+          ]
+        },
+        "Name": "Lulu Santos"
+      },
+      {
+        "ArtistId": 102,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Marillion"
+      },
+      {
+        "ArtistId": 103,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Marisa Monte"
+      },
+      {
+        "ArtistId": 104,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Marvin Gaye"
+      },
+      {
+        "ArtistId": 105,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Men At Work"
+      },
+      {
+        "ArtistId": 106,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {}
+          ]
+        },
+        "Name": "Motörhead"
+      },
+      {
+        "ArtistId": 107,
+        "FK_AlbumArtistId": {
+          "rows": []
+        },
+        "Name": "Motörhead & Girlschool"
+      }
+    ]
+  }
+]

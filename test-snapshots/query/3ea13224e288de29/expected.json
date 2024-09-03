@@ -1,0 +1,12 @@
+[
+  {
+    "aggregates": {
+      "GenreId_avg_1214": 13,
+      "GenreId_count_4985": 25,
+      "GenreId_min_0810": 1,
+      "GenreId_sum_5424": 325,
+      "Name_max_0787": "World",
+      "Name_min_0354": "Alternative"
+    }
+  }
+]

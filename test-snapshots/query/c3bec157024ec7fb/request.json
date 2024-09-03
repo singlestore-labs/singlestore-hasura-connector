@@ -1,0 +1,65 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "fields": {
+      "MediaTypeId": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "and",
+      "expressions": [
+        {
+          "type": "or",
+          "expressions": [
+            {
+              "type": "binary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "Name",
+                "path": []
+              },
+              "operator": "equal",
+              "value": {
+                "type": "scalar",
+                "value": "AAC audio file"
+              }
+            },
+            {
+              "type": "unary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "Name",
+                "path": []
+              },
+              "operator": "is_null"
+            }
+          ]
+        },
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "MediaTypeId",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": 2
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

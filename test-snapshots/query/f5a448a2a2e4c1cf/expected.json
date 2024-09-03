@@ -1,0 +1,118 @@
+[
+  {
+    "rows": [
+      {
+        "Address_5994": "1111 6 Ave SW",
+        "BirthDate_0681": "1973-08-29",
+        "City_8361": "Calgary",
+        "Country_0188": "Canada",
+        "Email_1055": "jane@chinookcorp.com",
+        "EmployeeId_9868": 3,
+        "FirstName_3435": "Jane",
+        "HireDate_1245": "2002-04-01",
+        "LastName_6280": "Peacock",
+        "ReportsTo_1359": 2,
+        "State_7731": "AB",
+        "Title_5254": "Sales Support Agent"
+      },
+      {
+        "Address_5994": "11120 Jasper Ave NW",
+        "BirthDate_0681": "1962-02-18",
+        "City_8361": "Edmonton",
+        "Country_0188": "Canada",
+        "Email_1055": "andrew@chinookcorp.com",
+        "EmployeeId_9868": 1,
+        "FirstName_3435": "Andrew",
+        "HireDate_1245": "2002-08-14",
+        "LastName_6280": "Adams",
+        "ReportsTo_1359": null,
+        "State_7731": "AB",
+        "Title_5254": "General Manager"
+      },
+      {
+        "Address_5994": "5827 Bowness Road NW",
+        "BirthDate_0681": "1973-07-01",
+        "City_8361": "Calgary",
+        "Country_0188": "Canada",
+        "Email_1055": "michael@chinookcorp.com",
+        "EmployeeId_9868": 6,
+        "FirstName_3435": "Michael",
+        "HireDate_1245": "2003-10-17",
+        "LastName_6280": "Mitchell",
+        "ReportsTo_1359": 1,
+        "State_7731": "AB",
+        "Title_5254": "IT Manager"
+      },
+      {
+        "Address_5994": "590 Columbia Boulevard West",
+        "BirthDate_0681": "1970-05-29",
+        "City_8361": "Lethbridge",
+        "Country_0188": "Canada",
+        "Email_1055": "robert@chinookcorp.com",
+        "EmployeeId_9868": 7,
+        "FirstName_3435": "Robert",
+        "HireDate_1245": "2004-01-02",
+        "LastName_6280": "King",
+        "ReportsTo_1359": 6,
+        "State_7731": "AB",
+        "Title_5254": "IT Staff"
+      },
+      {
+        "Address_5994": "683 10 Street SW",
+        "BirthDate_0681": "1947-09-19",
+        "City_8361": "Calgary",
+        "Country_0188": "Canada",
+        "Email_1055": "margaret@chinookcorp.com",
+        "EmployeeId_9868": 4,
+        "FirstName_3435": "Margaret",
+        "HireDate_1245": "2003-05-03",
+        "LastName_6280": "Park",
+        "ReportsTo_1359": 2,
+        "State_7731": "AB",
+        "Title_5254": "Sales Support Agent"
+      },
+      {
+        "Address_5994": "7727B 41 Ave",
+        "BirthDate_0681": "1965-03-03",
+        "City_8361": "Calgary",
+        "Country_0188": "Canada",
+        "Email_1055": "steve@chinookcorp.com",
+        "EmployeeId_9868": 5,
+        "FirstName_3435": "Steve",
+        "HireDate_1245": "2003-10-17",
+        "LastName_6280": "Johnson",
+        "ReportsTo_1359": 2,
+        "State_7731": "AB",
+        "Title_5254": "Sales Support Agent"
+      },
+      {
+        "Address_5994": "825 8 Ave SW",
+        "BirthDate_0681": "1958-12-08",
+        "City_8361": "Calgary",
+        "Country_0188": "Canada",
+        "Email_1055": "nancy@chinookcorp.com",
+        "EmployeeId_9868": 2,
+        "FirstName_3435": "Nancy",
+        "HireDate_1245": "2002-05-01",
+        "LastName_6280": "Edwards",
+        "ReportsTo_1359": 1,
+        "State_7731": "AB",
+        "Title_5254": "Sales Manager"
+      },
+      {
+        "Address_5994": "923 7 ST NW",
+        "BirthDate_0681": "1968-01-09",
+        "City_8361": "Lethbridge",
+        "Country_0188": "Canada",
+        "Email_1055": "laura@chinookcorp.com",
+        "EmployeeId_9868": 8,
+        "FirstName_3435": "Laura",
+        "HireDate_1245": "2004-03-04",
+        "LastName_6280": "Callahan",
+        "ReportsTo_1359": 6,
+        "State_7731": "AB",
+        "Title_5254": "IT Staff"
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "collection": "chinook.Genre",
+  "query": {
+    "fields": {
+      "GenreId_1123": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "Name_7880": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "FK_TrackGenreId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "AlbumId": {
+              "type": "column",
+              "column": "AlbumId",
+              "fields": null
+            },
+            "Bytes": {
+              "type": "column",
+              "column": "Bytes",
+              "fields": null
+            },
+            "Composer": {
+              "type": "column",
+              "column": "Composer",
+              "fields": null
+            },
+            "GenreId": {
+              "type": "column",
+              "column": "GenreId",
+              "fields": null
+            },
+            "MediaTypeId": {
+              "type": "column",
+              "column": "MediaTypeId",
+              "fields": null
+            },
+            "Milliseconds": {
+              "type": "column",
+              "column": "Milliseconds",
+              "fields": null
+            },
+            "Name": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            },
+            "TrackId": {
+              "type": "column",
+              "column": "TrackId",
+              "fields": null
+            },
+            "UnitPrice": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "GenreId": "GenreId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

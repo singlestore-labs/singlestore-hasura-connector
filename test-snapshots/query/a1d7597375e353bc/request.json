@@ -1,0 +1,79 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "UnitPrice_2519": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "Bytes_9771": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Composer_1138": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "Milliseconds_3955": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "MediaTypeId_7818": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "FK_InvoiceLineTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "InvoiceId": {
+              "type": "column",
+              "column": "InvoiceId",
+              "fields": null
+            },
+            "InvoiceLineId": {
+              "type": "column",
+              "column": "InvoiceLineId",
+              "fields": null
+            },
+            "Quantity": {
+              "type": "column",
+              "column": "Quantity",
+              "fields": null
+            },
+            "TrackId": {
+              "type": "column",
+              "column": "TrackId",
+              "fields": null
+            },
+            "UnitPrice": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.InvoiceLine",
+      "arguments": {}
+    }
+  }
+}

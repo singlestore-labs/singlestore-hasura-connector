@@ -1,0 +1,80 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Address_9676": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "City_0609": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Company_0741": {
+        "type": "column",
+        "column": "Company",
+        "fields": null
+      },
+      "Country_9079": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "CustomerId_6524": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "Email_4129": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "Fax_8635": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "SupportRepId_4135": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      },
+      "LastName_9871": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "State_0940": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "CustomerId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "State",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

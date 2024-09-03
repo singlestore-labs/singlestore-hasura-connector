@@ -1,0 +1,20 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "aggregates": {
+      "CustomerId_min_3111": {
+        "type": "single_column",
+        "column": "CustomerId",
+        "function": "min"
+      },
+      "BillingAddress_max_4869": {
+        "type": "single_column",
+        "column": "BillingAddress",
+        "function": "max"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

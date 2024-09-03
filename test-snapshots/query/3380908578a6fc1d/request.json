@@ -1,0 +1,59 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "Composer_9487": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "FK_InvoiceLineTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "InvoiceId": {
+              "type": "column",
+              "column": "InvoiceId",
+              "fields": null
+            },
+            "InvoiceLineId": {
+              "type": "column",
+              "column": "InvoiceLineId",
+              "fields": null
+            },
+            "Quantity": {
+              "type": "column",
+              "column": "Quantity",
+              "fields": null
+            },
+            "TrackId": {
+              "type": "column",
+              "column": "TrackId",
+              "fields": null
+            },
+            "UnitPrice": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.InvoiceLine",
+      "arguments": {}
+    }
+  }
+}

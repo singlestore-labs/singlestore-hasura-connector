@@ -1,0 +1,106 @@
+[
+  {
+    "rows": [
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 1,
+              "Name": "AC/DC"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 1,
+              "Name": "AC/DC"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 10,
+              "Name": "Billy Cobham"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 100,
+              "Name": "Lenny Kravitz"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 101,
+              "Name": "Lulu Santos"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 101,
+              "Name": "Lulu Santos"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 102,
+              "Name": "Marillion"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 103,
+              "Name": "Marisa Monte"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 104,
+              "Name": "Marvin Gaye"
+            }
+          ]
+        }
+      },
+      {
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 105,
+              "Name": "Men At Work"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

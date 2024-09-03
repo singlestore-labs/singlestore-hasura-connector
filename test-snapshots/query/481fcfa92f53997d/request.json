@@ -1,0 +1,40 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "fields": {
+      "PlaylistId_0742": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      },
+      "TrackId_4549": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "PlaylistId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "TrackId",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

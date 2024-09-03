@@ -1,0 +1,116 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "BillingAddress": {
+        "type": "column",
+        "column": "BillingAddress",
+        "fields": null
+      },
+      "BillingCity": {
+        "type": "column",
+        "column": "BillingCity",
+        "fields": null
+      },
+      "BillingCountry": {
+        "type": "column",
+        "column": "BillingCountry",
+        "fields": null
+      },
+      "BillingPostalCode": {
+        "type": "column",
+        "column": "BillingPostalCode",
+        "fields": null
+      },
+      "BillingState": {
+        "type": "column",
+        "column": "BillingState",
+        "fields": null
+      },
+      "CustomerId": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "InvoiceDate": {
+        "type": "column",
+        "column": "InvoiceDate",
+        "fields": null
+      },
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "Total": {
+        "type": "column",
+        "column": "Total",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "and",
+        "expressions": [
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "TrackId",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 3256
+            }
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "InvoiceId",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 10
+            }
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "Quantity",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "InvoiceId": "InvoiceId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.InvoiceLine",
+      "arguments": {}
+    }
+  }
+}

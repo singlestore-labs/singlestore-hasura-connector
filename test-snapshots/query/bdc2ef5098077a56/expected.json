@@ -1,0 +1,62 @@
+[
+  {
+    "rows": [
+      {
+        "BirthDate_3951": "1973-07-01",
+        "HireDate_9311": "2003-10-17",
+        "PostalCode_6918": "T3B 0C5",
+        "ReportsTo_9082": 1,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1958-12-08",
+        "HireDate_9311": "2002-05-01",
+        "PostalCode_6918": "T2P 2T3",
+        "ReportsTo_9082": 1,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1973-08-29",
+        "HireDate_9311": "2002-04-01",
+        "PostalCode_6918": "T2P 5M5",
+        "ReportsTo_9082": 2,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1947-09-19",
+        "HireDate_9311": "2003-05-03",
+        "PostalCode_6918": "T2P 5G3",
+        "ReportsTo_9082": 2,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1970-05-29",
+        "HireDate_9311": "2004-01-02",
+        "PostalCode_6918": "T1K 5N8",
+        "ReportsTo_9082": 6,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1968-01-09",
+        "HireDate_9311": "2004-03-04",
+        "PostalCode_6918": "T1H 1Y8",
+        "ReportsTo_9082": 6,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1962-02-18",
+        "HireDate_9311": "2002-08-14",
+        "PostalCode_6918": "T5K 2N1",
+        "ReportsTo_9082": null,
+        "State_2650": "AB"
+      },
+      {
+        "BirthDate_3951": "1965-03-03",
+        "HireDate_9311": "2003-10-17",
+        "PostalCode_6918": "T3B 1Y7",
+        "ReportsTo_9082": 2,
+        "State_2650": "AB"
+      }
+    ]
+  }
+]

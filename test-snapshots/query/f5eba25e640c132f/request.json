@@ -1,0 +1,100 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "aggregates": {
+      "AlbumId_count": {
+        "type": "column_count",
+        "column": "AlbumId",
+        "distinct": false
+      },
+      "AlbumId_distinct_count": {
+        "type": "column_count",
+        "column": "AlbumId",
+        "distinct": true
+      },
+      "Bytes_count": {
+        "type": "column_count",
+        "column": "Bytes",
+        "distinct": false
+      },
+      "Bytes_distinct_count": {
+        "type": "column_count",
+        "column": "Bytes",
+        "distinct": true
+      },
+      "Composer_count": {
+        "type": "column_count",
+        "column": "Composer",
+        "distinct": false
+      },
+      "Composer_distinct_count": {
+        "type": "column_count",
+        "column": "Composer",
+        "distinct": true
+      },
+      "GenreId_count": {
+        "type": "column_count",
+        "column": "GenreId",
+        "distinct": false
+      },
+      "GenreId_distinct_count": {
+        "type": "column_count",
+        "column": "GenreId",
+        "distinct": true
+      },
+      "MediaTypeId_count": {
+        "type": "column_count",
+        "column": "MediaTypeId",
+        "distinct": false
+      },
+      "MediaTypeId_distinct_count": {
+        "type": "column_count",
+        "column": "MediaTypeId",
+        "distinct": true
+      },
+      "Milliseconds_count": {
+        "type": "column_count",
+        "column": "Milliseconds",
+        "distinct": false
+      },
+      "Milliseconds_distinct_count": {
+        "type": "column_count",
+        "column": "Milliseconds",
+        "distinct": true
+      },
+      "Name_count": {
+        "type": "column_count",
+        "column": "Name",
+        "distinct": false
+      },
+      "Name_distinct_count": {
+        "type": "column_count",
+        "column": "Name",
+        "distinct": true
+      },
+      "TrackId_count": {
+        "type": "column_count",
+        "column": "TrackId",
+        "distinct": false
+      },
+      "TrackId_distinct_count": {
+        "type": "column_count",
+        "column": "TrackId",
+        "distinct": true
+      },
+      "UnitPrice_count": {
+        "type": "column_count",
+        "column": "UnitPrice",
+        "distinct": false
+      },
+      "UnitPrice_distinct_count": {
+        "type": "column_count",
+        "column": "UnitPrice",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

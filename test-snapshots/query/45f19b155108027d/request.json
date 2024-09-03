@@ -1,0 +1,109 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "BillingAddress": {
+        "type": "column",
+        "column": "BillingAddress",
+        "fields": null
+      },
+      "BillingCity": {
+        "type": "column",
+        "column": "BillingCity",
+        "fields": null
+      },
+      "BillingCountry": {
+        "type": "column",
+        "column": "BillingCountry",
+        "fields": null
+      },
+      "BillingPostalCode": {
+        "type": "column",
+        "column": "BillingPostalCode",
+        "fields": null
+      },
+      "BillingState": {
+        "type": "column",
+        "column": "BillingState",
+        "fields": null
+      },
+      "CustomerId": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "InvoiceDate": {
+        "type": "column",
+        "column": "InvoiceDate",
+        "fields": null
+      },
+      "InvoiceId": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "Total": {
+        "type": "column",
+        "column": "Total",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "and",
+      "expressions": [
+        {
+          "type": "binary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "InvoiceDate",
+            "path": []
+          },
+          "operator": "equal",
+          "value": {
+            "type": "scalar",
+            "value": "2011-10-22"
+          }
+        },
+        {
+          "type": "or",
+          "expressions": [
+            {
+              "type": "binary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "BillingPostalCode",
+                "path": []
+              },
+              "operator": "equal",
+              "value": {
+                "type": "scalar",
+                "value": "95014"
+              }
+            },
+            {
+              "type": "unary_comparison_operator",
+              "column": {
+                "type": "column",
+                "name": "BillingPostalCode",
+                "path": []
+              },
+              "operator": "is_null"
+            }
+          ]
+        },
+        {
+          "type": "unary_comparison_operator",
+          "column": {
+            "type": "column",
+            "name": "BillingCountry",
+            "path": []
+          },
+          "operator": "is_null"
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

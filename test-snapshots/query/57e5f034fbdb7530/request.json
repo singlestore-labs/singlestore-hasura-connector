@@ -1,0 +1,119 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Address": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "City": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Company": {
+        "type": "column",
+        "column": "Company",
+        "fields": null
+      },
+      "Country": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "CustomerId": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "Email": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "Fax": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "LastName": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "State": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "SupportRepId": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "and",
+        "expressions": [
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "BillingAddress",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": "1 Infinite Loop"
+            }
+          },
+          {
+            "type": "unary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "BillingCity",
+              "path": []
+            },
+            "operator": "is_null"
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "CustomerId": "CustomerId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Invoice",
+      "arguments": {}
+    }
+  }
+}
