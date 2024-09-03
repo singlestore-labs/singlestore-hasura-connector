@@ -131,7 +131,7 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           # Clone ndc-hub repository
-          git clone https://github.com/hasura/ndc-hub.git
+          git clone https://github.com/AdalbertMemSQL/ndc-hub.git
           cd ndc-hub
 
           # Create a new branch
@@ -187,12 +187,12 @@ jobs:
           git commit -m "Update ${{ env.CONNECTOR_NAME }} connector metadata to version ${{ steps.get-version.outputs.tagged_version }}"
 
           # Push changes
-          git push https://${{ secrets.PAT_TOKEN }}@github.com/hasura/ndc-hub.git HEAD:update-${{ env.CONNECTOR_NAME }}-connector-v${{ steps.get-version.outputs.tagged_version }}
+          git push https://${{ secrets.PAT_TOKEN }}@github.com/AdalbertMemSQL/ndc-hub.git HEAD:update-${{ env.CONNECTOR_NAME }}-connector-v${{ steps.get-version.outputs.tagged_version }}
 
 
           # Create PR using GitHub CLI
           cd ../..
-          gh pr create --repo hasura/ndc-hub \
+          gh pr create --repo AdalbertMemSQL/ndc-hub \
             --base main \
             --head $NEW_BRANCH \
             --title "Update ${{ env.CONNECTOR_NAME }} connector to v${{ steps.get-version.outputs.tagged_version }}" \
