@@ -29,7 +29,7 @@ supportedEnvironmentVariables:
 commands:
   update:
     type: Dockerized
-    dockerImage: ghcr.io/hasura/singlestore-hasura-connector:v0.0.1
+    dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.1
     commandArgs:
       - update
 dockerComposeWatch:
