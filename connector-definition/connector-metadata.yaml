@@ -1,6 +1,6 @@
 packagingDefinition:
   type: PrebuiltDockerImage
-  dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.1
+  dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.2
 supportedEnvironmentVariables:
   - name: SINGELSTORE_URL
     description: The url for the SingleStore database. The format is `mysql://[<user>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]`.
@@ -29,7 +29,7 @@ supportedEnvironmentVariables:
 commands:
   update:
     type: Dockerized
-    dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.1
+    dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.2
     commandArgs:
       - update
 dockerComposeWatch:
