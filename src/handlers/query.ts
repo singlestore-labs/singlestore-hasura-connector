@@ -13,7 +13,6 @@ export async function doQuery(
 ): Promise<QueryResponse> {
     let queries = generateQueries(configuration, query);
     const sql = queries[0].sql
-    console.log(sql)
     const spanAttributes = { sql };
     const tracer = opentelemetry.trace.getTracer("singletore-hasura-conenctor");
 
@@ -30,11 +29,8 @@ function performQueries(state: State, queries: SingleStoreQuery[], request: Quer
     for (const query of queries) {
         const res = state.connPool.execute<RowDataPacket[]>(query.sql, query.parameters)
             .then(([res, fields]: [RowDataPacket[], FieldPacket[]]): any => {
-                console.log(query.parameters)
-                console.log(res)
                 let rowSet = res[0].data as RowSet;
                 fixNullRowSets(rowSet, request.query)
-                console.log(rowSet)
                 return rowSet;
             })
         results.push(res)
