@@ -1,0 +1,15 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "aggregates": {
+      "MediaTypeId_count_6574": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

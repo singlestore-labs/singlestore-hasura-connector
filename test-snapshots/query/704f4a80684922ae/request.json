@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.Album",
+  "query": {
+    "fields": {
+      "AlbumId": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "ArtistId": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      },
+      "Title": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

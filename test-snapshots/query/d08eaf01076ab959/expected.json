@@ -1,0 +1,36 @@
+[
+  {
+    "aggregates": {
+      "Address_count": 8,
+      "Address_distinct_count": 8,
+      "BirthDate_count": 8,
+      "BirthDate_distinct_count": 8,
+      "City_count": 8,
+      "City_distinct_count": 3,
+      "Country_count": 8,
+      "Country_distinct_count": 1,
+      "Email_count": 8,
+      "Email_distinct_count": 8,
+      "EmployeeId_count": 8,
+      "EmployeeId_distinct_count": 8,
+      "Fax_count": 8,
+      "Fax_distinct_count": 8,
+      "FirstName_count": 8,
+      "FirstName_distinct_count": 8,
+      "HireDate_count": 8,
+      "HireDate_distinct_count": 7,
+      "LastName_count": 8,
+      "LastName_distinct_count": 8,
+      "Phone_count": 8,
+      "Phone_distinct_count": 7,
+      "PostalCode_count": 8,
+      "PostalCode_distinct_count": 8,
+      "ReportsTo_count": 7,
+      "ReportsTo_distinct_count": 3,
+      "State_count": 8,
+      "State_distinct_count": 1,
+      "Title_count": 8,
+      "Title_distinct_count": 5
+    }
+  }
+]

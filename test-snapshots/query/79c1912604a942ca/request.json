@@ -1,0 +1,38 @@
+{
+  "collection": "chinook.Album",
+  "query": {
+    "fields": {
+      "AlbumId": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "ArtistId": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      },
+      "Title": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "binary_comparison_operator",
+      "column": {
+        "type": "column",
+        "name": "Title",
+        "path": []
+      },
+      "operator": "equal",
+      "value": {
+        "type": "scalar",
+        "value": "For Those About To Rock We Salute You"
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

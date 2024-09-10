@@ -1,0 +1,76 @@
+[
+  {
+    "rows": [
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2009-04-22",
+        "InvoiceId_9739": 27
+      },
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2010-10-14",
+        "InvoiceId_9739": 148
+      },
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2010-11-24",
+        "InvoiceId_9739": 159
+      },
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2011-07-25",
+        "InvoiceId_9739": 214
+      },
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2013-02-28",
+        "InvoiceId_9739": 343
+      },
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2013-06-02",
+        "InvoiceId_9739": 366
+      },
+      {
+        "BillingCity_7794": "Yellowknife",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 33,
+        "InvoiceDate_5143": "2013-09-04",
+        "InvoiceId_9739": 388
+      },
+      {
+        "BillingCity_7794": "Vancouver",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 15,
+        "InvoiceDate_5143": "2009-06-05",
+        "InvoiceId_9739": 36
+      },
+      {
+        "BillingCity_7794": "Vancouver",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 15,
+        "InvoiceDate_5143": "2009-07-16",
+        "InvoiceId_9739": 47
+      },
+      {
+        "BillingCity_7794": "Vancouver",
+        "BillingCountry_9677": "Canada",
+        "CustomerId_9515": 15,
+        "InvoiceDate_5143": "2010-03-16",
+        "InvoiceId_9739": 102
+      }
+    ]
+  }
+]

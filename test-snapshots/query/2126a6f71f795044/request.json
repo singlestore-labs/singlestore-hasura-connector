@@ -1,0 +1,82 @@
+{
+  "collection": "chinook.Genre",
+  "query": {
+    "fields": {
+      "GenreId": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "and",
+        "expressions": [
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "MediaTypeId",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 1
+            }
+          },
+          {
+            "type": "or",
+            "expressions": [
+              {
+                "type": "binary_comparison_operator",
+                "column": {
+                  "type": "column",
+                  "name": "Bytes",
+                  "path": []
+                },
+                "operator": "equal",
+                "value": {
+                  "type": "scalar",
+                  "value": 6599424
+                }
+              },
+              {
+                "type": "unary_comparison_operator",
+                "column": {
+                  "type": "column",
+                  "name": "Bytes",
+                  "path": []
+                },
+                "operator": "is_null"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "GenreId": "GenreId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

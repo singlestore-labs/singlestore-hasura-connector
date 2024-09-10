@@ -1,0 +1,169 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Address": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "City": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Company": {
+        "type": "column",
+        "column": "Company",
+        "fields": null
+      },
+      "Country": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "CustomerId": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "Email": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "Fax": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "LastName": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "State": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "SupportRepId": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      },
+      "FK_CustomerSupportRepId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "Address_8984": {
+              "type": "column",
+              "column": "Address",
+              "fields": null
+            },
+            "BirthDate_2087": {
+              "type": "column",
+              "column": "BirthDate",
+              "fields": null
+            },
+            "City_6608": {
+              "type": "column",
+              "column": "City",
+              "fields": null
+            },
+            "Country_7109": {
+              "type": "column",
+              "column": "Country",
+              "fields": null
+            },
+            "Email_7976": {
+              "type": "column",
+              "column": "Email",
+              "fields": null
+            },
+            "EmployeeId_3587": {
+              "type": "column",
+              "column": "EmployeeId",
+              "fields": null
+            },
+            "Fax_4318": {
+              "type": "column",
+              "column": "Fax",
+              "fields": null
+            },
+            "FirstName_8621": {
+              "type": "column",
+              "column": "FirstName",
+              "fields": null
+            },
+            "HireDate_4989": {
+              "type": "column",
+              "column": "HireDate",
+              "fields": null
+            },
+            "LastName_1204": {
+              "type": "column",
+              "column": "LastName",
+              "fields": null
+            },
+            "Phone_8071": {
+              "type": "column",
+              "column": "Phone",
+              "fields": null
+            },
+            "PostalCode_3329": {
+              "type": "column",
+              "column": "PostalCode",
+              "fields": null
+            },
+            "ReportsTo_0945": {
+              "type": "column",
+              "column": "ReportsTo",
+              "fields": null
+            },
+            "State_0743": {
+              "type": "column",
+              "column": "State",
+              "fields": null
+            },
+            "Title_3347": {
+              "type": "column",
+              "column": "Title",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "SupportRepId": "EmployeeId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Employee",
+      "arguments": {}
+    }
+  }
+}

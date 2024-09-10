@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "MediaTypeId_count": 5,
+      "MediaTypeId_distinct_count": 5,
+      "Name_count": 5,
+      "Name_distinct_count": 5
+    }
+  }
+]

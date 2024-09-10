@@ -1,0 +1,147 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "EmployeeId": {
+        "type": "column",
+        "column": "EmployeeId",
+        "fields": null
+      },
+      "Fax": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "ReportsTo": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      },
+      "State": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "Title": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "and",
+        "expressions": [
+          {
+            "type": "or",
+            "expressions": [
+              {
+                "type": "binary_comparison_operator",
+                "column": {
+                  "type": "column",
+                  "name": "Country",
+                  "path": []
+                },
+                "operator": "equal",
+                "value": {
+                  "type": "scalar",
+                  "value": "Canada"
+                }
+              },
+              {
+                "type": "unary_comparison_operator",
+                "column": {
+                  "type": "column",
+                  "name": "Country",
+                  "path": []
+                },
+                "operator": "is_null"
+              }
+            ]
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "EmployeeId",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": 7
+            }
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "EmployeeId": "ReportsTo"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Employee",
+      "arguments": {}
+    }
+  }
+}

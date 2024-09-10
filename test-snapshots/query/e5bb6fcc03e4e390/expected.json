@@ -1,0 +1,102 @@
+[
+  {
+    "rows": [
+      {
+        "Address_5781": "11120 Jasper Ave NW",
+        "BirthDate_4094": "1962-02-18",
+        "City_3840": "Edmonton",
+        "Email_4268": "andrew@chinookcorp.com",
+        "EmployeeId_1165": 1,
+        "FirstName_2548": "Andrew",
+        "Phone_9210": "+1 (780) 428-9482",
+        "PostalCode_3554": "T5K 2N1",
+        "ReportsTo_7033": null,
+        "Title_7681": "General Manager"
+      },
+      {
+        "Address_5781": "825 8 Ave SW",
+        "BirthDate_4094": "1958-12-08",
+        "City_3840": "Calgary",
+        "Email_4268": "nancy@chinookcorp.com",
+        "EmployeeId_1165": 2,
+        "FirstName_2548": "Nancy",
+        "Phone_9210": "+1 (403) 262-3443",
+        "PostalCode_3554": "T2P 2T3",
+        "ReportsTo_7033": 1,
+        "Title_7681": "Sales Manager"
+      },
+      {
+        "Address_5781": "1111 6 Ave SW",
+        "BirthDate_4094": "1973-08-29",
+        "City_3840": "Calgary",
+        "Email_4268": "jane@chinookcorp.com",
+        "EmployeeId_1165": 3,
+        "FirstName_2548": "Jane",
+        "Phone_9210": "+1 (403) 262-3443",
+        "PostalCode_3554": "T2P 5M5",
+        "ReportsTo_7033": 2,
+        "Title_7681": "Sales Support Agent"
+      },
+      {
+        "Address_5781": "683 10 Street SW",
+        "BirthDate_4094": "1947-09-19",
+        "City_3840": "Calgary",
+        "Email_4268": "margaret@chinookcorp.com",
+        "EmployeeId_1165": 4,
+        "FirstName_2548": "Margaret",
+        "Phone_9210": "+1 (403) 263-4423",
+        "PostalCode_3554": "T2P 5G3",
+        "ReportsTo_7033": 2,
+        "Title_7681": "Sales Support Agent"
+      },
+      {
+        "Address_5781": "7727B 41 Ave",
+        "BirthDate_4094": "1965-03-03",
+        "City_3840": "Calgary",
+        "Email_4268": "steve@chinookcorp.com",
+        "EmployeeId_1165": 5,
+        "FirstName_2548": "Steve",
+        "Phone_9210": "1 (780) 836-9987",
+        "PostalCode_3554": "T3B 1Y7",
+        "ReportsTo_7033": 2,
+        "Title_7681": "Sales Support Agent"
+      },
+      {
+        "Address_5781": "5827 Bowness Road NW",
+        "BirthDate_4094": "1973-07-01",
+        "City_3840": "Calgary",
+        "Email_4268": "michael@chinookcorp.com",
+        "EmployeeId_1165": 6,
+        "FirstName_2548": "Michael",
+        "Phone_9210": "+1 (403) 246-9887",
+        "PostalCode_3554": "T3B 0C5",
+        "ReportsTo_7033": 1,
+        "Title_7681": "IT Manager"
+      },
+      {
+        "Address_5781": "590 Columbia Boulevard West",
+        "BirthDate_4094": "1970-05-29",
+        "City_3840": "Lethbridge",
+        "Email_4268": "robert@chinookcorp.com",
+        "EmployeeId_1165": 7,
+        "FirstName_2548": "Robert",
+        "Phone_9210": "+1 (403) 456-9986",
+        "PostalCode_3554": "T1K 5N8",
+        "ReportsTo_7033": 6,
+        "Title_7681": "IT Staff"
+      },
+      {
+        "Address_5781": "923 7 ST NW",
+        "BirthDate_4094": "1968-01-09",
+        "City_3840": "Lethbridge",
+        "Email_4268": "laura@chinookcorp.com",
+        "EmployeeId_1165": 8,
+        "FirstName_2548": "Laura",
+        "Phone_9210": "+1 (403) 467-3351",
+        "PostalCode_3554": "T1H 1Y8",
+        "ReportsTo_7033": 6,
+        "Title_7681": "IT Staff"
+      }
+    ]
+  }
+]

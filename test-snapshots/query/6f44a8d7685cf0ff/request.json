@@ -1,0 +1,99 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "AlbumId": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "Bytes": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Composer": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "GenreId": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "MediaTypeId": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Milliseconds": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "or",
+        "expressions": [
+          {
+            "type": "unary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "Name",
+              "path": []
+            },
+            "operator": "is_null"
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "Name",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": "Protected AAC audio file"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "MediaTypeId": "MediaTypeId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.MediaType",
+      "arguments": {}
+    }
+  }
+}

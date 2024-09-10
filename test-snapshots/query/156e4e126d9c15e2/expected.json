@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "TrackId_avg_1341": 1767.081698221,
+      "TrackId_max_4627": 3503,
+      "TrackId_median_1457": 1773,
+      "TrackId_sum_7036": 15400117
+    }
+  }
+]

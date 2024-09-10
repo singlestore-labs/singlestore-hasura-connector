@@ -1,0 +1,35 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "aggregates": {
+      "TrackId_min_2239": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "min"
+      },
+      "TrackId_avg_6516": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "avg"
+      },
+      "PlaylistId_median_6115": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "median"
+      },
+      "TrackId_median_1370": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "median"
+      },
+      "TrackId_count_5628": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

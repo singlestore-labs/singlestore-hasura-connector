@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "GenreId_count": 25,
+      "GenreId_distinct_count": 25,
+      "Name_count": 25,
+      "Name_distinct_count": 25
+    }
+  }
+]

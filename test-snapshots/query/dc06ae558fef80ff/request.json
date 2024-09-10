@@ -1,0 +1,82 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "fields": {
+      "MediaTypeId": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "exists",
+      "in_collection": {
+        "type": "related",
+        "relationship": "__array_relationship",
+        "arguments": {}
+      },
+      "predicate": {
+        "type": "and",
+        "expressions": [
+          {
+            "type": "or",
+            "expressions": [
+              {
+                "type": "binary_comparison_operator",
+                "column": {
+                  "type": "column",
+                  "name": "GenreId",
+                  "path": []
+                },
+                "operator": "equal",
+                "value": {
+                  "type": "scalar",
+                  "value": 1
+                }
+              },
+              {
+                "type": "unary_comparison_operator",
+                "column": {
+                  "type": "column",
+                  "name": "GenreId",
+                  "path": []
+                },
+                "operator": "is_null"
+              }
+            ]
+          },
+          {
+            "type": "binary_comparison_operator",
+            "column": {
+              "type": "column",
+              "name": "Name",
+              "path": []
+            },
+            "operator": "equal",
+            "value": {
+              "type": "scalar",
+              "value": "Breaking The Rules"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "MediaTypeId": "MediaTypeId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

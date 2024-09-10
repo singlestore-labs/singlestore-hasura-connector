@@ -1,0 +1,46 @@
+[
+  {
+    "rows": [
+      {
+        "AlbumId_0897": 1,
+        "ArtistId_8445": 1
+      },
+      {
+        "AlbumId_0897": 2,
+        "ArtistId_8445": 2
+      },
+      {
+        "AlbumId_0897": 3,
+        "ArtistId_8445": 2
+      },
+      {
+        "AlbumId_0897": 4,
+        "ArtistId_8445": 1
+      },
+      {
+        "AlbumId_0897": 5,
+        "ArtistId_8445": 3
+      },
+      {
+        "AlbumId_0897": 6,
+        "ArtistId_8445": 4
+      },
+      {
+        "AlbumId_0897": 7,
+        "ArtistId_8445": 5
+      },
+      {
+        "AlbumId_0897": 8,
+        "ArtistId_8445": 6
+      },
+      {
+        "AlbumId_0897": 9,
+        "ArtistId_8445": 7
+      },
+      {
+        "AlbumId_0897": 10,
+        "ArtistId_8445": 8
+      }
+    ]
+  }
+]

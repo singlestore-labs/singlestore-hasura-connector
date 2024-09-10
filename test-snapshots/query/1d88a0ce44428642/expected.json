@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "AlbumId_avg_8769": 174,
+      "AlbumId_sum_6686": 60378,
+      "ArtistId_avg_0043": 121.942363112,
+      "ArtistId_sum_8401": 42314
+    }
+  }
+]

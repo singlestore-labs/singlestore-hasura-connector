@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "Composer_1999": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "MediaTypeId_4847": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Bytes",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

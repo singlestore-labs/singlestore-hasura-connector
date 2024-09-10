@@ -1,0 +1,21 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "1 Infinite Loop",
+        "City": "Cupertino",
+        "Company": "Apple Inc.",
+        "Country": "USA",
+        "CustomerId": 19,
+        "Email": "tgoyer@apple.com",
+        "Fax": "+1 (408) 996-1011",
+        "FirstName": "Tim",
+        "LastName": "Goyer",
+        "Phone": "+1 (408) 996-1010",
+        "PostalCode": "95014",
+        "State": "CA",
+        "SupportRepId": 3
+      }
+    ]
+  }
+]

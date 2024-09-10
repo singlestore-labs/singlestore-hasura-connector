@@ -1,0 +1,54 @@
+{
+    "collection": "chinook.Track",
+    "query": {
+        "fields": {
+            "Name_6228": {
+                "type": "column",
+                "column": "Name",
+                "fields": null
+            }
+        },
+        "limit": 10,
+        "order_by": {
+            "elements": [
+                {
+                    "order_direction": "desc",
+                    "target": {
+                        "type": "column",
+                        "name": "Name",
+                        "path": [
+                            {
+                                "relationship": "GenreToTrack",
+                                "predicate": {
+                                    "type": "binary_comparison_operator",
+                                    "column": {
+                                        "type": "column",
+                                        "name": "GenreId",
+                                        "path": []
+                                    },
+                                    "operator": "less",
+                                    "value": {
+                                        "type": "scalar",
+                                        "value": 100
+                                    }
+                                },
+                                "arguments": {}
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "arguments": {},
+    "collection_relationships": {
+        "GenreToTrack": {
+            "column_mapping": {
+                "GenreId": "GenreId"
+            },
+            "relationship_type": "object",
+            "target_collection": "chinook.Genre",
+            "arguments": {}
+        }
+    }
+}

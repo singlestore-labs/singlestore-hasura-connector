@@ -1,0 +1,56 @@
+[
+  {
+    "rows": [
+      {
+        "BillingState_2417": null,
+        "InvoiceDate_5208": "2012-10-14",
+        "InvoiceId_4051": 314
+      },
+      {
+        "BillingState_2417": "Dublin",
+        "InvoiceDate_5208": "2009-09-24",
+        "InvoiceId_4051": 62
+      },
+      {
+        "BillingState_2417": null,
+        "InvoiceDate_5208": "2010-06-30",
+        "InvoiceId_4051": 125
+      },
+      {
+        "BillingState_2417": null,
+        "InvoiceDate_5208": "2011-09-07",
+        "InvoiceId_4051": 223
+      },
+      {
+        "BillingState_2417": null,
+        "InvoiceDate_5208": "2013-04-18",
+        "InvoiceId_4051": 356
+      },
+      {
+        "BillingState_2417": "RM",
+        "InvoiceDate_5208": "2010-12-02",
+        "InvoiceId_4051": 160
+      },
+      {
+        "BillingState_2417": null,
+        "InvoiceDate_5208": "2012-05-12",
+        "InvoiceId_4051": 279
+      },
+      {
+        "BillingState_2417": "SP",
+        "InvoiceDate_5208": "2012-01-09",
+        "InvoiceId_4051": 251
+      },
+      {
+        "BillingState_2417": "SP",
+        "InvoiceDate_5208": "2013-03-18",
+        "InvoiceId_4051": 349
+      },
+      {
+        "BillingState_2417": null,
+        "InvoiceDate_5208": "2009-11-25",
+        "InvoiceId_4051": 76
+      }
+    ]
+  }
+]

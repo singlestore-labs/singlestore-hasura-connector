@@ -1,0 +1,47 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "Milliseconds_5860": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "Name_5491": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "TrackId_5564": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "GenreId_4952": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "MediaTypeId_2922": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Milliseconds",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

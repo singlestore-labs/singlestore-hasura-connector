@@ -1,0 +1,45 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "aggregates": {
+      "InvoiceId_sum_4456": {
+        "type": "single_column",
+        "column": "InvoiceId",
+        "function": "sum"
+      },
+      "Quantity_count_3055": {
+        "type": "single_column",
+        "column": "Quantity",
+        "function": "count"
+      },
+      "InvoiceLineId_min_1787": {
+        "type": "single_column",
+        "column": "InvoiceLineId",
+        "function": "min"
+      },
+      "InvoiceLineId_count_7813": {
+        "type": "single_column",
+        "column": "InvoiceLineId",
+        "function": "count"
+      },
+      "InvoiceId_min_0398": {
+        "type": "single_column",
+        "column": "InvoiceId",
+        "function": "min"
+      },
+      "TrackId_avg_2920": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "avg"
+      },
+      "TrackId_min_7327": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

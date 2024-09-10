@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "ArtistId_count": 275,
+      "ArtistId_distinct_count": 275,
+      "Name_count": 275,
+      "Name_distinct_count": 275
+    }
+  }
+]

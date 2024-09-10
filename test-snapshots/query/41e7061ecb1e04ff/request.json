@@ -1,0 +1,113 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address_5647": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate_7419": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City_6469": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country_4359": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_2489": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "EmployeeId_7877": {
+        "type": "column",
+        "column": "EmployeeId",
+        "fields": null
+      },
+      "Fax_5754": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_0511": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate_5125": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName_0933": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone_5593": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode_6603": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "ReportsTo_0446": {
+        "type": "column",
+        "column": "ReportsTo",
+        "fields": null
+      },
+      "State_8994": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "Title_6846": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Email",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "BirthDate",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "EmployeeId",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

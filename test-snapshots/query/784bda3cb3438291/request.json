@@ -1,0 +1,84 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "fields": {
+      "PlaylistId": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "FK_PlaylistTrackTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "AlbumId_0621": {
+              "type": "column",
+              "column": "AlbumId",
+              "fields": null
+            },
+            "Bytes_6357": {
+              "type": "column",
+              "column": "Bytes",
+              "fields": null
+            },
+            "Composer_0519": {
+              "type": "column",
+              "column": "Composer",
+              "fields": null
+            },
+            "GenreId_7114": {
+              "type": "column",
+              "column": "GenreId",
+              "fields": null
+            },
+            "MediaTypeId_4264": {
+              "type": "column",
+              "column": "MediaTypeId",
+              "fields": null
+            },
+            "Milliseconds_0948": {
+              "type": "column",
+              "column": "Milliseconds",
+              "fields": null
+            },
+            "Name_0189": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            },
+            "TrackId_7128": {
+              "type": "column",
+              "column": "TrackId",
+              "fields": null
+            },
+            "UnitPrice_8825": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

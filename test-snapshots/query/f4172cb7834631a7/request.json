@@ -1,0 +1,100 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "aggregates": {
+      "BillingAddress_count": {
+        "type": "column_count",
+        "column": "BillingAddress",
+        "distinct": false
+      },
+      "BillingAddress_distinct_count": {
+        "type": "column_count",
+        "column": "BillingAddress",
+        "distinct": true
+      },
+      "BillingCity_count": {
+        "type": "column_count",
+        "column": "BillingCity",
+        "distinct": false
+      },
+      "BillingCity_distinct_count": {
+        "type": "column_count",
+        "column": "BillingCity",
+        "distinct": true
+      },
+      "BillingCountry_count": {
+        "type": "column_count",
+        "column": "BillingCountry",
+        "distinct": false
+      },
+      "BillingCountry_distinct_count": {
+        "type": "column_count",
+        "column": "BillingCountry",
+        "distinct": true
+      },
+      "BillingPostalCode_count": {
+        "type": "column_count",
+        "column": "BillingPostalCode",
+        "distinct": false
+      },
+      "BillingPostalCode_distinct_count": {
+        "type": "column_count",
+        "column": "BillingPostalCode",
+        "distinct": true
+      },
+      "BillingState_count": {
+        "type": "column_count",
+        "column": "BillingState",
+        "distinct": false
+      },
+      "BillingState_distinct_count": {
+        "type": "column_count",
+        "column": "BillingState",
+        "distinct": true
+      },
+      "CustomerId_count": {
+        "type": "column_count",
+        "column": "CustomerId",
+        "distinct": false
+      },
+      "CustomerId_distinct_count": {
+        "type": "column_count",
+        "column": "CustomerId",
+        "distinct": true
+      },
+      "InvoiceDate_count": {
+        "type": "column_count",
+        "column": "InvoiceDate",
+        "distinct": false
+      },
+      "InvoiceDate_distinct_count": {
+        "type": "column_count",
+        "column": "InvoiceDate",
+        "distinct": true
+      },
+      "InvoiceId_count": {
+        "type": "column_count",
+        "column": "InvoiceId",
+        "distinct": false
+      },
+      "InvoiceId_distinct_count": {
+        "type": "column_count",
+        "column": "InvoiceId",
+        "distinct": true
+      },
+      "Total_count": {
+        "type": "column_count",
+        "column": "Total",
+        "distinct": false
+      },
+      "Total_distinct_count": {
+        "type": "column_count",
+        "column": "Total",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

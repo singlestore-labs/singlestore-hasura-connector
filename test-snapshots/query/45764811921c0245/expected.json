@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "BillingAddress_count_3059": 412,
+      "BillingCity_max_1259": "Yellowknife",
+      "CustomerId_count_1798": 412,
+      "Total_sum_3283": 2328.6
+    }
+  }
+]

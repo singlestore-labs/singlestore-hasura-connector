@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "fields": {
+      "ArtistId_4745": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      },
+      "Name_0025": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Name",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

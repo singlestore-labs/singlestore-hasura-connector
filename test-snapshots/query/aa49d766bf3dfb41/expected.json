@@ -1,0 +1,8 @@
+[
+  {
+    "aggregates": {
+      "BillingAddress_max_4869": "Via Degli Scipioni, 43",
+      "CustomerId_min_3111": 1
+    }
+  }
+]

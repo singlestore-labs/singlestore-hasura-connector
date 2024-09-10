@@ -1,0 +1,46 @@
+[
+  {
+    "rows": [
+      {
+        "GenreId_5099": 1,
+        "Name_9952": "Rock"
+      },
+      {
+        "GenreId_5099": 2,
+        "Name_9952": "Jazz"
+      },
+      {
+        "GenreId_5099": 3,
+        "Name_9952": "Metal"
+      },
+      {
+        "GenreId_5099": 4,
+        "Name_9952": "Alternative & Punk"
+      },
+      {
+        "GenreId_5099": 5,
+        "Name_9952": "Rock And Roll"
+      },
+      {
+        "GenreId_5099": 6,
+        "Name_9952": "Blues"
+      },
+      {
+        "GenreId_5099": 7,
+        "Name_9952": "Latin"
+      },
+      {
+        "GenreId_5099": 8,
+        "Name_9952": "Reggae"
+      },
+      {
+        "GenreId_5099": 9,
+        "Name_9952": "Pop"
+      },
+      {
+        "GenreId_5099": 10,
+        "Name_9952": "Soundtrack"
+      }
+    ]
+  }
+]

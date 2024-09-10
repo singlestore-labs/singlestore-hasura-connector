@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "aggregates": {
+      "TrackId_min_7719": {
+        "type": "single_column",
+        "column": "TrackId",
+        "function": "min"
+      },
+      "UnitPrice_count_2902": {
+        "type": "single_column",
+        "column": "UnitPrice",
+        "function": "count"
+      },
+      "GenreId_median_5198": {
+        "type": "single_column",
+        "column": "GenreId",
+        "function": "median"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "aggregates": {
+      "Bytes_max_8169": {
+        "type": "single_column",
+        "column": "Bytes",
+        "function": "max"
+      },
+      "Milliseconds_count_0600": {
+        "type": "single_column",
+        "column": "Milliseconds",
+        "function": "count"
+      },
+      "Name_max_8188": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "max"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

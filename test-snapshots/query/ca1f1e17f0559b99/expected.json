@@ -1,0 +1,17 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "Klanova 9/506",
+        "BillingCity": "Prague",
+        "BillingCountry": "Czech Republic",
+        "BillingPostalCode": "14700",
+        "BillingState": null,
+        "CustomerId": 5,
+        "InvoiceDate": "2010-03-12",
+        "InvoiceId": 100,
+        "Total": 3.96
+      }
+    ]
+  }
+]

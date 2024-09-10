@@ -1,0 +1,35 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "aggregates": {
+      "BillingCountry_count_4695": {
+        "type": "single_column",
+        "column": "BillingCountry",
+        "function": "count"
+      },
+      "InvoiceId_count_7341": {
+        "type": "single_column",
+        "column": "InvoiceId",
+        "function": "count"
+      },
+      "CustomerId_sum_2814": {
+        "type": "single_column",
+        "column": "CustomerId",
+        "function": "sum"
+      },
+      "InvoiceDate_max_0928": {
+        "type": "single_column",
+        "column": "InvoiceDate",
+        "function": "max"
+      },
+      "InvoiceDate_min_8432": {
+        "type": "single_column",
+        "column": "InvoiceDate",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

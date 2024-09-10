@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "aggregates": {
+      "PlaylistId_count": {
+        "type": "column_count",
+        "column": "PlaylistId",
+        "distinct": false
+      },
+      "PlaylistId_distinct_count": {
+        "type": "column_count",
+        "column": "PlaylistId",
+        "distinct": true
+      },
+      "TrackId_count": {
+        "type": "column_count",
+        "column": "TrackId",
+        "distinct": false
+      },
+      "TrackId_distinct_count": {
+        "type": "column_count",
+        "column": "TrackId",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

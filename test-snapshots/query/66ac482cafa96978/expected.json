@@ -1,0 +1,166 @@
+[
+  {
+    "rows": [
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1000
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1000
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1001
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1001
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1002
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1002
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1003
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1003
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1004
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1004
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1005
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1005
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1006
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1006
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1007
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1007
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1008
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1008
+            }
+          ]
+        },
+        "GenreId_6255": 1,
+        "MediaTypeId_8460": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1009
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1009
+            }
+          ]
+        },
+        "GenreId_6255": 4,
+        "MediaTypeId_8460": 1
+      }
+    ]
+  }
+]

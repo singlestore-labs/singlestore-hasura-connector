@@ -1,0 +1,70 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "PostalCode_6658": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "LastName_3982": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "State_0718": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "Country_4270": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_7629": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "EmployeeId_2314": {
+        "type": "column",
+        "column": "EmployeeId",
+        "fields": null
+      },
+      "HireDate_9146": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "Title_8655": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Country",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "FirstName",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

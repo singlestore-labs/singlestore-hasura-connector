@@ -1,0 +1,13 @@
+[
+  {
+    "aggregates": {
+      "InvoiceId_min_0398": 1,
+      "InvoiceId_sum_4456": 463386,
+      "InvoiceLineId_count_7813": 2240,
+      "InvoiceLineId_min_1787": 1,
+      "Quantity_count_3055": 2240,
+      "TrackId_avg_2920": 1717.734375,
+      "TrackId_min_7327": 1
+    }
+  }
+]

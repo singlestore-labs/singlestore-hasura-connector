@@ -1,0 +1,32 @@
+[
+  {
+    "aggregates": {
+      "Address_count": 59,
+      "Address_distinct_count": 59,
+      "City_count": 59,
+      "City_distinct_count": 53,
+      "Company_count": 10,
+      "Company_distinct_count": 10,
+      "Country_count": 59,
+      "Country_distinct_count": 24,
+      "CustomerId_count": 59,
+      "CustomerId_distinct_count": 59,
+      "Email_count": 59,
+      "Email_distinct_count": 59,
+      "Fax_count": 12,
+      "Fax_distinct_count": 12,
+      "FirstName_count": 59,
+      "FirstName_distinct_count": 56,
+      "LastName_count": 59,
+      "LastName_distinct_count": 59,
+      "Phone_count": 58,
+      "Phone_distinct_count": 58,
+      "PostalCode_count": 55,
+      "PostalCode_distinct_count": 55,
+      "State_count": 30,
+      "State_distinct_count": 25,
+      "SupportRepId_count": 59,
+      "SupportRepId_distinct_count": 3
+    }
+  }
+]

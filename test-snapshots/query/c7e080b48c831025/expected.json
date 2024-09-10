@@ -1,0 +1,9 @@
+[
+  {
+    "aggregates": {
+      "CustomerId_median_0958": 30,
+      "FirstName_min_7429": "Aaron",
+      "State_max_4952": "WI"
+    }
+  }
+]

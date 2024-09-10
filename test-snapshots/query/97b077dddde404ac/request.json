@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "aggregates": {
+      "ArtistId_count": {
+        "type": "column_count",
+        "column": "ArtistId",
+        "distinct": false
+      },
+      "ArtistId_distinct_count": {
+        "type": "column_count",
+        "column": "ArtistId",
+        "distinct": true
+      },
+      "Name_count": {
+        "type": "column_count",
+        "column": "Name",
+        "distinct": false
+      },
+      "Name_distinct_count": {
+        "type": "column_count",
+        "column": "Name",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

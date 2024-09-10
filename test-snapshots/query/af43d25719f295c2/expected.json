@@ -1,0 +1,11 @@
+[
+  {
+    "aggregates": {
+      "GenreId_avg_4556": 13,
+      "GenreId_count_0507": 25,
+      "GenreId_max_2949": 25,
+      "GenreId_min_5569": 1,
+      "GenreId_sum_4544": 325
+    }
+  }
+]

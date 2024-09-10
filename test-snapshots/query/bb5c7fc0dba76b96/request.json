@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.Album",
+  "query": {
+    "fields": {
+      "Title_1288": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      },
+      "ArtistId_4131": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Title",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

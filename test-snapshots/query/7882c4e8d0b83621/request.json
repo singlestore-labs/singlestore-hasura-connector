@@ -1,0 +1,15 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "aggregates": {
+      "PostalCode_min_2853": {
+        "type": "single_column",
+        "column": "PostalCode",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,33 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "fields": {
+      "PlaylistId": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "binary_comparison_operator",
+      "column": {
+        "type": "column",
+        "name": "PlaylistId",
+        "path": []
+      },
+      "operator": "equal",
+      "value": {
+        "type": "scalar",
+        "value": 1
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

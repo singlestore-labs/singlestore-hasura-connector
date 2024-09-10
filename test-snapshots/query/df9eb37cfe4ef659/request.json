@@ -1,0 +1,48 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "CustomerId_7494": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "LastName_3794": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "State",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "CustomerId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Email",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

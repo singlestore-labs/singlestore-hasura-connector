@@ -1,0 +1,42 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "SupportRepId_7753": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      },
+      "City_8543": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Fax_6684": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "Country_2455": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Phone",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

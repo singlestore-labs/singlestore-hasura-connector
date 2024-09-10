@@ -1,0 +1,60 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "AlbumId_2388": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "TrackId_6305": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "Composer_1578": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "UnitPrice_9827": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "Name_4125": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "Milliseconds_9555": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "GenreId",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Bytes",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "rows": [
+      {
+        "GenreId": 1,
+        "Name": "Rock"
+      },
+      {
+        "GenreId": 10,
+        "Name": "Soundtrack"
+      },
+      {
+        "GenreId": 11,
+        "Name": "Bossa Nova"
+      },
+      {
+        "GenreId": 12,
+        "Name": "Easy Listening"
+      },
+      {
+        "GenreId": 13,
+        "Name": "Heavy Metal"
+      },
+      {
+        "GenreId": 14,
+        "Name": "R&B/Soul"
+      },
+      {
+        "GenreId": 15,
+        "Name": "Electronica/Dance"
+      },
+      {
+        "GenreId": 16,
+        "Name": "World"
+      },
+      {
+        "GenreId": 17,
+        "Name": "Hip Hop/Rap"
+      },
+      {
+        "GenreId": 2,
+        "Name": "Jazz"
+      }
+    ]
+  }
+]

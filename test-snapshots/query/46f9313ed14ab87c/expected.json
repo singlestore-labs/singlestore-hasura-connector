@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "Name_count_7056": 18,
+      "Name_max_9252": "TV Shows",
+      "PlaylistId_median_2745": 9.5,
+      "PlaylistId_min_3967": 1
+    }
+  }
+]

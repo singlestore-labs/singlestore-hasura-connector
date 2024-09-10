@@ -1,0 +1,69 @@
+{
+  "collection": "chinook.Genre",
+  "query": {
+    "fields": {
+      "GenreId": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "FK_TrackGenreId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "Name_2607": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            },
+            "Bytes_5740": {
+              "type": "column",
+              "column": "Bytes",
+              "fields": null
+            },
+            "Composer_6824": {
+              "type": "column",
+              "column": "Composer",
+              "fields": null
+            },
+            "GenreId_4437": {
+              "type": "column",
+              "column": "GenreId",
+              "fields": null
+            },
+            "UnitPrice_3644": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            },
+            "Milliseconds_1874": {
+              "type": "column",
+              "column": "Milliseconds",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "GenreId": "GenreId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

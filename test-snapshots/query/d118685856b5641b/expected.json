@@ -1,0 +1,15 @@
+[
+  {
+    "aggregates": {
+      "Address_max_9249": "Via Degli Scipioni, 43",
+      "Company_count_9455": 10,
+      "CustomerId_avg_8160": 30,
+      "CustomerId_sum_2572": 1770,
+      "Fax_max_7125": "+55 (61) 3363-7855",
+      "LastName_max_8116": "Zimmermann",
+      "Phone_count_4039": 58,
+      "State_max_4296": "WI",
+      "SupportRepId_min_4979": 3
+    }
+  }
+]

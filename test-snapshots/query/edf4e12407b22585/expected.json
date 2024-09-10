@@ -1,0 +1,187 @@
+[
+  {
+    "rows": [
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            },
+            {
+              "MediaTypeId_2937": 1
+            }
+          ]
+        },
+        "MediaTypeId": 1,
+        "Name": "MPEG audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            },
+            {
+              "MediaTypeId_2937": 2
+            }
+          ]
+        },
+        "MediaTypeId": 2,
+        "Name": "Protected AAC audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            },
+            {
+              "MediaTypeId_2937": 3
+            }
+          ]
+        },
+        "MediaTypeId": 3,
+        "Name": "Protected MPEG-4 video file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "MediaTypeId_2937": 4
+            },
+            {
+              "MediaTypeId_2937": 4
+            },
+            {
+              "MediaTypeId_2937": 4
+            },
+            {
+              "MediaTypeId_2937": 4
+            },
+            {
+              "MediaTypeId_2937": 4
+            },
+            {
+              "MediaTypeId_2937": 4
+            },
+            {
+              "MediaTypeId_2937": 4
+            }
+          ]
+        },
+        "MediaTypeId": 4,
+        "Name": "Purchased AAC audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            },
+            {
+              "MediaTypeId_2937": 5
+            }
+          ]
+        },
+        "MediaTypeId": 5,
+        "Name": "AAC audio file"
+      }
+    ]
+  }
+]

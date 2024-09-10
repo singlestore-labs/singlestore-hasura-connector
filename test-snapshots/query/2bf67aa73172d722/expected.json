@@ -1,0 +1,56 @@
+[
+  {
+    "rows": [
+      {
+        "City_2440": "Boston",
+        "CustomerId_0987": 23,
+        "Fax_9983": null
+      },
+      {
+        "City_2440": "Chicago",
+        "CustomerId_0987": 24,
+        "Fax_9983": null
+      },
+      {
+        "City_2440": "Cupertino",
+        "CustomerId_0987": 19,
+        "Fax_9983": "+1 (408) 996-1011"
+      },
+      {
+        "City_2440": "Fort Worth",
+        "CustomerId_0987": 26,
+        "Fax_9983": null
+      },
+      {
+        "City_2440": "Madison",
+        "CustomerId_0987": 25,
+        "Fax_9983": null
+      },
+      {
+        "City_2440": "Mountain View",
+        "CustomerId_0987": 16,
+        "Fax_9983": "+1 (650) 253-0000"
+      },
+      {
+        "City_2440": "Mountain View",
+        "CustomerId_0987": 20,
+        "Fax_9983": null
+      },
+      {
+        "City_2440": "New York",
+        "CustomerId_0987": 18,
+        "Fax_9983": "+1 (212) 221-4679"
+      },
+      {
+        "City_2440": "Orlando",
+        "CustomerId_0987": 22,
+        "Fax_9983": null
+      },
+      {
+        "City_2440": "Redmond",
+        "CustomerId_0987": 17,
+        "Fax_9983": "+1 (425) 882-8081"
+      }
+    ]
+  }
+]

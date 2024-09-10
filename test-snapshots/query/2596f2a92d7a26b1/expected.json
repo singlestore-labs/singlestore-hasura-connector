@@ -1,0 +1,200 @@
+[
+  {
+    "rows": [
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 11170334,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 1
+            },
+            {
+              "PlaylistId": 17,
+              "TrackId": 1
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 1
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 343719
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 6566314,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 11
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 11
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 199836
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 6599424,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 9
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 9
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 203102
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 6706347,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 13
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 13
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 205688
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 6713451,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 6
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 6
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 205662
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 6852860,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 8
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 8
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 210834
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 7636561,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 7
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 7
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 233926
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 8596840,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 12
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 12
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 263288
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 8611245,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 10
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 10
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 263497
+      },
+      {
+        "AlbumId_9441": 1,
+        "Bytes_1807": 8817038,
+        "Composer_8712": "Angus Young, Malcolm Young, Brian Johnson",
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "PlaylistId": 1,
+              "TrackId": 14
+            },
+            {
+              "PlaylistId": 8,
+              "TrackId": 14
+            }
+          ]
+        },
+        "GenreId_0427": 1,
+        "Milliseconds_9296": 270863
+      }
+    ]
+  }
+]

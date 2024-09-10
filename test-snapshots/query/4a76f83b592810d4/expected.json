@@ -1,0 +1,16 @@
+[
+  {
+    "aggregates": {
+      "InvoiceId_count": 2240,
+      "InvoiceId_distinct_count": 412,
+      "InvoiceLineId_count": 2240,
+      "InvoiceLineId_distinct_count": 2240,
+      "Quantity_count": 2240,
+      "Quantity_distinct_count": 1,
+      "TrackId_count": 2240,
+      "TrackId_distinct_count": 1984,
+      "UnitPrice_count": 2240,
+      "UnitPrice_distinct_count": 2
+    }
+  }
+]

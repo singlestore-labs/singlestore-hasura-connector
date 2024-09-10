@@ -1,0 +1,99 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "AlbumId_6354": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "Bytes_7531": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Composer_4805": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "GenreId_8406": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "MediaTypeId_8726": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Milliseconds_8020": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "Name_8227": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "TrackId_8712": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "UnitPrice_8668": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "FK_InvoiceLineTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "InvoiceId": {
+              "type": "column",
+              "column": "InvoiceId",
+              "fields": null
+            },
+            "InvoiceLineId": {
+              "type": "column",
+              "column": "InvoiceLineId",
+              "fields": null
+            },
+            "Quantity": {
+              "type": "column",
+              "column": "Quantity",
+              "fields": null
+            },
+            "TrackId": {
+              "type": "column",
+              "column": "TrackId",
+              "fields": null
+            },
+            "UnitPrice": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.InvoiceLine",
+      "arguments": {}
+    }
+  }
+}

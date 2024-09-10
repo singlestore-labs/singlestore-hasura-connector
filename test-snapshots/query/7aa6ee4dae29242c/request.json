@@ -1,0 +1,50 @@
+{
+  "collection": "chinook.Playlist",
+  "query": {
+    "aggregates": {
+      "PlaylistId_sum_4356": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "sum"
+      },
+      "Name_count_2777": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "count"
+      },
+      "Name_max_8454": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "max"
+      },
+      "Name_min_4359": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "min"
+      },
+      "PlaylistId_avg_0141": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "avg"
+      },
+      "PlaylistId_count_6420": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "count"
+      },
+      "PlaylistId_median_2083": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "median"
+      },
+      "PlaylistId_min_2862": {
+        "type": "single_column",
+        "column": "PlaylistId",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "rows": [
+      {
+        "AlbumId": 255,
+        "Bytes": 4448025,
+        "Composer": null,
+        "GenreId": 9,
+        "MediaTypeId": 2,
+        "Milliseconds": 274644,
+        "Name": "Give Peace a Chance",
+        "TrackId": 3256,
+        "UnitPrice": 0.99
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "City_2527": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "LastName_7348": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "EmployeeId",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

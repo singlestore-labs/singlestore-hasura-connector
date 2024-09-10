@@ -1,0 +1,186 @@
+[
+  {
+    "rows": [
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 11170334,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 343719,
+              "Name_9586": "For Those About To Rock (We Salute You)",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 1,
+        "TrackId": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 11170334,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 343719,
+              "Name_9586": "For Those About To Rock (We Salute You)",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 17,
+        "TrackId": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 11170334,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 343719,
+              "Name_9586": "For Those About To Rock (We Salute You)",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 8,
+        "TrackId": 1
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6566314,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 199836,
+              "Name_9586": "C.O.D.",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 1,
+        "TrackId": 11
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6566314,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 199836,
+              "Name_9586": "C.O.D.",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 8,
+        "TrackId": 11
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6599424,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 203102,
+              "Name_9586": "Snowballed",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 1,
+        "TrackId": 9
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6599424,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 203102,
+              "Name_9586": "Snowballed",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 8,
+        "TrackId": 9
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6706347,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 205688,
+              "Name_9586": "Night Of The Long Knives",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 1,
+        "TrackId": 13
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6706347,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 205688,
+              "Name_9586": "Night Of The Long Knives",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 8,
+        "TrackId": 13
+      },
+      {
+        "FK_PlaylistTrackTrackId": {
+          "rows": [
+            {
+              "AlbumId_4699": 1,
+              "Bytes_9369": 6713451,
+              "Composer_3978": "Angus Young, Malcolm Young, Brian Johnson",
+              "GenreId_1530": 1,
+              "MediaTypeId_4182": 1,
+              "Milliseconds_0380": 205662,
+              "Name_9586": "Put The Finger On You",
+              "UnitPrice_5916": 0.99
+            }
+          ]
+        },
+        "PlaylistId": 1,
+        "TrackId": 6
+      }
+    ]
+  }
+]

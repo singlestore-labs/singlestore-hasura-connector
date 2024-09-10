@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "MediaTypeId_avg_2884": 3,
+      "MediaTypeId_count_9324": 5,
+      "MediaTypeId_sum_5529": 15,
+      "Name_max_9674": "Purchased AAC audio file"
+    }
+  }
+]

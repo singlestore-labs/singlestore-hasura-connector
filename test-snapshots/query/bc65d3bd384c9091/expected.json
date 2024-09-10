@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "Name_count": 18,
+      "Name_distinct_count": 14,
+      "PlaylistId_count": 18,
+      "PlaylistId_distinct_count": 18
+    }
+  }
+]

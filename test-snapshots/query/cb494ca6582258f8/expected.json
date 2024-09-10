@@ -1,0 +1,46 @@
+[
+  {
+    "rows": [
+      {
+        "Address_1293": "11120 Jasper Ave NW",
+        "City_9781": "Edmonton",
+        "Fax_8166": "+1 (780) 428-3457"
+      },
+      {
+        "Address_1293": "825 8 Ave SW",
+        "City_9781": "Calgary",
+        "Fax_8166": "+1 (403) 262-3322"
+      },
+      {
+        "Address_1293": "1111 6 Ave SW",
+        "City_9781": "Calgary",
+        "Fax_8166": "+1 (403) 262-6712"
+      },
+      {
+        "Address_1293": "683 10 Street SW",
+        "City_9781": "Calgary",
+        "Fax_8166": "+1 (403) 263-4289"
+      },
+      {
+        "Address_1293": "7727B 41 Ave",
+        "City_9781": "Calgary",
+        "Fax_8166": "1 (780) 836-9543"
+      },
+      {
+        "Address_1293": "5827 Bowness Road NW",
+        "City_9781": "Calgary",
+        "Fax_8166": "+1 (403) 246-9899"
+      },
+      {
+        "Address_1293": "590 Columbia Boulevard West",
+        "City_9781": "Lethbridge",
+        "Fax_8166": "+1 (403) 456-8485"
+      },
+      {
+        "Address_1293": "923 7 ST NW",
+        "City_9781": "Lethbridge",
+        "Fax_8166": "+1 (403) 467-8772"
+      }
+    ]
+  }
+]

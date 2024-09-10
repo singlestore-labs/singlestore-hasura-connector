@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "PlaylistId_count": 8715,
+      "PlaylistId_distinct_count": 14,
+      "TrackId_count": 8715,
+      "TrackId_distinct_count": 3503
+    }
+  }
+]

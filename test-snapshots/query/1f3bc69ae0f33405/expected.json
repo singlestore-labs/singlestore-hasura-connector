@@ -1,0 +1,14 @@
+[
+  {
+    "aggregates": {
+      "PlaylistId_count_3127": 8715,
+      "PlaylistId_max_0587": 18,
+      "PlaylistId_min_0469": 1,
+      "PlaylistId_sum_0583": 42852,
+      "TrackId_avg_1558": 1767.081698221,
+      "TrackId_count_7045": 8715,
+      "TrackId_median_2243": 1773,
+      "TrackId_min_7324": 1
+    }
+  }
+]

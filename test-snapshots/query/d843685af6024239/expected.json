@@ -1,0 +1,12 @@
+[
+  {
+    "aggregates": {
+      "Address_count_8489": 59,
+      "CustomerId_avg_3517": 30,
+      "FirstName_min_7696": "Aaron",
+      "Phone_count_7381": 58,
+      "PostalCode_count_0511": 55,
+      "PostalCode_max_9121": "X1A 1N6"
+    }
+  }
+]

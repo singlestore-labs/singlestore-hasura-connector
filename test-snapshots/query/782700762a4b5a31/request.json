@@ -1,0 +1,65 @@
+{
+  "collection": "chinook.Invoice",
+  "query": {
+    "fields": {
+      "BillingAddress_2884": {
+        "type": "column",
+        "column": "BillingAddress",
+        "fields": null
+      },
+      "Total_6751": {
+        "type": "column",
+        "column": "Total",
+        "fields": null
+      },
+      "BillingCountry_4964": {
+        "type": "column",
+        "column": "BillingCountry",
+        "fields": null
+      },
+      "BillingPostalCode_7122": {
+        "type": "column",
+        "column": "BillingPostalCode",
+        "fields": null
+      },
+      "InvoiceId_0515": {
+        "type": "column",
+        "column": "InvoiceId",
+        "fields": null
+      },
+      "CustomerId_2202": {
+        "type": "column",
+        "column": "CustomerId",
+        "fields": null
+      },
+      "InvoiceDate_5665": {
+        "type": "column",
+        "column": "InvoiceDate",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "BillingState",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "InvoiceId",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

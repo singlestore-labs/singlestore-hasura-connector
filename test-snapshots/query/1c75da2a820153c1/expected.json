@@ -1,0 +1,40 @@
+[
+  {
+    "rows": [
+      {
+        "Address": "5827 Bowness Road NW",
+        "BirthDate": "1973-07-01",
+        "City": "Calgary",
+        "Country": "Canada",
+        "Email": "michael@chinookcorp.com",
+        "EmployeeId": 6,
+        "Fax": "+1 (403) 246-9899",
+        "FirstName": "Michael",
+        "HireDate": "2003-10-17",
+        "LastName": "Mitchell",
+        "Phone": "+1 (403) 246-9887",
+        "PostalCode": "T3B 0C5",
+        "ReportsTo": 1,
+        "State": "AB",
+        "Title": "IT Manager"
+      },
+      {
+        "Address": "7727B 41 Ave",
+        "BirthDate": "1965-03-03",
+        "City": "Calgary",
+        "Country": "Canada",
+        "Email": "steve@chinookcorp.com",
+        "EmployeeId": 5,
+        "Fax": "1 (780) 836-9543",
+        "FirstName": "Steve",
+        "HireDate": "2003-10-17",
+        "LastName": "Johnson",
+        "Phone": "1 (780) 836-9987",
+        "PostalCode": "T3B 1Y7",
+        "ReportsTo": 2,
+        "State": "AB",
+        "Title": "Sales Support Agent"
+      }
+    ]
+  }
+]

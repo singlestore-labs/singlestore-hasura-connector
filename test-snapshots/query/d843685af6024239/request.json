@@ -1,0 +1,40 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "aggregates": {
+      "Address_count_8489": {
+        "type": "single_column",
+        "column": "Address",
+        "function": "count"
+      },
+      "PostalCode_max_9121": {
+        "type": "single_column",
+        "column": "PostalCode",
+        "function": "max"
+      },
+      "FirstName_min_7696": {
+        "type": "single_column",
+        "column": "FirstName",
+        "function": "min"
+      },
+      "CustomerId_avg_3517": {
+        "type": "single_column",
+        "column": "CustomerId",
+        "function": "avg"
+      },
+      "Phone_count_7381": {
+        "type": "single_column",
+        "column": "Phone",
+        "function": "count"
+      },
+      "PostalCode_count_0511": {
+        "type": "single_column",
+        "column": "PostalCode",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

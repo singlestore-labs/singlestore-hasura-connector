@@ -1,0 +1,49 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "fields": {
+      "ArtistId": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "FK_AlbumArtistId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "AlbumId_2531": {
+              "type": "column",
+              "column": "AlbumId",
+              "fields": null
+            },
+            "Title_8793": {
+              "type": "column",
+              "column": "Title",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "ArtistId": "ArtistId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Album",
+      "arguments": {}
+    }
+  }
+}

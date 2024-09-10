@@ -1,0 +1,281 @@
+[
+  {
+    "rows": [
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "Bytes_8091": 10003747,
+              "GenreId_8129": 7,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10003794,
+              "GenreId_8129": 3,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10005675,
+              "GenreId_8129": 4,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10009697,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10012231,
+              "GenreId_8129": 7,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10014683,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10019269,
+              "GenreId_8129": 7,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10019861,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10020122,
+              "GenreId_8129": 10,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10022428,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            }
+          ]
+        },
+        "MediaTypeId": 1,
+        "Name": "MPEG audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "Bytes_8091": 10085867,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10887931,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 16454937,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 2229617,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 3819535,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 8052374,
+              "GenreId_8129": 23,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 9785346,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            }
+          ]
+        },
+        "MediaTypeId": 4,
+        "Name": "Purchased AAC audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "Bytes_8091": 10201342,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 10564704,
+              "GenreId_8129": 9,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 11157785,
+              "GenreId_8129": 23,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 1189062,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 1208080,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 1851753,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 1944738,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 1973559,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 2081895,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 2189002,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            }
+          ]
+        },
+        "MediaTypeId": 2,
+        "Name": "Protected AAC audio file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "Bytes_8091": 1054423946,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 1059546140,
+              "GenreId_8129": 21,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 183867185,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 197937785,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 201654606,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 204995876,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 206500939,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 207045178,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 207607466,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            },
+            {
+              "Bytes_8091": 207748198,
+              "GenreId_8129": 19,
+              "UnitPrice_1087": 1.99
+            }
+          ]
+        },
+        "MediaTypeId": 3,
+        "Name": "Protected MPEG-4 video file"
+      },
+      {
+        "FK_TrackMediaTypeId": {
+          "rows": [
+            {
+              "Bytes_8091": 2775071,
+              "GenreId_8129": 7,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 3240609,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 3453849,
+              "GenreId_8129": 1,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 4011615,
+              "GenreId_8129": 2,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 4292028,
+              "GenreId_8129": 2,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 4615841,
+              "GenreId_8129": 16,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 4821485,
+              "GenreId_8129": 2,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 4855457,
+              "GenreId_8129": 16,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 5327463,
+              "GenreId_8129": 15,
+              "UnitPrice_1087": 0.99
+            },
+            {
+              "Bytes_8091": 5817216,
+              "GenreId_8129": 24,
+              "UnitPrice_1087": 0.99
+            }
+          ]
+        },
+        "MediaTypeId": 5,
+        "Name": "AAC audio file"
+      }
+    ]
+  }
+]

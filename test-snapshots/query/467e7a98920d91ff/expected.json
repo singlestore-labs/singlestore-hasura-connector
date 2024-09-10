@@ -1,0 +1,110 @@
+[
+  {
+    "rows": [
+      {
+        "BirthDate_2538": "1947-09-19",
+        "City_2399": "Calgary",
+        "Country_4293": "Canada",
+        "Email_3755": "margaret@chinookcorp.com",
+        "Fax_4283": "+1 (403) 263-4289",
+        "FirstName_0095": "Margaret",
+        "HireDate_3932": "2003-05-03",
+        "LastName_8499": "Park",
+        "PostalCode_9360": "T2P 5G3",
+        "ReportsTo_4613": 2,
+        "Title_7236": "Sales Support Agent"
+      },
+      {
+        "BirthDate_2538": "1958-12-08",
+        "City_2399": "Calgary",
+        "Country_4293": "Canada",
+        "Email_3755": "nancy@chinookcorp.com",
+        "Fax_4283": "+1 (403) 262-3322",
+        "FirstName_0095": "Nancy",
+        "HireDate_3932": "2002-05-01",
+        "LastName_8499": "Edwards",
+        "PostalCode_9360": "T2P 2T3",
+        "ReportsTo_4613": 1,
+        "Title_7236": "Sales Manager"
+      },
+      {
+        "BirthDate_2538": "1962-02-18",
+        "City_2399": "Edmonton",
+        "Country_4293": "Canada",
+        "Email_3755": "andrew@chinookcorp.com",
+        "Fax_4283": "+1 (780) 428-3457",
+        "FirstName_0095": "Andrew",
+        "HireDate_3932": "2002-08-14",
+        "LastName_8499": "Adams",
+        "PostalCode_9360": "T5K 2N1",
+        "ReportsTo_4613": null,
+        "Title_7236": "General Manager"
+      },
+      {
+        "BirthDate_2538": "1965-03-03",
+        "City_2399": "Calgary",
+        "Country_4293": "Canada",
+        "Email_3755": "steve@chinookcorp.com",
+        "Fax_4283": "1 (780) 836-9543",
+        "FirstName_0095": "Steve",
+        "HireDate_3932": "2003-10-17",
+        "LastName_8499": "Johnson",
+        "PostalCode_9360": "T3B 1Y7",
+        "ReportsTo_4613": 2,
+        "Title_7236": "Sales Support Agent"
+      },
+      {
+        "BirthDate_2538": "1968-01-09",
+        "City_2399": "Lethbridge",
+        "Country_4293": "Canada",
+        "Email_3755": "laura@chinookcorp.com",
+        "Fax_4283": "+1 (403) 467-8772",
+        "FirstName_0095": "Laura",
+        "HireDate_3932": "2004-03-04",
+        "LastName_8499": "Callahan",
+        "PostalCode_9360": "T1H 1Y8",
+        "ReportsTo_4613": 6,
+        "Title_7236": "IT Staff"
+      },
+      {
+        "BirthDate_2538": "1970-05-29",
+        "City_2399": "Lethbridge",
+        "Country_4293": "Canada",
+        "Email_3755": "robert@chinookcorp.com",
+        "Fax_4283": "+1 (403) 456-8485",
+        "FirstName_0095": "Robert",
+        "HireDate_3932": "2004-01-02",
+        "LastName_8499": "King",
+        "PostalCode_9360": "T1K 5N8",
+        "ReportsTo_4613": 6,
+        "Title_7236": "IT Staff"
+      },
+      {
+        "BirthDate_2538": "1973-07-01",
+        "City_2399": "Calgary",
+        "Country_4293": "Canada",
+        "Email_3755": "michael@chinookcorp.com",
+        "Fax_4283": "+1 (403) 246-9899",
+        "FirstName_0095": "Michael",
+        "HireDate_3932": "2003-10-17",
+        "LastName_8499": "Mitchell",
+        "PostalCode_9360": "T3B 0C5",
+        "ReportsTo_4613": 1,
+        "Title_7236": "IT Manager"
+      },
+      {
+        "BirthDate_2538": "1973-08-29",
+        "City_2399": "Calgary",
+        "Country_4293": "Canada",
+        "Email_3755": "jane@chinookcorp.com",
+        "Fax_4283": "+1 (403) 262-6712",
+        "FirstName_0095": "Jane",
+        "HireDate_3932": "2002-04-01",
+        "LastName_8499": "Peacock",
+        "PostalCode_9360": "T2P 5M5",
+        "ReportsTo_4613": 2,
+        "Title_7236": "Sales Support Agent"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "Name_count_7791": 18,
+      "Name_max_5539": "TV Shows",
+      "Name_min_2844": "90’s Music",
+      "PlaylistId_max_0644": 18
+    }
+  }
+]

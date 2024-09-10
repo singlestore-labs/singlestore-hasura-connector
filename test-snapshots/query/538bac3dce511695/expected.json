@@ -1,0 +1,13 @@
+[
+  {
+    "aggregates": {
+      "AlbumId_count_1958": 347,
+      "AlbumId_median_5681": 174,
+      "AlbumId_sum_2545": 60378,
+      "ArtistId_avg_0076": 121.942363112,
+      "ArtistId_count_0461": 347,
+      "Title_max_2958": "[1997] Black Light Syndrome",
+      "Title_min_1962": "...And Justice For All"
+    }
+  }
+]

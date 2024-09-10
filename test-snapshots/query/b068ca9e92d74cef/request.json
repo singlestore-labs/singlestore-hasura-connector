@@ -1,0 +1,89 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "fields": {
+      "TrackId_8159": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "InvoiceLineId_3012": {
+        "type": "column",
+        "column": "InvoiceLineId",
+        "fields": null
+      },
+      "UnitPrice_9796": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "FK_InvoiceLineInvoiceId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "BillingAddress": {
+              "type": "column",
+              "column": "BillingAddress",
+              "fields": null
+            },
+            "BillingCity": {
+              "type": "column",
+              "column": "BillingCity",
+              "fields": null
+            },
+            "BillingCountry": {
+              "type": "column",
+              "column": "BillingCountry",
+              "fields": null
+            },
+            "BillingPostalCode": {
+              "type": "column",
+              "column": "BillingPostalCode",
+              "fields": null
+            },
+            "BillingState": {
+              "type": "column",
+              "column": "BillingState",
+              "fields": null
+            },
+            "CustomerId": {
+              "type": "column",
+              "column": "CustomerId",
+              "fields": null
+            },
+            "InvoiceDate": {
+              "type": "column",
+              "column": "InvoiceDate",
+              "fields": null
+            },
+            "InvoiceId": {
+              "type": "column",
+              "column": "InvoiceId",
+              "fields": null
+            },
+            "Total": {
+              "type": "column",
+              "column": "Total",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "InvoiceId": "InvoiceId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.Invoice",
+      "arguments": {}
+    }
+  }
+}

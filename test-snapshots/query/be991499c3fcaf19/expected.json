@@ -1,0 +1,116 @@
+[
+  {
+    "rows": [
+      {
+        "ArtistId_8054": 1,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 1,
+              "Name": "AC/DC"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 1,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 1,
+              "Name": "AC/DC"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 10,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 10,
+              "Name": "Billy Cobham"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 100,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 100,
+              "Name": "Lenny Kravitz"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 101,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 101,
+              "Name": "Lulu Santos"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 101,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 101,
+              "Name": "Lulu Santos"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 102,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 102,
+              "Name": "Marillion"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 103,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 103,
+              "Name": "Marisa Monte"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 104,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 104,
+              "Name": "Marvin Gaye"
+            }
+          ]
+        }
+      },
+      {
+        "ArtistId_8054": 105,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "ArtistId": 105,
+              "Name": "Men At Work"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

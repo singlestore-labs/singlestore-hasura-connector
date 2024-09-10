@@ -1,0 +1,79 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "AlbumId_4860": {
+        "type": "column",
+        "column": "AlbumId",
+        "fields": null
+      },
+      "UnitPrice_2665": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "Composer_0968": {
+        "type": "column",
+        "column": "Composer",
+        "fields": null
+      },
+      "GenreId_1266": {
+        "type": "column",
+        "column": "GenreId",
+        "fields": null
+      },
+      "MediaTypeId_7222": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      },
+      "Milliseconds_2620": {
+        "type": "column",
+        "column": "Milliseconds",
+        "fields": null
+      },
+      "Name_0914": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "TrackId_9241": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "FK_TrackGenreId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "GenreId": {
+              "type": "column",
+              "column": "GenreId",
+              "fields": null
+            },
+            "Name": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "GenreId": "GenreId"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.Genre",
+      "arguments": {}
+    }
+  }
+}

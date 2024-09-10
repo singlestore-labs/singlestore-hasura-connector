@@ -1,0 +1,14 @@
+[
+  {
+    "aggregates": {
+      "Name_count_2777": 18,
+      "Name_max_8454": "TV Shows",
+      "Name_min_4359": "90’s Music",
+      "PlaylistId_avg_0141": 9.5,
+      "PlaylistId_count_6420": 18,
+      "PlaylistId_median_2083": 9.5,
+      "PlaylistId_min_2862": 1,
+      "PlaylistId_sum_4356": 171
+    }
+  }
+]

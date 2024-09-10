@@ -1,7 +1,7 @@
-import { Aggregate, BadRequest, ComparisonTarget, ComparisonValue, ExistsInCollection, Expression, Field, OrderBy, OrderByElement, PathElement, Query, Relationship } from "@hasura/ndc-sdk-typescript"
+import { Aggregate, BadRequest, ComparisonTarget, ComparisonValue, ExistsInCollection, Expression, Field, NotSupported, OrderBy, OrderByElement, PathElement, Query, Relationship } from "@hasura/ndc-sdk-typescript"
 import { Configuration } from ".."
 import { SingleStoreQuery } from "./SingleStoreQuery"
-import { AliasGenerator } from "./AliasGenerator"
+import { RowsetAliasGenerator, ColumnAliasGenerator } from "./AliasGenerator"
 
 export class SingleStoreQueryBuilder {
     configuration: Configuration
@@ -12,11 +12,13 @@ export class SingleStoreQueryBuilder {
     parentRelationship: Relationship | null
     aggregateRowsToObject = true
     defaultOrderByColumn: string | null = null
-    aliasGenerator: AliasGenerator = new AliasGenerator()
+    rowsetAliasGenerator: RowsetAliasGenerator = new RowsetAliasGenerator()
+    columnAliasGenerator: ColumnAliasGenerator = new ColumnAliasGenerator()
 
     subqueries: { [k: string]: SingleStoreQuery } = {}
     orderByElementToSubqueryAlias: Map<OrderByElement, string> = new Map<OrderByElement, string>()
     comparisonTargetToSubqueryAlias: Map<ComparisonTarget, string> = new Map<ComparisonTarget, string>()
+    orderByElementAlias: Map<OrderByElement, string> = new Map<OrderByElement, string>()
     sqlParts: string[] = []
     parameters: any[] = []
 
@@ -46,7 +48,7 @@ export class SingleStoreQueryBuilder {
             if (this.aggregateRowsToObject) {
                 this.defaultOrderByColumn = "row"
             }
-            this.sqlParts.push(this.selectFields(query.fields))
+            this.sqlParts.push(this.selectFields(query.fields, query.order_by))
         } else {
             throw new BadRequest("Neither aggregates nor fields are specified")
         }
@@ -106,30 +108,67 @@ export class SingleStoreQueryBuilder {
         }
     }
 
-    private selectFields(fields: { [k: string]: Field }): string {
-        return `SELECT JSON_BUILD_OBJECT(${Object.entries(fields)
-            .map(([fieldName, field]): string => {
-                switch (field.type) {
-                    case "column":
-                        // TODO: escape
-                        return `'${fieldName}', ${this.collection}.${field.column}`
-                    case "relationship":
-                        const tableName = this.aliasGenerator.newAlias()
-                        const relationship = this.relationships[field.relationship]
+    private visitSelectField(field: Field): string {
+        switch (field.type) {
+            case "column":
+                // TODO: escape
+                return `${this.collection}.${field.column}`
+            case "relationship":
+                const tableName = this.rowsetAliasGenerator.newAlias()
+                const relationship = this.relationships[field.relationship]
 
-                        this.subqueries[tableName] = new SingleStoreQueryBuilder(
-                            this.configuration,
-                            this.variables,
-                            relationship.target_collection,
-                            this.relationships,
-                            this.collection,
-                            relationship
-                        ).build(field.query)
+                this.subqueries[tableName] = new SingleStoreQueryBuilder(
+                    this.configuration,
+                    this.variables,
+                    relationship.target_collection,
+                    this.relationships,
+                    this.collection,
+                    relationship
+                ).build(field.query)
 
-                        // TODO: escape
-                        return `'${fieldName}', ${tableName}.data`
+                // TODO: escape
+                return `${tableName}.data`
+        }
+    }
+
+    private selectFields(fields: { [k: string]: Field }, orderBy: OrderBy | null | undefined): string {
+        const selectElements = []
+
+        if (this.aggregateRowsToObject) {
+            selectElements.push(`JSON_BUILD_OBJECT(${Object.entries(fields)
+                .map(([fieldName, field]): string => {
+                    const column = this.visitSelectField(field)
+                    return `'${fieldName}', ${column}`
+                }).join(", ")}) AS row`)
+        } else {
+            Object.entries(fields).forEach(([fieldName, field]) => {
+                const column = this.visitSelectField(field)
+                selectElements.push(`${column}  AS ${fieldName}`)
+            })
+        }
+
+        orderBy?.elements.forEach(element => {
+            const alias = this.columnAliasGenerator.newAlias()
+            this.orderByElementAlias.set(element, alias)
+
+            if (element.target.path.length > 0) {
+                // TODO escape
+                selectElements.push(`${this.orderByElementToSubqueryAlias.get(element)}.order_expr AS ${alias}`);
+            } else {
+                switch (element.target.type) {
+                    case 'column':
+                        // TODO escape
+                        selectElements.push(`${this.collection}.${element.target.name} AS ${alias}`);
+                        break
+                    case 'single_column_aggregate':
+                        throw new BadRequest("Empty path for single_column_aggregate orderby element");
+                    case 'star_count_aggregate':
+                        throw new BadRequest("Empty path for star_column_aggregate orderby element");
                 }
-            }).join(", ")}) AS row`
+            }
+        })
+
+        return `SELECT ${selectElements.join(", ")}`
     }
 
     private subqueriesFromOrderBy(orderBy?: OrderBy | null) {
@@ -157,35 +196,35 @@ export class SingleStoreQueryBuilder {
                     this.relationships,
                     this.collection,
                     rel,
-                    false
+                    target.type == "star_count_aggregate"
                 ).build(query)
 
-                var tableName = this.aliasGenerator.newAlias()
+                var tableName = this.rowsetAliasGenerator.newAlias()
                 switch (target.type) {
                     case "column":
                         // TODO: escape
                         subquery = new SingleStoreQuery(
-                            `SELECT ANY_VALUE(${tableName}.${target.name}) AS order_expr FROM ((${subquery.sql}) AS ${tableName})`,
+                            `SELECT ANY_VALUE(${tableName}.${colName}) AS order_expr FROM((${subquery.sql}) AS ${tableName})`,
                             subquery.parameters
                         )
                         break;
                     case "single_column_aggregate":
                         // TODO: escape
                         subquery = new SingleStoreQuery(
-                            `SELECT ${this.mapAggregate(target.function)}(${tableName}.${target.column}) AS order_expr FROM ((${subquery}) AS ${tableName})`,
+                            `SELECT ${this.mapAggregate(target.function)}(${tableName}.${colName}) AS order_expr FROM((${subquery.sql}) AS ${tableName})`,
                             subquery.parameters
                         )
                         break;
                     case "star_count_aggregate":
                         // TODO: escape
                         subquery = new SingleStoreQuery(
-                            `SELECT COUNT(*) AS order_expr FROM ((${subquery}) AS ${tableName})`,
+                            `SELECT COUNT(*) AS order_expr FROM((${subquery.sql}) AS ${tableName})`,
                             subquery.parameters
                         )
                         break;
                 }
 
-                tableName = this.aliasGenerator.newAlias()
+                tableName = this.rowsetAliasGenerator.newAlias()
                 this.subqueries[tableName] = subquery
                 this.orderByElementToSubqueryAlias.set(element, tableName)
             })
@@ -194,7 +233,7 @@ export class SingleStoreQueryBuilder {
     private pathToQuery(path: PathElement[], fieldName: string): Query {
         var res: Query = {
             fields: {
-                fieldName: {
+                [fieldName]: {
                     type: "column",
                     column: fieldName
                 }
@@ -205,7 +244,7 @@ export class SingleStoreQueryBuilder {
         for (let i = path.length - 1; i >= 1; i--) {
             res = {
                 fields: {
-                    fieldName: {
+                    [fieldName]: {
                         type: "relationship",
                         query: res,
                         relationship: path[i].relationship,
@@ -227,7 +266,7 @@ export class SingleStoreQueryBuilder {
     private join() {
         Object.keys(this.subqueries).forEach(alias => {
             const subquery = this.subqueries[alias]
-            this.parameters.push(subquery.parameters)
+            this.parameters = this.parameters.concat(subquery.parameters)
             this.sqlParts.push(`LEFT OUTER JOIN LATERAL (
 ${subquery.sql}
 ) AS ${alias} ON TRUE`)
@@ -301,16 +340,16 @@ ${subquery.sql}
                         const relationship: Relationship = this.relationships[collectionInfo.relationship]
 
                         return `EXISTS (
-SELECT 1 FROM ${relationship.target_collection} 
+        SELECT 1 FROM ${relationship.target_collection} 
 ${this.visitWhere(relationship.target_collection, expression.predicate, collection, relationship)}
 LIMIT 1
-)`
+    )`
                     case "unrelated":
                         return `EXISTS (
-SELECT 1 FROM ${collectionInfo.collection} 
-${this.visitWhere(collection, expression.predicate, null, null)}
+        SELECT 1 FROM ${collectionInfo.collection} 
+${this.visitWhere(collectionInfo.collection, expression.predicate, null, null)}
 LIMIT 1
-)`
+    )`
                     default:
                         throw new BadRequest("Unknown exists type");
                 }
@@ -330,8 +369,7 @@ LIMIT 1
                     return `${collection}.${target.name}`;
                 }
             case 'root_collection_column':
-                // TODO: escape
-                return `${this.collection}.${target.name}`;
+                throw new NotSupported("Referencing root collection is not supported")
         }
     }
 
@@ -396,14 +434,14 @@ LIMIT 1
                 false
             ).build(query)
 
-            var tableName = this.aliasGenerator.newAlias()
+            var tableName = this.rowsetAliasGenerator.newAlias()
             subquery = new SingleStoreQuery(
                 // TODO escape
                 `SELECT ANY_VALUE(${tableName}.${target.name}) AS comp_expr FROM ((${subquery.sql}) AS ${tableName})`,
                 subquery.parameters
             )
 
-            tableName = this.aliasGenerator.newAlias()
+            tableName = this.rowsetAliasGenerator.newAlias()
             this.subqueries[tableName] = subquery
             this.comparisonTargetToSubqueryAlias.set(target, tableName)
         }
@@ -416,34 +454,26 @@ LIMIT 1
     }
 
     private orderBy(orderBy?: OrderBy | null) {
+        this.sqlParts.push(this.visitOrderBy(orderBy));
+    }
+
+    private visitOrderBy(orderBy?: OrderBy | null): string {
         if (orderBy && orderBy.elements.length > 0) {
-            this.sqlParts.push(`ORDER BY ${orderBy.elements.map(element => {
+            return `ORDER BY ${orderBy.elements.map(element => {
                 const direction = element.order_direction === 'asc' ? 'ASC' : 'DESC';
-                if (element.target.path.length > 0) {
-                    // TODO escape
-                    return `${this.orderByElementToSubqueryAlias.get(element)}.order_expr ${direction} `;
-                } else {
-                    switch (element.target.type) {
-                        case 'column':
-                            // TODO escape
-                            return `${this.collection}.${element.target.name} ${direction} `;
-                        case 'single_column_aggregate':
-                            throw new BadRequest("Empty path for single_column_aggregate orderby element");
-                        case 'star_count_aggregate':
-                            throw new BadRequest("Empty path for star_column_aggregate orderby element");
-                    }
-                }
-            }).join(", ")}`)
+                return `${this.orderByElementAlias.get(element)} ${direction} `;
+            }).join(", ")
+                } ${this.defaultOrderByColumn ? `, ${this.defaultOrderByColumn}` : ""} `
         } else if (this.defaultOrderByColumn) {
-            this.sqlParts.push(`ORDER BY ${this.defaultOrderByColumn}`)
+            return `ORDER BY ${this.defaultOrderByColumn} `
+        } else {
+            return "";
         }
     }
 
     private limit(limit?: number | null) {
         if (limit) {
             this.sqlParts.push(`LIMIT ${limit}`)
-        } else {
-            this.sqlParts.push(`LIMIT ${Number.MAX_SAFE_INTEGER}`)
         }
     }
 
@@ -533,9 +563,10 @@ LIMIT 1
      * [ 1 ]
      */
     build(query: Query): SingleStoreQuery {
-        this.select(query)
         this.subqueriesFromOrderBy(query.order_by)
         this.subqueriesFromExpression(query.predicate)
+
+        this.select(query)
         this.from()
         this.join()
         this.where(query.predicate)
@@ -545,11 +576,12 @@ LIMIT 1
 
         var sql = this.sqlParts.join('\n')
 
+        const table = this.rowsetAliasGenerator.newAlias()
         if (this.aggregateRowsToObject) {
-            sql = `SELECT JSON_BUILD_OBJECT('rows', JSON_AGG(row)) AS data 
-FROM (
+            sql = `SELECT JSON_BUILD_OBJECT('rows', JSON_AGG(row ${this.visitOrderBy(query.order_by)})) AS data
+FROM(
 ${sql}
-)`
+) AS ${table}`
         }
 
         return {

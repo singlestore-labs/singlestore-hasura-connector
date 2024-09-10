@@ -1,0 +1,17 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "1 Infinite Loop",
+        "BillingCity": "Cupertino",
+        "BillingCountry": "USA",
+        "BillingPostalCode": "95014",
+        "BillingState": "CA",
+        "CustomerId": 19,
+        "InvoiceDate": "2012-01-24",
+        "InvoiceId": 255,
+        "Total": 5.94
+      }
+    ]
+  }
+]

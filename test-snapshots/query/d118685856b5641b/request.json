@@ -1,0 +1,55 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "aggregates": {
+      "CustomerId_avg_8160": {
+        "type": "single_column",
+        "column": "CustomerId",
+        "function": "avg"
+      },
+      "CustomerId_sum_2572": {
+        "type": "single_column",
+        "column": "CustomerId",
+        "function": "sum"
+      },
+      "Address_max_9249": {
+        "type": "single_column",
+        "column": "Address",
+        "function": "max"
+      },
+      "Phone_count_4039": {
+        "type": "single_column",
+        "column": "Phone",
+        "function": "count"
+      },
+      "LastName_max_8116": {
+        "type": "single_column",
+        "column": "LastName",
+        "function": "max"
+      },
+      "Fax_max_7125": {
+        "type": "single_column",
+        "column": "Fax",
+        "function": "max"
+      },
+      "SupportRepId_min_4979": {
+        "type": "single_column",
+        "column": "SupportRepId",
+        "function": "min"
+      },
+      "State_max_4296": {
+        "type": "single_column",
+        "column": "State",
+        "function": "max"
+      },
+      "Company_count_9455": {
+        "type": "single_column",
+        "column": "Company",
+        "function": "count"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

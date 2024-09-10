@@ -1,0 +1,37 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "fields": {
+      "Email_0187": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "SupportRepId_7069": {
+        "type": "column",
+        "column": "SupportRepId",
+        "fields": null
+      },
+      "PostalCode_9783": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Phone",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

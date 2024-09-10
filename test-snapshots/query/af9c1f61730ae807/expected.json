@@ -1,0 +1,50 @@
+[
+  {
+    "rows": [
+      {
+        "BillingAddress": "1 Infinite Loop",
+        "BillingCity": "Cupertino",
+        "BillingCountry": "USA",
+        "BillingPostalCode": "95014",
+        "BillingState": "CA",
+        "CustomerId": 19,
+        "InvoiceDate": "2012-09-13",
+        "InvoiceId": 307,
+        "Total": 1.99
+      },
+      {
+        "BillingAddress": "12,Community Centre",
+        "BillingCity": "Delhi",
+        "BillingCountry": "India",
+        "BillingPostalCode": "110017",
+        "BillingState": null,
+        "CustomerId": 58,
+        "InvoiceDate": "2013-12-22",
+        "InvoiceId": 412,
+        "Total": 1.99
+      },
+      {
+        "BillingAddress": "3,Raj Bhavan Road",
+        "BillingCity": "Bangalore",
+        "BillingCountry": "India",
+        "BillingPostalCode": "560001",
+        "BillingState": null,
+        "CustomerId": 59,
+        "InvoiceDate": "2010-02-26",
+        "InvoiceId": 97,
+        "Total": 1.99
+      },
+      {
+        "BillingAddress": "4, Rue Milton",
+        "BillingCity": "Paris",
+        "BillingCountry": "France",
+        "BillingPostalCode": "75009",
+        "BillingState": null,
+        "CustomerId": 39,
+        "InvoiceDate": "2011-06-06",
+        "InvoiceId": 202,
+        "Total": 1.99
+      }
+    ]
+  }
+]

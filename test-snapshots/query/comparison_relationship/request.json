@@ -1,0 +1,54 @@
+{
+    "collection": "chinook.Customer",
+    "query": {
+        "fields": {
+            "FirstName": {
+                "type": "column",
+                "column": "FirstName",
+                "fields": null
+            }
+        },
+        "limit": 10,
+        "predicate": {
+            "type": "binary_comparison_operator",
+            "column": {
+                "type": "column",
+                "name": "EmployeeId",
+                "path": [
+                    {
+                        "relationship": "CustomerToEmployee",
+                        "arguments": {}
+                    },
+                    {
+                        "relationship": "EmployeeReportsTo",
+                        "arguments": {}
+                    }
+                ]
+            },
+            "operator": "less",
+            "value": {
+                "type": "scalar",
+                "value": 100
+            }
+        }
+    },
+    "arguments": {},
+    "collection_relationships": {
+        "CustomerToEmployee": {
+            "column_mapping": {
+                "SupportRepId": "EmployeeId"
+            },
+            "relationship_type": "object",
+            "target_collection": "chinook.Employee",
+            "arguments": {}
+        },
+        "EmployeeReportsTo": {
+            "column_mapping": {
+                "ReportsTo": "EmployeeId"
+            },
+            "relationship_type": "object",
+            "target_collection": "chinook.Employee",
+            "arguments": {}
+        }
+    }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "aggregates": {
+      "Country_count_4323": 8,
+      "Phone_count_7548": 8,
+      "ReportsTo_min_5898": 1,
+      "State_max_6589": "AB"
+    }
+  }
+]

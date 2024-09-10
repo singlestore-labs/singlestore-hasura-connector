@@ -1,0 +1,25 @@
+{
+  "collection": "chinook.Customer",
+  "query": {
+    "aggregates": {
+      "PostalCode_min_2912": {
+        "type": "single_column",
+        "column": "PostalCode",
+        "function": "min"
+      },
+      "Address_min_6317": {
+        "type": "single_column",
+        "column": "Address",
+        "function": "min"
+      },
+      "Fax_min_4381": {
+        "type": "single_column",
+        "column": "Fax",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

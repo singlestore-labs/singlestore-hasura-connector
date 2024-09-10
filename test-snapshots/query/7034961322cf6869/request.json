@@ -1,0 +1,15 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "aggregates": {
+      "Milliseconds_max_2798": {
+        "type": "single_column",
+        "column": "Milliseconds",
+        "function": "max"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

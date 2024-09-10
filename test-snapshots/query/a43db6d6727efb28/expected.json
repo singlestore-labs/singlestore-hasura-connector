@@ -1,0 +1,26 @@
+[
+  {
+    "rows": [
+      {
+        "MediaTypeId_1685": 5,
+        "Name_9191": "AAC audio file"
+      },
+      {
+        "MediaTypeId_1685": 4,
+        "Name_9191": "Purchased AAC audio file"
+      },
+      {
+        "MediaTypeId_1685": 3,
+        "Name_9191": "Protected MPEG-4 video file"
+      },
+      {
+        "MediaTypeId_1685": 2,
+        "Name_9191": "Protected AAC audio file"
+      },
+      {
+        "MediaTypeId_1685": 1,
+        "Name_9191": "MPEG audio file"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "rows": [
+      {
+        "BillingCity_7212": "Delhi",
+        "CustomerId_7594": 58,
+        "Total_8932": 1.99
+      },
+      {
+        "BillingCity_7212": "Helsinki",
+        "CustomerId_7594": 44,
+        "Total_8932": 13.86
+      },
+      {
+        "BillingCity_7212": "Porto",
+        "CustomerId_7594": 35,
+        "Total_8932": 8.91
+      },
+      {
+        "BillingCity_7212": "Toronto",
+        "CustomerId_7594": 29,
+        "Total_8932": 5.94
+      },
+      {
+        "BillingCity_7212": "Madison",
+        "CustomerId_7594": 25,
+        "Total_8932": 3.96
+      },
+      {
+        "BillingCity_7212": "Boston",
+        "CustomerId_7594": 23,
+        "Total_8932": 1.98
+      },
+      {
+        "BillingCity_7212": "Reno",
+        "CustomerId_7594": 21,
+        "Total_8932": 1.98
+      },
+      {
+        "BillingCity_7212": "Mountain View",
+        "CustomerId_7594": 20,
+        "Total_8932": 0.99
+      },
+      {
+        "BillingCity_7212": "Prague",
+        "CustomerId_7594": 6,
+        "Total_8932": 25.86
+      },
+      {
+        "BillingCity_7212": "Buenos Aires",
+        "CustomerId_7594": 56,
+        "Total_8932": 8.91
+      }
+    ]
+  }
+]

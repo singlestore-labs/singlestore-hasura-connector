@@ -1,0 +1,12 @@
+[
+  {
+    "aggregates": {
+      "BillingCity_max_4107": "Yellowknife",
+      "BillingCountry_min_0867": "Argentina",
+      "BillingState_min_2121": "AB",
+      "InvoiceDate_min_3004": "2009-01-01",
+      "InvoiceId_count_6167": 412,
+      "InvoiceId_min_8983": 1
+    }
+  }
+]

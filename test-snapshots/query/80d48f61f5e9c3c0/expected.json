@@ -1,0 +1,11 @@
+[
+  {
+    "aggregates": {
+      "PlaylistId_avg_6374": 4.917039586,
+      "PlaylistId_min_8134": 1,
+      "TrackId_count_3745": 8715,
+      "TrackId_max_1020": 3503,
+      "TrackId_min_0547": 1
+    }
+  }
+]

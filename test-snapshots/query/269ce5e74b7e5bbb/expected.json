@@ -1,0 +1,66 @@
+[
+  {
+    "rows": [
+      {
+        "BillingCity_5021": "Madison",
+        "BillingState_6271": "WI",
+        "CustomerId_4094": 25,
+        "InvoiceDate_4631": "2009-10-25"
+      },
+      {
+        "BillingCity_5021": "Redmond",
+        "BillingState_6271": "WA",
+        "CustomerId_4094": 17,
+        "InvoiceDate_4631": "2010-04-29"
+      },
+      {
+        "BillingCity_5021": "Amsterdam",
+        "BillingState_6271": "VV",
+        "CustomerId_4094": 48,
+        "InvoiceDate_4631": "2012-02-09"
+      },
+      {
+        "BillingCity_5021": "Salt Lake City",
+        "BillingState_6271": "UT",
+        "CustomerId_4094": 28,
+        "InvoiceDate_4631": "2013-05-19"
+      },
+      {
+        "BillingCity_5021": "Fort Worth",
+        "BillingState_6271": "TX",
+        "CustomerId_4094": 26,
+        "InvoiceDate_4631": "2011-01-02"
+      },
+      {
+        "BillingCity_5021": "São José dos Campos",
+        "BillingState_6271": "SP",
+        "CustomerId_4094": 1,
+        "InvoiceDate_4631": "2011-05-06"
+      },
+      {
+        "BillingCity_5021": "São Paulo",
+        "BillingState_6271": "SP",
+        "CustomerId_4094": 10,
+        "InvoiceDate_4631": "2012-01-09"
+      },
+      {
+        "BillingCity_5021": "São Paulo",
+        "BillingState_6271": "SP",
+        "CustomerId_4094": 11,
+        "InvoiceDate_4631": "2013-03-18"
+      },
+      {
+        "BillingCity_5021": "Rome",
+        "BillingState_6271": "RM",
+        "CustomerId_4094": 47,
+        "InvoiceDate_4631": "2010-12-02"
+      },
+      {
+        "BillingCity_5021": "Rio de Janeiro",
+        "BillingState_6271": "RJ",
+        "CustomerId_4094": 12,
+        "InvoiceDate_4631": "2009-05-23"
+      }
+    ]
+  }
+]

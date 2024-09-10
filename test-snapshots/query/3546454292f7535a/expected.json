@@ -1,0 +1,96 @@
+[
+  {
+    "rows": [
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 10,
+        "Total_8382": 5.94
+      },
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 183,
+        "Total_8382": 1.98
+      },
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 194,
+        "Total_8382": 21.86
+      },
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 249,
+        "Total_8382": 8.91
+      },
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 378,
+        "Total_8382": 1.98
+      },
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 401,
+        "Total_8382": 3.96
+      },
+      {
+        "BillingCity_3238": "Dublin",
+        "BillingCountry_5886": "Ireland",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": "Dublin",
+        "CustomerId_3752": 46,
+        "InvoiceId_7314": 62,
+        "Total_8382": 0.99
+      },
+      {
+        "BillingCity_3238": "Lisbon",
+        "BillingCountry_5886": "Portugal",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": null,
+        "CustomerId_3752": 34,
+        "InvoiceId_7314": 125,
+        "Total_8382": 0.99
+      },
+      {
+        "BillingCity_3238": "Lisbon",
+        "BillingCountry_5886": "Portugal",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": null,
+        "CustomerId_3752": 34,
+        "InvoiceId_7314": 246,
+        "Total_8382": 1.98
+      },
+      {
+        "BillingCity_3238": "Lisbon",
+        "BillingCountry_5886": "Portugal",
+        "BillingPostalCode_4134": null,
+        "BillingState_3073": null,
+        "CustomerId_3752": 34,
+        "InvoiceId_7314": 257,
+        "Total_8382": 13.86
+      }
+    ]
+  }
+]

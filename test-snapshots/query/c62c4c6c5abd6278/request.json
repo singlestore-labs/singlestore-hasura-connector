@@ -1,0 +1,33 @@
+{
+  "collection": "chinook.Artist",
+  "query": {
+    "fields": {
+      "ArtistId": {
+        "type": "column",
+        "column": "ArtistId",
+        "fields": null
+      },
+      "Name": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "predicate": {
+      "type": "binary_comparison_operator",
+      "column": {
+        "type": "column",
+        "name": "ArtistId",
+        "path": []
+      },
+      "operator": "equal",
+      "value": {
+        "type": "scalar",
+        "value": 106
+      }
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

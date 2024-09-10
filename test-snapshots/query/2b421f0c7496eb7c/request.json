@@ -1,0 +1,53 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address_4089": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "Title_3400": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      },
+      "FirstName_1228": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Email",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "Fax",
+            "path": []
+          }
+        },
+        {
+          "order_direction": "desc",
+          "target": {
+            "type": "column",
+            "name": "HireDate",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

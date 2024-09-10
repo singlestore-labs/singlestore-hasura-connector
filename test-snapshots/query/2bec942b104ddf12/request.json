@@ -1,0 +1,174 @@
+{
+  "collection": "chinook.Employee",
+  "query": {
+    "fields": {
+      "Address_8605": {
+        "type": "column",
+        "column": "Address",
+        "fields": null
+      },
+      "BirthDate_4927": {
+        "type": "column",
+        "column": "BirthDate",
+        "fields": null
+      },
+      "City_2877": {
+        "type": "column",
+        "column": "City",
+        "fields": null
+      },
+      "Country_2659": {
+        "type": "column",
+        "column": "Country",
+        "fields": null
+      },
+      "Email_1964": {
+        "type": "column",
+        "column": "Email",
+        "fields": null
+      },
+      "EmployeeId_3907": {
+        "type": "column",
+        "column": "EmployeeId",
+        "fields": null
+      },
+      "Fax_7146": {
+        "type": "column",
+        "column": "Fax",
+        "fields": null
+      },
+      "FirstName_9980": {
+        "type": "column",
+        "column": "FirstName",
+        "fields": null
+      },
+      "HireDate_7326": {
+        "type": "column",
+        "column": "HireDate",
+        "fields": null
+      },
+      "LastName_6075": {
+        "type": "column",
+        "column": "LastName",
+        "fields": null
+      },
+      "Phone_2184": {
+        "type": "column",
+        "column": "Phone",
+        "fields": null
+      },
+      "PostalCode_0736": {
+        "type": "column",
+        "column": "PostalCode",
+        "fields": null
+      },
+      "Title_2759": {
+        "type": "column",
+        "column": "Title",
+        "fields": null
+      },
+      "State_8712": {
+        "type": "column",
+        "column": "State",
+        "fields": null
+      },
+      "FK_EmployeeReportsTo1": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "Address": {
+              "type": "column",
+              "column": "Address",
+              "fields": null
+            },
+            "BirthDate": {
+              "type": "column",
+              "column": "BirthDate",
+              "fields": null
+            },
+            "City": {
+              "type": "column",
+              "column": "City",
+              "fields": null
+            },
+            "Country": {
+              "type": "column",
+              "column": "Country",
+              "fields": null
+            },
+            "Email": {
+              "type": "column",
+              "column": "Email",
+              "fields": null
+            },
+            "EmployeeId": {
+              "type": "column",
+              "column": "EmployeeId",
+              "fields": null
+            },
+            "Fax": {
+              "type": "column",
+              "column": "Fax",
+              "fields": null
+            },
+            "FirstName": {
+              "type": "column",
+              "column": "FirstName",
+              "fields": null
+            },
+            "HireDate": {
+              "type": "column",
+              "column": "HireDate",
+              "fields": null
+            },
+            "LastName": {
+              "type": "column",
+              "column": "LastName",
+              "fields": null
+            },
+            "Phone": {
+              "type": "column",
+              "column": "Phone",
+              "fields": null
+            },
+            "PostalCode": {
+              "type": "column",
+              "column": "PostalCode",
+              "fields": null
+            },
+            "ReportsTo": {
+              "type": "column",
+              "column": "ReportsTo",
+              "fields": null
+            },
+            "State": {
+              "type": "column",
+              "column": "State",
+              "fields": null
+            },
+            "Title": {
+              "type": "column",
+              "column": "Title",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__relationship": {
+      "column_mapping": {
+        "EmployeeId": "ReportsTo"
+      },
+      "relationship_type": "object",
+      "target_collection": "chinook.Employee",
+      "arguments": {}
+    }
+  }
+}

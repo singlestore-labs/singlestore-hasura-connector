@@ -1,0 +1,59 @@
+{
+  "collection": "chinook.PlaylistTrack",
+  "query": {
+    "fields": {
+      "PlaylistId": {
+        "type": "column",
+        "column": "PlaylistId",
+        "fields": null
+      },
+      "TrackId": {
+        "type": "column",
+        "column": "TrackId",
+        "fields": null
+      },
+      "FK_PlaylistTrackTrackId": {
+        "type": "relationship",
+        "query": {
+          "fields": {
+            "MediaTypeId_9003": {
+              "type": "column",
+              "column": "MediaTypeId",
+              "fields": null
+            },
+            "Bytes_9531": {
+              "type": "column",
+              "column": "Bytes",
+              "fields": null
+            },
+            "Name_3738": {
+              "type": "column",
+              "column": "Name",
+              "fields": null
+            },
+            "UnitPrice_7545": {
+              "type": "column",
+              "column": "UnitPrice",
+              "fields": null
+            }
+          },
+          "limit": 10
+        },
+        "relationship": "__array_relationship",
+        "arguments": {}
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {
+    "__array_relationship": {
+      "column_mapping": {
+        "TrackId": "TrackId"
+      },
+      "relationship_type": "array",
+      "target_collection": "chinook.Track",
+      "arguments": {}
+    }
+  }
+}

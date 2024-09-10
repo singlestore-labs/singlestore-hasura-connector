@@ -1,0 +1,30 @@
+{
+  "collection": "chinook.MediaType",
+  "query": {
+    "aggregates": {
+      "MediaTypeId_count_5826": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "count"
+      },
+      "Name_count_6028": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "count"
+      },
+      "MediaTypeId_min_0808": {
+        "type": "single_column",
+        "column": "MediaTypeId",
+        "function": "min"
+      },
+      "Name_min_4493": {
+        "type": "single_column",
+        "column": "Name",
+        "function": "min"
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "rows": [
+      {
+        "Address_4242": "7727B 41 Ave",
+        "BirthDate_3213": "1965-03-03",
+        "Country_1516": "Canada",
+        "Email_8811": "steve@chinookcorp.com",
+        "FirstName_8240": "Steve",
+        "HireDate_5087": "2003-10-17",
+        "LastName_3660": "Johnson",
+        "Phone_8656": "1 (780) 836-9987",
+        "PostalCode_0783": "T3B 1Y7",
+        "ReportsTo_0530": 2,
+        "State_0649": "AB",
+        "Title_9497": "Sales Support Agent"
+      },
+      {
+        "Address_4242": "11120 Jasper Ave NW",
+        "BirthDate_3213": "1962-02-18",
+        "Country_1516": "Canada",
+        "Email_8811": "andrew@chinookcorp.com",
+        "FirstName_8240": "Andrew",
+        "HireDate_5087": "2002-08-14",
+        "LastName_3660": "Adams",
+        "Phone_8656": "+1 (780) 428-9482",
+        "PostalCode_0783": "T5K 2N1",
+        "ReportsTo_0530": null,
+        "State_0649": "AB",
+        "Title_9497": "General Manager"
+      },
+      {
+        "Address_4242": "923 7 ST NW",
+        "BirthDate_3213": "1968-01-09",
+        "Country_1516": "Canada",
+        "Email_8811": "laura@chinookcorp.com",
+        "FirstName_8240": "Laura",
+        "HireDate_5087": "2004-03-04",
+        "LastName_3660": "Callahan",
+        "Phone_8656": "+1 (403) 467-3351",
+        "PostalCode_0783": "T1H 1Y8",
+        "ReportsTo_0530": 6,
+        "State_0649": "AB",
+        "Title_9497": "IT Staff"
+      },
+      {
+        "Address_4242": "590 Columbia Boulevard West",
+        "BirthDate_3213": "1970-05-29",
+        "Country_1516": "Canada",
+        "Email_8811": "robert@chinookcorp.com",
+        "FirstName_8240": "Robert",
+        "HireDate_5087": "2004-01-02",
+        "LastName_3660": "King",
+        "Phone_8656": "+1 (403) 456-9986",
+        "PostalCode_0783": "T1K 5N8",
+        "ReportsTo_0530": 6,
+        "State_0649": "AB",
+        "Title_9497": "IT Staff"
+      },
+      {
+        "Address_4242": "683 10 Street SW",
+        "BirthDate_3213": "1947-09-19",
+        "Country_1516": "Canada",
+        "Email_8811": "margaret@chinookcorp.com",
+        "FirstName_8240": "Margaret",
+        "HireDate_5087": "2003-05-03",
+        "LastName_3660": "Park",
+        "Phone_8656": "+1 (403) 263-4423",
+        "PostalCode_0783": "T2P 5G3",
+        "ReportsTo_0530": 2,
+        "State_0649": "AB",
+        "Title_9497": "Sales Support Agent"
+      },
+      {
+        "Address_4242": "1111 6 Ave SW",
+        "BirthDate_3213": "1973-08-29",
+        "Country_1516": "Canada",
+        "Email_8811": "jane@chinookcorp.com",
+        "FirstName_8240": "Jane",
+        "HireDate_5087": "2002-04-01",
+        "LastName_3660": "Peacock",
+        "Phone_8656": "+1 (403) 262-3443",
+        "PostalCode_0783": "T2P 5M5",
+        "ReportsTo_0530": 2,
+        "State_0649": "AB",
+        "Title_9497": "Sales Support Agent"
+      },
+      {
+        "Address_4242": "825 8 Ave SW",
+        "BirthDate_3213": "1958-12-08",
+        "Country_1516": "Canada",
+        "Email_8811": "nancy@chinookcorp.com",
+        "FirstName_8240": "Nancy",
+        "HireDate_5087": "2002-05-01",
+        "LastName_3660": "Edwards",
+        "Phone_8656": "+1 (403) 262-3443",
+        "PostalCode_0783": "T2P 2T3",
+        "ReportsTo_0530": 1,
+        "State_0649": "AB",
+        "Title_9497": "Sales Manager"
+      },
+      {
+        "Address_4242": "5827 Bowness Road NW",
+        "BirthDate_3213": "1973-07-01",
+        "Country_1516": "Canada",
+        "Email_8811": "michael@chinookcorp.com",
+        "FirstName_8240": "Michael",
+        "HireDate_5087": "2003-10-17",
+        "LastName_3660": "Mitchell",
+        "Phone_8656": "+1 (403) 246-9887",
+        "PostalCode_0783": "T3B 0C5",
+        "ReportsTo_0530": 1,
+        "State_0649": "AB",
+        "Title_9497": "IT Manager"
+      }
+    ]
+  }
+]

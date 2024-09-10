@@ -1,0 +1,60 @@
+{
+  "collection": "chinook.InvoiceLine",
+  "query": {
+    "aggregates": {
+      "InvoiceId_count": {
+        "type": "column_count",
+        "column": "InvoiceId",
+        "distinct": false
+      },
+      "InvoiceId_distinct_count": {
+        "type": "column_count",
+        "column": "InvoiceId",
+        "distinct": true
+      },
+      "InvoiceLineId_count": {
+        "type": "column_count",
+        "column": "InvoiceLineId",
+        "distinct": false
+      },
+      "InvoiceLineId_distinct_count": {
+        "type": "column_count",
+        "column": "InvoiceLineId",
+        "distinct": true
+      },
+      "Quantity_count": {
+        "type": "column_count",
+        "column": "Quantity",
+        "distinct": false
+      },
+      "Quantity_distinct_count": {
+        "type": "column_count",
+        "column": "Quantity",
+        "distinct": true
+      },
+      "TrackId_count": {
+        "type": "column_count",
+        "column": "TrackId",
+        "distinct": false
+      },
+      "TrackId_distinct_count": {
+        "type": "column_count",
+        "column": "TrackId",
+        "distinct": true
+      },
+      "UnitPrice_count": {
+        "type": "column_count",
+        "column": "UnitPrice",
+        "distinct": false
+      },
+      "UnitPrice_distinct_count": {
+        "type": "column_count",
+        "column": "UnitPrice",
+        "distinct": true
+      }
+    },
+    "limit": 10
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

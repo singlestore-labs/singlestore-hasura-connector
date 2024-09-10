@@ -1,0 +1,42 @@
+{
+  "collection": "chinook.Track",
+  "query": {
+    "fields": {
+      "UnitPrice_8083": {
+        "type": "column",
+        "column": "UnitPrice",
+        "fields": null
+      },
+      "Bytes_2355": {
+        "type": "column",
+        "column": "Bytes",
+        "fields": null
+      },
+      "Name_7249": {
+        "type": "column",
+        "column": "Name",
+        "fields": null
+      },
+      "MediaTypeId_0896": {
+        "type": "column",
+        "column": "MediaTypeId",
+        "fields": null
+      }
+    },
+    "limit": 10,
+    "order_by": {
+      "elements": [
+        {
+          "order_direction": "asc",
+          "target": {
+            "type": "column",
+            "name": "Bytes",
+            "path": []
+          }
+        }
+      ]
+    }
+  },
+  "arguments": {},
+  "collection_relationships": {}
+}

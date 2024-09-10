@@ -1,0 +1,118 @@
+[
+  {
+    "rows": [
+      {
+        "ArtistId": 1,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 1
+            },
+            {
+              "AlbumId_9697": 4
+            }
+          ]
+        },
+        "Name": "AC/DC"
+      },
+      {
+        "ArtistId": 10,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 13
+            }
+          ]
+        },
+        "Name": "Billy Cobham"
+      },
+      {
+        "ArtistId": 100,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 141
+            }
+          ]
+        },
+        "Name": "Lenny Kravitz"
+      },
+      {
+        "ArtistId": 101,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 142
+            },
+            {
+              "AlbumId_9697": 143
+            }
+          ]
+        },
+        "Name": "Lulu Santos"
+      },
+      {
+        "ArtistId": 102,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 144
+            }
+          ]
+        },
+        "Name": "Marillion"
+      },
+      {
+        "ArtistId": 103,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 145
+            }
+          ]
+        },
+        "Name": "Marisa Monte"
+      },
+      {
+        "ArtistId": 104,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 146
+            }
+          ]
+        },
+        "Name": "Marvin Gaye"
+      },
+      {
+        "ArtistId": 105,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 147
+            }
+          ]
+        },
+        "Name": "Men At Work"
+      },
+      {
+        "ArtistId": 106,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_9697": 160
+            }
+          ]
+        },
+        "Name": "Motörhead"
+      },
+      {
+        "ArtistId": 107,
+        "FK_AlbumArtistId": {
+          "rows": []
+        },
+        "Name": "Motörhead & Girlschool"
+      }
+    ]
+  }
+]

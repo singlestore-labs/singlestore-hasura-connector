@@ -1,0 +1,140 @@
+[
+  {
+    "rows": [
+      {
+        "ArtistId": 1,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 1,
+              "ArtistId_9164": 1,
+              "Title_9018": "For Those About To Rock We Salute You"
+            },
+            {
+              "AlbumId_7047": 4,
+              "ArtistId_9164": 1,
+              "Title_9018": "Let There Be Rock"
+            }
+          ]
+        },
+        "Name": "AC/DC"
+      },
+      {
+        "ArtistId": 10,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 13,
+              "ArtistId_9164": 10,
+              "Title_9018": "The Best Of Billy Cobham"
+            }
+          ]
+        },
+        "Name": "Billy Cobham"
+      },
+      {
+        "ArtistId": 100,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 141,
+              "ArtistId_9164": 100,
+              "Title_9018": "Greatest Hits"
+            }
+          ]
+        },
+        "Name": "Lenny Kravitz"
+      },
+      {
+        "ArtistId": 101,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 142,
+              "ArtistId_9164": 101,
+              "Title_9018": "Lulu Santos - RCA 100 Anos De Música - Álbum 01"
+            },
+            {
+              "AlbumId_7047": 143,
+              "ArtistId_9164": 101,
+              "Title_9018": "Lulu Santos - RCA 100 Anos De Música - Álbum 02"
+            }
+          ]
+        },
+        "Name": "Lulu Santos"
+      },
+      {
+        "ArtistId": 102,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 144,
+              "ArtistId_9164": 102,
+              "Title_9018": "Misplaced Childhood"
+            }
+          ]
+        },
+        "Name": "Marillion"
+      },
+      {
+        "ArtistId": 103,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 145,
+              "ArtistId_9164": 103,
+              "Title_9018": "Barulhinho Bom"
+            }
+          ]
+        },
+        "Name": "Marisa Monte"
+      },
+      {
+        "ArtistId": 104,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 146,
+              "ArtistId_9164": 104,
+              "Title_9018": "Seek And Shall Find: More Of The Best (1963-1981)"
+            }
+          ]
+        },
+        "Name": "Marvin Gaye"
+      },
+      {
+        "ArtistId": 105,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 147,
+              "ArtistId_9164": 105,
+              "Title_9018": "The Best Of Men At Work"
+            }
+          ]
+        },
+        "Name": "Men At Work"
+      },
+      {
+        "ArtistId": 106,
+        "FK_AlbumArtistId": {
+          "rows": [
+            {
+              "AlbumId_7047": 160,
+              "ArtistId_9164": 106,
+              "Title_9018": "Ace Of Spades"
+            }
+          ]
+        },
+        "Name": "Motörhead"
+      },
+      {
+        "ArtistId": 107,
+        "FK_AlbumArtistId": {
+          "rows": []
+        },
+        "Name": "Motörhead & Girlschool"
+      }
+    ]
+  }
+]
