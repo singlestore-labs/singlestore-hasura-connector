@@ -4,6 +4,10 @@ This changelog documents changes between release tags.
 ## [Unreleased]
 Upcoming changes for the next versioned release.
 
+## [0.0.3]
+ * Updated logo
+ * Fixed bugs in the SQL generation
+
 ## [0.0.2]
  * Fixed docker image in the metadata
 
