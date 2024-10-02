@@ -14,12 +14,6 @@ supportedEnvironmentVariables:
     description: Password of the SingleStore database user.
   - name: SINGLESTORE_DATABASE
     description: Name of the SingleStore database to connect with.
-  - name: SINGLESTORE_SSL_CA
-    description: Name of the environment variable that stores the CA certificates.
-  - name: SINGLESTORE_SSL_CERT
-    description: Name of the environment variable that stores the cert chain in PEM format.
-  - name: SINGLESTORE_SSL_KEY
-    description: Name of the environment variable that stores the private key in PEM format.
   - name: SINGLESTORE_SSL_CIPHERS
     description: Cipher suite specification.  If specified, it replaces the default value.
   - name: SINGLESTORE_SSL_PASSPHRASE

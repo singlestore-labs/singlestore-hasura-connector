@@ -90,9 +90,9 @@ Alternatively, you can also set following environment variables instead of the `
 | SINGLESTORE_USER                    |             | SingleStore user to authenticate as. |
 | SINGLESTORE_PASSWORD                |             | Password of the SingleStore database user. |
 | SINGLESTORE_DATABASE                |             | Name of the SingleStore database to connect with. |
-| SINGLESTORE_SSL_CA                  |             | Name of the environment variable that stores the CA certificates. |
-| SINGLESTORE_SSL_CERT                |             | Name of the environment variable that stores the cert chain in PEM format. |
-| SINGLESTORE_SSL_KEY                 |             | Name of the environment variable that stores the private key in PEM format. |
+| SINGLESTORE_SSL_CA                  |             | CA certificate. |
+| SINGLESTORE_SSL_CERT                |             | Certificate chain in PEM format. |
+| SINGLESTORE_SSL_KEY                 |             | Private key in PEM format. |
 | SINGLESTORE_SSL_CIPHERS             |             | Cipher suite specification. If specified, it replaces the default value. |
 | SINGLESTORE_SSL_PASSPHRASE          |             | Shared passphrase used for a single private key. |
 | SINGLESTORE_SSL_REJECT_UNAUTHORIZED | true        | If enabled, the server rejects any connection that is not authorized with the list of supplied CAs. |
