@@ -3,29 +3,23 @@ packagingDefinition:
   dockerImage: ghcr.io/singlestore-labs/singlestore-hasura-connector:v0.0.3
 supportedEnvironmentVariables:
   - name: SINGELSTORE_URL
-    description: The url for the SingleStore database. The format is `mysql://[<user>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]`.
+    description: URL for the SingleStore database. The format is `mysql://[<user>[:<password>]][@<host>:[<port>]]/[<database>][?<key1>=<value1>[&<key2>=<value2>]]`.
   - name: SINGLESTORE_HOST
-    description: The hostname of the database you are connecting to. (default - localhost)
+    description: Hostname of the SingleStore database to connect with. (default - localhost)
   - name: SINGLESTORE_PORT
-    description: The port number to connect to. (default - 3306)
+    description: Port number of the SingleStore database. (default - 3306)
   - name: SINGLESTORE_USER
-    description: The SingleStore user to authenticate as
+    description: SingleStore user to authenticate as.
   - name: SINGLESTORE_PASSWORD
-    description: The password of that SingleStore user
+    description: Password of the SingleStore database user.
   - name: SINGLESTORE_DATABASE
-    description: The name of the database to use
-  - name: SINGLESTORE_SSL_CA
-    description: The path to trusted CA certificates file
-  - name: SINGLESTORE_SSL_CERT
-    description: The path to cert chain file in PEM format
-  - name: SINGLESTORE_SSL_KEY
-    description: The path to private key file in PEM format
+    description: Name of the SingleStore database to connect with.
   - name: SINGLESTORE_SSL_CIPHERS
-    description: The cipher suite specification, replacing the default
+    description: Cipher suite specification.  If specified, it replaces the default value.
   - name: SINGLESTORE_SSL_PASSPHRASE
-    description: The shared passphrase used for a single private key
+    description: Shared passphrase used for a single private key.
   - name: SINGLESTORE_SSL_REJECT_UNAUTHORIZED
-    description: If true the server will reject any connection which is not authorized with the list of supplied CAs (default true)
+    description: If enabled, the server rejects any connection that is not authorized with the list of supplied CAs. (default - true)
 commands:
   update:
     type: Dockerized

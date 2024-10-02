@@ -56,7 +56,7 @@ ddn auth login
 
 ### Step 2: Configure the connector
 
-After the supergraph and subgraph have been initialized (refer to [Prerequisites](#Prerequisites), run the initialization command in interactive mode. Specify a name for the connector in the command.
+After the supergraph and subgraph have been initialized (refer to [Prerequisites](#Prerequisites)), run the initialization command in interactive mode. Specify a name for the connector in the command.
 
 ```bash
 ddn connector init <connector-name>  -i
@@ -87,13 +87,14 @@ Alternatively, you can also set following environment variables instead of the `
 |-------------------------------------|-------------|-------------|
 | SINGLESTORE_HOST                    | localhost   | Hostname of the SingleStore database to connect with. |
 | SINGLESTORE_PORT                    | 3306        | Port number of the SingleStore database. |
+| SINGLESTORE_USER                    |             | SingleStore user to authenticate as. |
 | SINGLESTORE_PASSWORD                |             | Password of the SingleStore database user. |
 | SINGLESTORE_DATABASE                |             | Name of the SingleStore database to connect with. |
-| SINGLESTORE_SSL_CA                  |             | Path to the trusted CA certificate file. |
-| SINGLESTORE_SSL_CERT                |             | Path to the certificate chain file in PEM format. |
-| SINGLESTORE_SSL_KEY                 |             | Path to the private key file in PEM format. |
+| SINGLESTORE_SSL_CA                  |             | CA certificate. |
+| SINGLESTORE_SSL_CERT                |             | Certificate chain in PEM format. |
+| SINGLESTORE_SSL_KEY                 |             | Private key in PEM format. |
 | SINGLESTORE_SSL_CIPHERS             |             | Cipher suite specification. If specified, it replaces the default value. |
-| SINGLESTORE_SSL_PASSPHRASE          |             | Cipher suite specification. If specified, it replaces the default value. |
+| SINGLESTORE_SSL_PASSPHRASE          |             | Shared passphrase used for a single private key. |
 | SINGLESTORE_SSL_REJECT_UNAUTHORIZED | true        | If enabled, the server rejects any connection that is not authorized with the list of supplied CAs. |
 
 If `SINGLELSTORE_URL` is set these variables are ignored.

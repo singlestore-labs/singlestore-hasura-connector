@@ -33,9 +33,9 @@ export function createPool(): Pool {
             password: SINGLESTORE_PASSWORD,
             database: SINGLESTORE_DATABASE,
             ssl: (SINGLESTORE_SSL_CA || SINGLESTORE_SSL_CERT || SINGLESTORE_SSL_CIPHERS || SINGLESTORE_SSL_KEY || SINGLESTORE_SSL_PASSPHRASE || SINGLESTORE_SSL_REJECT_UNAUTHORIZED) ? {
-                ca: SINGLESTORE_SSL_CA ? readFileSync(SINGLESTORE_SSL_CA) : undefined,
-                cert: SINGLESTORE_SSL_CERT ? readFileSync(SINGLESTORE_SSL_CERT) : undefined,
-                key: SINGLESTORE_SSL_KEY ? readFileSync(SINGLESTORE_SSL_KEY) : undefined,
+                ca: SINGLESTORE_SSL_CA,
+                cert: SINGLESTORE_SSL_CERT,
+                key: SINGLESTORE_SSL_KEY,
                 ciphers: SINGLESTORE_SSL_CIPHERS,
                 passphrase: SINGLESTORE_SSL_PASSPHRASE,
                 rejectUnauthorized: Boolean(SINGLESTORE_SSL_REJECT_UNAUTHORIZED)
