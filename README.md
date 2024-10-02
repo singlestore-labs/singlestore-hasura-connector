@@ -56,7 +56,7 @@ ddn auth login
 
 ### Step 2: Configure the connector
 
-After the supergraph and subgraph have been initialized (refer to [Prerequisites](#Prerequisites), run the initialization command in interactive mode. Specify a name for the connector in the command.
+After the supergraph and subgraph have been initialized (refer to [Prerequisites](#Prerequisites)), run the initialization command in interactive mode. Specify a name for the connector in the command.
 
 ```bash
 ddn connector init <connector-name>  -i
