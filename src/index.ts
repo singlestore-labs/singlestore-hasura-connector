@@ -1,4 +1,4 @@
-import { BadGateway, CapabilitiesResponse, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
+import { BadGateway, Capabilities, Connector, ExplainResponse, Forbidden, MutationRequest, MutationResponse, QueryRequest, QueryResponse, SchemaResponse, start } from "@hasura/ndc-sdk-typescript";
 import { Pool } from 'mysql2/promise';
 import { readFileSync } from "fs";
 import { CAPABILITIES_RESPONSE } from "./constants";
@@ -82,7 +82,7 @@ const connector: Connector<Configuration, State> = {
      * @param configuration
      * @param state
      */
-    async healthCheck(configuration: Configuration, state: State): Promise<undefined> {
+    async getHealthReadiness(configuration: Configuration, state: State): Promise<undefined> {
         try {
             await state.connPool.execute("SELECT 1")
         } catch (x) {
@@ -99,7 +99,7 @@ const connector: Connector<Configuration, State> = {
      * This function should be syncronous
      * @param configuration
      */
-    getCapabilities(configuration: Configuration): CapabilitiesResponse {
+    getCapabilities(configuration: Configuration): Capabilities {
         return CAPABILITIES_RESPONSE;
     },
 
