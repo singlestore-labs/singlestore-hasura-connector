@@ -6,6 +6,7 @@ import { doGetSchema } from "./handlers/schema";
 import { doQuery } from "./handlers/query";
 import { doQueryExplain } from "./handlers/queryExplain";
 import { Configuration, createPool } from "./util";
+import { do_mutation } from "./handlers/mutation";
 
 export type State = {
     connPool: Pool;
@@ -162,7 +163,7 @@ const connector: Connector<Configuration, State> = {
         state: State,
         request: MutationRequest
     ): Promise<MutationResponse> {
-        throw new Error("Function not implemented.");
+        return do_mutation(configuration, state, request);
     },
 
     /**

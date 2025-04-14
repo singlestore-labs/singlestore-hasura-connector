@@ -1,15 +1,18 @@
-import { CollectionInfo, ObjectField, ObjectType, SchemaResponse, Type, UnprocessableContent } from "@hasura/ndc-sdk-typescript";
+import { CollectionInfo, ObjectField, ObjectType, ProcedureInfo, SchemaResponse, Type, UnprocessableContent } from "@hasura/ndc-sdk-typescript";
 import { DataTypeClass, SCALAR_TYPES } from "../constants";
 import { ColumnSchema, Configuration } from "../util";
 
 export function doGetSchema(configuration: Configuration): SchemaResponse {
     let collectionInfos: CollectionInfo[] = [];
     let object_types: { [k: string]: ObjectType } = {};
+    const procedures: ProcedureInfo[] = []
 
     for (const table of configuration.tables) {
+        const fields = convertColumnsToFields(table.columns)
+
         object_types[table.tableName] = {
             description: table.description,
-            fields: convertColumnsToFields(table.columns)
+            fields: fields
         }
 
         collectionInfos.push({
@@ -20,6 +23,19 @@ export function doGetSchema(configuration: Configuration): SchemaResponse {
             uniqueness_constraints: table.uniquenessConstraints,
             foreign_keys: table.foreignKeys
         })
+
+        const insertOneProcedure: ProcedureInfo = {
+            name: `insert_${table.tableName}_one`,
+            description: `Insert a single record into the ${table.tableName} collection.`,
+            arguments: {
+                object: {
+                    description: `The record to insert into the ${table.tableName}`,
+                    type: { type: "named", name: table.tableName }
+                }
+            },
+            result_type: { type: "named", name: "INTEGER" }
+        };
+        procedures.push(insertOneProcedure);
     }
 
     const schemaResponse: SchemaResponse = {
@@ -27,7 +43,7 @@ export function doGetSchema(configuration: Configuration): SchemaResponse {
         object_types: object_types,
         collections: collectionInfos,
         functions: [],
-        procedures: []
+        procedures: procedures
     };
     return schemaResponse;
 };
