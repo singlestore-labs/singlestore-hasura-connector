@@ -126,7 +126,7 @@ jobs:
         with:
           draft: false
           tag_name: v${{ steps.get-version.outputs.tagged_version }}
-          body: ${{ steps.changelog-reader.outputs.changes }}
+          body: ${{ steps.changelog-reader.outputs.changelog }}
           files: |
             ./connector-definition/dist/connector-definition.tgz
           fail_on_unmatched_files: true
