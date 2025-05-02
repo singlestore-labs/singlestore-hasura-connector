@@ -109,11 +109,19 @@ jobs:
         run: |
           echo "tagged_version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
         shell: bash
-      - uses: mindsers/changelog-reader-action@v2
+      - name: Read changelog for current version
         id: changelog-reader
-        with:
-          version: ${{ steps.get-version.outputs.tagged_version }}
-          path: ./CHANGELOG.md
+        run: |
+          version="${{ steps.get-version.outputs.tagged_version }}"
+          changelog=$(awk -v version="$version" '
+            $0 ~ "^## \\[" version "\\]" {found=1; next}
+            found && /^## \[.*\]/ {exit}
+            found {print}
+          ' ./CHANGELOG.md)
+          changelog="${changelog//'%'/'%25'}"
+          changelog="${changelog//$'\n'/'%0A'}"
+          changelog="${changelog//$'\r'/'%0D'}"
+          echo "changelog=$changelog" >> $GITHUB_OUTPUT
       - uses: softprops/action-gh-release@v1
         with:
           draft: false
