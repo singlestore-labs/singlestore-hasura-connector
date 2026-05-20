@@ -6,6 +6,7 @@
         ],
         "module": "NodeNext",
         "moduleResolution": "nodenext",
+        "types": ["node"],
         "resolveJsonModule": true,
         "declaration": true,
         "sourceMap": true,
