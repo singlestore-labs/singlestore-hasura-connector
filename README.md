@@ -2,6 +2,8 @@
 
 <a href="https://www.singlestore.com/"><img src="https://github.com/singlestore-labs/singlestore-hasura-connector/blob/main/docs/logo_primary_singlestore_black.png" align="right" width="200"></a>
 
+**Attention**: The code in this repository is intended for experimental use only and is not fully tested, documented, or supported by SingleStore. Visit the [SingleStore Forums](https://www.singlestore.com/forum/) to ask questions about this repository.
+
 <!-- TODO: update when connector will be published -->
 
 [![Docs](https://img.shields.io/badge/docs-v3.x-brightgreen.svg?style=flat)](https://hasura.io/docs/3.0/latest/connectors/singesltore/)
